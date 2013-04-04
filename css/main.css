@@ -74,6 +74,7 @@ header .description {
 .more-info {
     background: #ebebeb;
     margin: 65px 0 0 0;
+    padding: 0 0 65px 0;
 }
 .main-content > div {
     text-align: center;
