@@ -38,7 +38,7 @@ h1 {
 }
 
 header .subtitle {
-    font-size: 44px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -88,6 +88,98 @@ footer {
     width: 100%;
 }
 
+/* Large desktop */
+@media (min-width: 1200px) {
+    header .subtitle {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header  div.offset2 {
+        margin-left: 8% !important;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        left: 170px;
+        top: 130px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    header .subtitle {
+        font-size: 22px;
+    }
+
+    header .description, .fork {
+        display: none;
+    }
+
+    header  div.offset2 {
+        margin-left: 2% !important;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        left: 170px;
+        top: 0;
+    }
+
+    .navbar-fixed-top {
+        margin: 0 !important;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 641px) and (max-width: 767px) {
+    .slider-wrapper {
+        top: 0;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 640px) {
+
+    header .subtitle {
+        font-size: 18px;
+    }
+
+    .slider-wrapper {
+        display: none !important;
+    }
+
+    header .description, .fork {
+        display: none;
+    }
+
+    .navbar-fixed-top {
+        margin: 0 !important;
+    }
+
+    header  div.offset2 {
+        margin-left: 2% !important;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .more-info {
+        padding: 30px;
+    }
+
+    .more-info h2 {
+        margin: 0 0 20px 0;
+    }
+
+    .more-info p {
+        width: 80%;
+    }
+
+
+}
 
 
 
