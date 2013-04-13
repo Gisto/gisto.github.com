@@ -235,3 +235,23 @@ img {
 .contact a {
     color: #f1f1f1;
 }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 315px;
+}
+
+.clear {
+    clear: both;
+}
+
+.features img {
+    max-width: 315px;
+}
+.align-center {
+    text-align: center;
+}
