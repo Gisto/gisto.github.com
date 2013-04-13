@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="DELETED" beforePath="C:\Users\morsd_000\Documents\gisto.github.com\img\Screenshot from 2013-04-08 20:43:16.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\morsd_000\Documents\gisto.github.com\img\Screenshot from 2013-04-08 20:43:49.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\morsd_000\Documents\gisto.github.com\img\Screenshot from 2013-04-08 20:45:10.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\morsd_000\Documents\gisto.github.com\img\Screenshot from 2013-04-08 20:45:24.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\morsd_000\Documents\gisto.github.com\img\Screenshot from 2013-04-08 20:52:12.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365852065287" ignored="false" />
-    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365860803198" ignored="false" />
+    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365864964308" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
-    <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027221363" ignored="false" />
+    <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365864793336" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/app/api/sample/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/app/js/app.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/app/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
@@ -47,10 +48,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="63" selection-start="4485" selection-end="4485" vertical-scroll-proportion="0.26530612">
+            <state line="55" column="39" selection-start="2203" selection-end="2203" vertical-scroll-proportion="-11.961538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="3" selection-start="139" selection-end="139" vertical-scroll-proportion="0.13646789">
               <folding />
             </state>
           </provider>
@@ -92,9 +102,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -147,6 +157,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gisto.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gisto.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gisto.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,7 +340,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="63" selection-start="4485" selection-end="4485" vertical-scroll-proportion="0.26530612">
+        <state line="55" column="39" selection-start="2203" selection-end="2203" vertical-scroll-proportion="-11.961538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="139" selection-end="139" vertical-scroll-proportion="0.13646789">
           <folding />
         </state>
       </provider>
