@@ -49,7 +49,6 @@ body {
 body {
     font-family: 'Roboto', serif,"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 150%;
-    color: #555;
 }
 
 a {
@@ -61,10 +60,10 @@ a:hover {
     color:#999;
 }
 header, .horizontal {
-    background: #ccc;
-    background: -webkit-linear-gradient(top, #F2F2F2, #D9D9D9 );
-    text-shadow: 1px 1px 1px #FFF;
-    text-shadow: 1px 1px 1px #FFF;
+    background: #fff;
+    /*background: -webkit-linear-gradient(top, #F2F2F2, #D9D9D9 );*/
+    box-shadow: 0px 0px 8px #555;
+    position: relative;
 }
 
 header .logo {
@@ -93,10 +92,14 @@ img {
 .hero,
 .features {
     padding: 30px 10px;
-    background: #8fbc8f;
-    box-shadow: 0px 0px 20px #555 inset;
+    background: #314A59;
+    /*box-shadow: 0px 0px 20px #555 inset;*/
 }
 
+.hero {
+ box-shadow: 0px 0px 40px #555 inset;
+ background: #57A25B;
+}
 .hero h1,
 .features h1 {
     color: #f2f2f2;
@@ -113,8 +116,8 @@ img {
 
 .features {
     padding: 30px 10px;
-    background: #c2d8ff;
-    box-shadow: 0px 0px 20px #555 inset;
+    background: #e5e5e5;
+    /*box-shadow: 0px 0px 20px #555 inset;*/
 }
 
 .features h1 {
@@ -194,9 +197,9 @@ img {
 }
 
 .footer {
-    background: #ffcac2;
+    background: #f4f4f4;
     padding: 30px 10px;
-    box-shadow: 0px 0px 20px #555 inset;
+    border-top: 1px solid #bebebe;
 }
 
 .footer h1 {
@@ -216,7 +219,19 @@ img {
 }
 
 .contact {
-    background: #f7ffc2;
+    background: #333;
     padding: 30px 10px;
-    box-shadow: 0px 0px 20px #555 inset;
+    /*box-shadow: 0px 0px 20px #555 inset;*/
+}
+
+.contact h2 {
+ color: #f4f4f4;   
+}
+
+.contact p {
+ color: #cecece;   
+}
+
+.contact a {
+    color: #f1f1f1;
 }
