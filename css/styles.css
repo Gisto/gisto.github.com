@@ -198,7 +198,7 @@ img {
 
 .footer {
     background: #f4f4f4;
-    padding: 30px 10px;
+    padding: 50px 10px;
     border-top: 1px solid #bebebe;
 }
 
@@ -226,10 +226,14 @@ img {
 
 .contact h2 {
  color: #f4f4f4;   
+ font-size: 32px;
+ font-weight: 100;
 }
 
 .contact p {
  color: #cecece;   
+ font-size: 21px;
+ font-weight: 100;
 }
 
 .contact a {
@@ -254,4 +258,25 @@ img {
 }
 .align-center {
     text-align: center;
+}
+
+.features > .row {
+    margin-top: 50px;
+}
+
+.features .separator {
+    width: 65%;
+    border-bottom: 1px solid #CCC;
+    clear: both;
+    margin: 20px auto;
+    padding-top: 50px;
+}
+
+.footer h1 {
+    font-size: 32px;
+}
+
+.footer p {
+    font-size: 21px;
+    margin-top: 13px;
 }

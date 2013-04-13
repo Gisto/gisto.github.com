@@ -13,7 +13,7 @@
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365852065287" ignored="false" />
-    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365859265642" ignored="false" />
+    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365860803198" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
     <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027221363" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/app/api/sample/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
@@ -27,7 +27,7 @@
     <file path="$PROJECT_DIR$/../gisto/app/partials/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/app/js/controllers.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/app/api/routes/gists.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
-    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365859279764" ignored="false" />
+    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365861107168" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="14" selection-start="5858" selection-end="5858" vertical-scroll-proportion="0.53061223">
+            <state line="116" column="63" selection-start="4485" selection-end="4485" vertical-scroll-proportion="0.26530612">
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="19" selection-start="4179" selection-end="4179" vertical-scroll-proportion="0.0">
+            <state line="281" column="1" selection-start="4758" selection-end="4758" vertical-scroll-proportion="-14.4">
               <folding />
             </state>
           </provider>
@@ -309,14 +309,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="19" selection-start="4179" selection-end="4179" vertical-scroll-proportion="0.0">
+        <state line="281" column="1" selection-start="4758" selection-end="4758" vertical-scroll-proportion="-14.4">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="14" selection-start="5858" selection-end="5858" vertical-scroll-proportion="0.53061223">
+        <state line="116" column="63" selection-start="4485" selection-end="4485" vertical-scroll-proportion="0.26530612">
           <folding />
         </state>
       </provider>
