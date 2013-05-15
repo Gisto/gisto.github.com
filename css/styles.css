@@ -286,3 +286,9 @@ img {
     font-size: 21px;
     margin-top: 13px;
 }
+
+#alt-caption {
+    text-align: center;
+    font-size: 12px;
+    color:#fff;
+}

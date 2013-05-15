@@ -56,9 +56,20 @@
                     <a class="btn links" href="#footer">Learn more </a>
                 </div>
                 <div class="sixcol last">
-                    <p>
-                        <img alt="Gisto" src="img/single-gist.png" />
-                    </p>
+
+
+                    <div class="cycle-slideshow"
+                         data-cycle-fx=fade
+                         data-cycle-timeout=4000
+                         data-cycle-caption="#alt-caption"
+                         data-cycle-caption-template="{{alt}}"
+                            >
+                        <img src="img/lite_theme.png" alt="Light theme - default">
+                        <img src="img/dark_theme.png" alt="Dark theme">
+                    </div>
+                    <div id="alt-caption" class="center"></div>
+
+
                 </div>
             </div>
         </div>
@@ -232,6 +243,7 @@
         </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.cycle2.min.js"></script>
         <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
         <script src="js/main.js"></script>
 
