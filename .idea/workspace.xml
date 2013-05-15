@@ -7,8 +7,8 @@
     </list>
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1368658268080" ignored="false" />
-    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1368657955375" ignored="false" />
+    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1368659186461" ignored="false" />
+    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1368660362199" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
     <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365864793336" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/app/api/sample/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
@@ -45,7 +45,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="13" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.4076087">
+            <state line="5" column="44" selection-start="122" selection-end="122" vertical-scroll-proportion="0.13586956">
               <folding />
             </state>
           </provider>
@@ -233,7 +233,11 @@
       <created>1368658272318</created>
       <updated>1368658272318</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add analytics">
+      <created>1368659190172</created>
+      <updated>1368659190172</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -302,7 +306,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add share this" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add analytics" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -319,6 +323,7 @@
     <MESSAGE value="Fix screenshots" />
     <MESSAGE value="Add jQuery cycle" />
     <MESSAGE value="Add share this" />
+    <MESSAGE value="Add analytics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -375,7 +380,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="13" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.4076087">
+        <state line="5" column="44" selection-start="122" selection-end="122" vertical-scroll-proportion="0.13586956">
           <folding />
         </state>
       </provider>
