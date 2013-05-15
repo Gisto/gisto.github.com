@@ -63,14 +63,12 @@ a:hover {
 
 
 header, .horizontal {
-    background: #fff;
+    background: -webkit-linear-gradient(top, #fff, #ccc );
     box-shadow: 0px 0px 8px #555;
     position: relative;
+    text-shadow:1px 1px 1px #fff;
 }
 
-header {
-    background: -webkit-linear-gradient(top, #F2F2F2, #D9D9D9 );
-}
 
 header .logo {
     font-size: 48px;
