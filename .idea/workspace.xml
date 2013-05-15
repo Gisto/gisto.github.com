@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1368655918820" ignored="false" />
+    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1368658268080" ignored="false" />
     <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1368657955375" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
     <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365864793336" ignored="false" />
@@ -43,10 +42,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="53" selection-start="2248" selection-end="2248" vertical-scroll-proportion="-20.0">
+            <state line="42" column="13" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.4076087">
               <folding />
             </state>
           </provider>
@@ -61,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.74533105">
+            <state line="65" column="55" selection-start="1133" selection-end="1187" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,8 +89,8 @@
       <list>
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -230,7 +229,11 @@
       <created>1368655920893</created>
       <updated>1368655920893</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add share this">
+      <created>1368658272318</created>
+      <updated>1368658272318</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -299,7 +302,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add jQuery cycle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add share this" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -315,6 +318,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Fix screenshots" />
     <MESSAGE value="Add jQuery cycle" />
+    <MESSAGE value="Add share this" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -362,16 +366,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="53" selection-start="2248" selection-end="2248" vertical-scroll-proportion="-20.0">
+        <state line="65" column="55" selection-start="1133" selection-end="1187" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.74533105">
+        <state line="42" column="13" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.4076087">
           <folding />
         </state>
       </provider>
