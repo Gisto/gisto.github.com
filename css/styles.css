@@ -159,6 +159,7 @@ img {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 20px;
+    display: inline-block;
     background: -moz-linear-gradient(
         top,
         #ff2819 0%,
