@@ -295,3 +295,12 @@ img {
 .smaller {
     font-size: 12px;
 }
+
+.download {
+    font-size: 20px;
+    margin-right: 27px;
+}
+
+.download-links a {
+    margin: 8px 28px;
+}
