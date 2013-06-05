@@ -8,7 +8,7 @@ $(function () {
 /* Determine OS and provide ling respectively */
 
     var platform = window.navigator.platform,
-        mainText = ' <a class="download innsite" href="#download">Not running {{OS}}? Click Here</a>',
+        mainText = ' <a class="download innsite" href="#footer">Not running {{OS}}? Click Here</a>',
         linux = /Linux/g,
         windows = /Win/g,
         mac = /Mac/g;
@@ -24,7 +24,7 @@ $(function () {
     }
 
     function downloadLink(os, link) {
-        $('.download').html(mainText.replace('{{OS}}', os) + ' ' + '<a onclick="ga.push([\'trackPageview\', \'download\']);" class="btn links" href="' + link + '"><i class="icon-download-alt"></i> Download for <br />' + os + ' </a>');
+        $('.download').html(mainText.replace('{{OS}}', os) + ' ' + '<a onclick="_gaq.push([\'trackPageview\', \'download\']);" class="btn links" href="' + link + '"><i class="icon-download-alt"></i> Download for <br />' + os + ' </a>');
     };
 
 });
