@@ -1,6 +1,6 @@
 $(function () {
 
-    $('.innsite').click(function (e) {
+    $('body').on('click', '.innsite', function (e) {
         e.preventDefault();
         $.scrollTo(e.currentTarget.hash, 800);
     });
