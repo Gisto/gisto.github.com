@@ -18,7 +18,7 @@ $(function () {
     } else if (mac.test(platform)) {
         downloadLink('OSX 10.7+', 'download/0.1.0a/Gisto-0.1.0a-OSX_x86.dmg');
     } else if (windows.test(platform)) {
-        downloadLink('Windows', 'download/0.1.0a/Gisto-0.1.0a-Win_x86.exe');
+        downloadLink('Windows', 'download/0.1.0a/Gisto-0.1.0a-Win_x86.zip');
     } else {
         $('.download').html('<a class="btn links" href="">View download options on GitHub</a>');
     }
