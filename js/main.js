@@ -24,7 +24,7 @@ $(function () {
     }
 
     function downloadLink(os, link) {
-        $('.download').html('<a onclick="_gaq.push([\'trackPageview\', \'download\']);" class="btn links" href="' + link + '"><i class="icon-download-alt"></i> Download for <br />' + os + ' </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
+        $('.download').html('<a onclick="ga(\'send\', \'pageview\', \'/download\');" class="btn links" href="' + link + '"><i class="icon-download-alt"></i> Download for <br />' + os + ' </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
     };
 
 });
