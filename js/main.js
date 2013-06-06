@@ -20,7 +20,7 @@ $(function () {
     } else if (windows.test(platform)) {
         downloadLink('Windows', 'download/0.1.0a/Gisto-0.1.0a-Win_x86.zip');
     } else {
-        $('.download').html('<a class="btn links" href="">View download options on GitHub</a>');
+        $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
     }
 
     function downloadLink(os, link) {
