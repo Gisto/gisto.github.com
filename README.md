@@ -1,4 +1,4 @@
 gisto.github.com
 ================
 
-Gisto landing page
+[Gisto landing page](http://www.gistoapp.com)
