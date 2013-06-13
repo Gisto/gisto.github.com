@@ -31,16 +31,30 @@
             shorten:false
         });</script>
     </head>
+    <script type="text/javascript">
+        var _gas = _gas || [];
+        _gas.push(['_setAccount', 'UA-40972813-1']); // REPLACE WITH YOUR GA NUMBER
+        _gas.push(['_setDomainName', '.gistoapp.com']); // REPLACE WITH YOUR DOMAIN
+        _gas.push(['_trackPageview']);
+        _gas.push(['_gasTrackForms']);
+        _gas.push(['_gasTrackOutboundLinks']);
+        _gas.push(['_gasTrackMaxScroll']);
+        _gas.push(['_gasTrackDownloads', {
+            category: 'Gisto Downloads',
+            extensions: 'dmg,gz,tar.gz'
+        }]);
+        _gas.push(['_gasTrackYoutube', {force: true}]);
+        _gas.push(['_gasTrackVimeo', {force: true}]);
+        _gas.push(['_gasTrackMailto']);
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-40972813-1', 'gistoapp.com');
-        ga('send', 'pageview');
-
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.10.1/gas.min.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
     </script>
 
     <body>
@@ -218,18 +232,14 @@
             <div class="row">
                 <div class="sixcol">
                     <h1>Application status</h1>
-                    <p class="light" >Current build: Alpha 0.1.0a.</p>
+                    <p class="light" >Current build: Alpha 0.1.1a | 2013-06-13</p>
                     <p>Download here for Windows, OSX And Linux</p>
                     <p class="download-links">
-                        <a onclick="ga('send', 'pageview', '/download');" class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-Win_x86.zip"><i class="icon-download-alt"></i> Download for <br /> Windows</a>
-                        <a onclick="ga('send', 'pageview', '/download');" class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-OSX_x86.dmg"><i class="icon-download-alt"></i> Download for <br /> OSX 10.7+</a>
+                        <a class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-Win_x86.zip"><i class="icon-download-alt"></i> Download for <br /> Windows</a>
+                        <a class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-OSX_x86.dmg"><i class="icon-download-alt"></i> Download for <br /> OSX 10.7+</a>
                         <br />
-                        <a onclick="ga('send', 'pageview', '/download');" class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz"><i class="icon-download-alt"></i> Download for <br /> Linux 64bit</a>
-                        <a onclick="ga('send', 'pageview', '/download');" class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-Linux_x86.tar.gz"><i class="icon-download-alt"></i> Download for <br /> Linux 32bit</a>
-                        <a onclick="ga.push(['trackPageview', 
-                        'download']);" class="btn links align-center" 
-                        href="download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz"><i class="icon-download-alt"></i> Download for <br /> Linux 64bit</a>
-                        <a onclick="ga.push(['trackPageview', 'download']);" class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-Linux_x86.tar.gz"><i class="icon-download-alt"></i> Download for <br /> Linux 32bit</a>
+                        <a class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz"><i class="icon-download-alt"></i> Download for <br /> Linux 64bit</a>
+                        <a class="btn links align-center" href="download/0.1.1a/Gisto-0.1.1a-Linux_x86.tar.gz"><i class="icon-download-alt"></i> Download for <br /> Linux 32bit</a>
                     </p>
                 </div>
                 <div class="sixcol last">
