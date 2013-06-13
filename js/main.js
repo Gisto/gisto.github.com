@@ -14,7 +14,7 @@ $(function () {
         mac = /Mac/g;
 
     if (linux.test(platform)) {
-        downloadLink('Linux 64bit', 'download/0.1.0a/Gisto-0.1.1a-Linux_x86_64.tar.gz');
+        downloadLink('Linux 64bit', 'download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz');
     } else if (mac.test(platform)) {
         downloadLink('OSX 10.7+', 'download/0.1.1a/Gisto-0.1.1a-OSX_x86.dmg');
     } else if (windows.test(platform)) {
