@@ -173,6 +173,7 @@ img {
     color: #ffffff;
     padding: 10px 20px;
     display: inline-block;
+    background:#ab0000;
     background: -moz-linear-gradient(
         top,
         #ff2819 0%,
@@ -310,8 +311,9 @@ img {
 }
 
 .download {
-    font-size: 20px;
-    margin-right: 27px;
+    font-size: 15px;
+    margin: 10px auto 0;
+    display: block;
 }
 
 .download-links a {
