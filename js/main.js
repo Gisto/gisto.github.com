@@ -24,7 +24,14 @@ $(function () {
     }
 
     function downloadLink(os, link) {
-        $('.download').html('<a onclick="ga(\'send\', \'pageview\', \'/download\');" class="btn links" href="' + link + '"><i class="icon-download-alt"></i> Download for <br />' + os + ' </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
+        $('.download').html('<a class="btn links" href="' + link + '"><i class="icon-download-alt"></i> Download for <br />' + os + ' </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
     };
+
+    /*
+    $.getJSON('https://raw.github.com/Gisto/Gisto/master/app/package.json?callback=?', function(data) {
+        console.log('JSON',data);
+    });
+    */
+
 
 });
