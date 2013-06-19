@@ -14,17 +14,17 @@ $(function () {
         mac = /Mac/g;
 
     if (linux.test(platform)) {
-        downloadLink('Linux 64bit', 'download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz');
+        downloadLink('Linux 64bit', 'download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz','icon-linux');
     } else if (mac.test(platform)) {
-        downloadLink('OSX 10.7+', 'download/0.1.1a/Gisto-0.1.1a-OSX_x86.dmg');
+        downloadLink('OSX 10.7+', 'download/0.1.1a/Gisto-0.1.1a-OSX_x86.dmg','icon-apple');
     } else if (windows.test(platform)) {
-        downloadLink('Windows', 'download/0.1.1a/Gisto-0.1.1a-Win_x86.zip');
+        downloadLink('Windows', 'download/0.1.1a/Gisto-0.1.1a-Win_x86.zip','icon-windows');
     } else {
         $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
     }
 
-    function downloadLink(os, link) {
-        $('.download').html('<a class="btn links" href="' + link + '"><i class="icon-download-alt"></i> Download for <br />' + os + ' </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
+    function downloadLink(os, link, icon) {
+        $('.download').html('<a class="btn links" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
     };
 
     /*

@@ -319,3 +319,20 @@ img {
 .download-links a {
     margin: 8px 28px;
 }
+
+.download-links a strong,
+.download a strong
+{
+    font-size: 17px;
+}
+
+.down-os {
+    float: left;
+    padding: 0px 20px 0px 0px;
+    border-right: 1px solid #fff;
+    margin: 0 20px 0 0;
+}
+
+.txt_wight {
+    color:#fff;
+}
