@@ -36,18 +36,11 @@
         _gas.push(['_setAccount', 'UA-40972813-1']); // REPLACE WITH YOUR GA NUMBER
         _gas.push(['_setDomainName', '.gistoapp.com']); // REPLACE WITH YOUR DOMAIN
         _gas.push(['_trackPageview']);
-        _gas.push(['_gasTrackForms']);
         _gas.push(['_gasTrackOutboundLinks']);
         _gas.push(['_gasTrackMaxScroll']);
         _gas.push(['_gasTrackDownloads', {
-            category: 'Gisto Downloads',
-            extensions: 'dmg,gz'
+            extensions: 'dmg,gz,zip'
         }]);
-        /*
-        _gas.push(['_gasTrackYoutube', {force: true}]);
-        _gas.push(['_gasTrackVimeo', {force: true}]);
-        _gas.push(['_gasTrackMailto']);
-        */
 
         (function() {
             var ga = document.createElement('script');
