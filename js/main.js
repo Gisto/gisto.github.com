@@ -5,6 +5,11 @@ $(function () {
         $.scrollTo(e.currentTarget.hash, 800);
     });
 
+    $('body').on('click', '.download-link', function() {
+        console.log('sent');
+        _gaq.push(['_trackPageView', '/download']); // track page views
+    });
+
 /* Determine OS and provide ling respectively */
 
     var platform = window.navigator.platform,
@@ -14,17 +19,17 @@ $(function () {
         mac = /Mac/g;
 
     if (linux.test(platform)) {
-        downloadLink('Linux 64bit', 'download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz','icon-linux');
+        downloadLink('Linux 64bit', 'download/0.1.2a/Gisto-0.1.2a-Linux_x86_64.tar.gz','icon-linux');
     } else if (mac.test(platform)) {
-        downloadLink('OSX 10.7+', 'download/0.1.1a/Gisto-0.1.1a-OSX_x86.dmg','icon-apple');
+        downloadLink('OSX 10.7+', 'download/0.1.2a/Gisto-0.1.2a-OSX_x86.dmg','icon-apple');
     } else if (windows.test(platform)) {
-        downloadLink('Windows', 'download/0.1.1a/Gisto-0.1.1a-Win_x86.zip','icon-windows');
+        downloadLink('Windows', 'download/0.1.2a/Gisto-0.1.2a-Win_x86.zip','icon-windows');
     } else {
         $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
     }
 
     function downloadLink(os, link, icon) {
-        $('.download').html('<a class="btn links" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
+        $('.download').html('<a class="btn links download-link" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('{{OS}}', os) );
     };
 
     /*
