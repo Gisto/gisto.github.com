@@ -2,18 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/download/0.1.2a/Gisto-0.1.2a-Linux_x86.tar.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/download/0.1.2a/Gisto-0.1.2a-Linux_x86_64.tar.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/download/0.1.2a/Gisto-0.1.2a-Win_x86.zip" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.0a/Gisto-0.1.0a-Linux_x86.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.0a/Gisto-0.1.0a-Linux_x86_64.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.0a/Gisto-0.1.0a-OSX_x86.dmg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.0a/Gisto-0.1.0a-Win_x86.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.1a/Gisto-0.1.1a-Linux_x86.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.1a/Gisto-0.1.1a-Linux_x86_64.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.1a/Gisto-0.1.1a-OSX_x86.dmg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.1a/Gisto-0.1.1a-Win-x86.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.1a/Gisto-0.1.1a-Win-x86.exe.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.1a/Gisto-0.1.1a-Win-x86.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/0.1.1a/Gisto-0.1.1a-Win_x86.zip" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/download/0.1.2a/Gisto-0.1.2a-Linux_x86.tar.gz" afterPath="$PROJECT_DIR$/download/Gisto-0.1.2a-Linux_x86.tar.gz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/download/0.1.2a/Gisto-0.1.2a-Linux_x86_64.tar.gz" afterPath="$PROJECT_DIR$/download/Gisto-0.1.2a-Linux_x86_64.tar.gz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/download/0.1.2a/Gisto-0.1.2a-OSX_x86.dmg" afterPath="$PROJECT_DIR$/download/Gisto-0.1.2a-OSX_x86.dmg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/download/0.1.2a/Gisto-0.1.2a-Win_x86.zip" afterPath="$PROJECT_DIR$/download/Gisto-0.1.2a-Win_x86.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371758062030" ignored="false" />
-    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371712834965" ignored="false" />
+    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371758769484" ignored="false" />
+    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371770577331" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
-    <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371678422631" ignored="false" />
+    <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371768511788" ignored="false" />
     <file path="D:/gisto/app/api/sample/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
     <file path="D:/gisto/app/js/app.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
     <file path="D:/gisto/app/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
@@ -25,7 +39,7 @@
     <file path="D:/gisto/app/partials/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
     <file path="D:/gisto/app/js/controllers.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
     <file path="D:/gisto/app/api/routes/gists.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
-    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371678743772" ignored="false" />
+    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371770671512" ignored="false" />
     <file path="/.gitignore" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1370505182449" ignored="false" />
     <file path="$PROJECT_DIR$/../yvel/modules/plblog/frontent/js/jscripts/tiny_mce/themes/advanced/skins/default/content.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371139278042" ignored="false" />
     <file path="$PROJECT_DIR$/../yvel/modules/plblog/frontent/js/jscripts/tiny_mce/plugins/template/css/template.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371139278042" ignored="false" />
@@ -68,10 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="38" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.033259425">
+            <state line="80" column="51" selection-start="3678" selection-end="3689" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
@@ -80,16 +94,16 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="20" selection-start="1000" selection-end="1008" vertical-scroll-proportion="0.0">
+            <state line="8" column="49" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="335" column="10" selection-start="5580" selection-end="5589" vertical-scroll-proportion="0.0">
+            <state line="233" column="30" selection-start="4596" selection-end="4596" vertical-scroll-proportion="0.25531915">
               <folding />
             </state>
           </provider>
@@ -116,17 +130,17 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="552" />
-    <option name="y" value="89" />
-    <option name="width" value="1223" />
-    <option name="height" value="668" />
+    <option name="x" value="-1" />
+    <option name="y" value="25" />
+    <option name="width" value="1368" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -185,24 +199,6 @@
               <option name="myItemId" value="download" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0.1.2a" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gisto.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gisto.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="download" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -220,6 +216,9 @@
       <recent name="$PROJECT_DIR$/font" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/download" />
     </key>
   </component>
   <component name="RunManager">
@@ -304,11 +303,15 @@
       <created>1371678864794</created>
       <updated>1371678864794</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add version 0.1.2a Linux-x86, Linux-x86, Windows-x86">
+      <created>1371758779443</created>
+      <updated>1371758779443</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="552" y="89" width="1223" height="668" extended-state="0" />
+    <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -317,18 +320,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34401348" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="getGist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19574468" sideWeight="0.6559865" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17424242" sideWeight="0.6559865" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -376,7 +379,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Update font awesome.&#10;* Redesigned download buttons a bit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add version 0.1.2a Linux-x86, Linux-x86, Windows-x86" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -401,6 +404,7 @@
     <MESSAGE value="Layout fix" />
     <MESSAGE value="Anlytics fix" />
     <MESSAGE value="* Update font awesome.&#10;* Redesigned download buttons a bit." />
+    <MESSAGE value="Add version 0.1.2a Linux-x86, Linux-x86, Windows-x86" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -491,21 +495,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="1000" selection-end="1008" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="335" column="10" selection-start="5580" selection-end="5589" vertical-scroll-proportion="0.0">
+        <state line="8" column="49" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="38" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.033259425">
+        <state line="80" column="51" selection-start="3678" selection-end="3689" vertical-scroll-proportion="-12.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="233" column="30" selection-start="4596" selection-end="4596" vertical-scroll-proportion="0.25531915">
           <folding />
         </state>
       </provider>
