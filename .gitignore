@@ -10,7 +10,7 @@
 *.sublime-workspace
 
 ### PhPStorm ###
-.idea/
+.idea
 
 ### NetBeans ###
 nbproject/private/

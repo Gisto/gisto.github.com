@@ -1,12 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="">
+    <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="Add version 0.1.2a Linux-x86, Linux-x86, Windows-x86">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/font/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/Octocat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/Octocat.xcf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/dark_theme.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/font/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/font/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/lite_theme.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/madeof.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/offline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/single-gist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/img/tagging.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/css/1140.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/js/css3-mediaqueries.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/scripts/e2e-test.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/scripts/e2e-test.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/ga.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/humans.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/css/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/changelog/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changelog/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/js/jquery.cycle2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/js/jquery.scrollTo-1.4.3.1-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/nbproject/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/nbproject/project.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/css/syntax.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/syntax.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/scripts/test.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/scripts/test.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/scripts/watchr.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/scripts/web-server.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/Gisto-0.1.2a-Linux_x86.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/Gisto-0.1.2a-Linux_x86_64.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/Gisto-0.1.2a-OSX_x86.dmg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/Gisto-0.1.2a-Win_x86.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372701019965" ignored="false" />
+    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372708167688" ignored="false" />
     <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371770577331" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
     <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371768511788" ignored="false" />
@@ -68,7 +125,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="51" selection-start="3678" selection-end="3689" vertical-scroll-proportion="0.0">
+            <state line="65" column="0" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,10 +140,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="30" selection-start="4596" selection-end="4596" vertical-scroll-proportion="0.027173912">
+            <state line="390" column="14" selection-start="6888" selection-end="6888" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="38" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.7003891">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="5" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,19 +191,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
+    <option name="x" value="-9" />
     <option name="y" value="17" />
-    <option name="width" value="1386" />
-    <option name="height" value="761" />
+    <option name="width" value="1384" />
+    <option name="height" value="760" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -156,6 +232,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,13 +261,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="download" />
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gisto.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gisto.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,7 +400,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="17" width="1386" height="761" extended-state="6" />
+    <frame x="-9" y="17" width="1384" height="760" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -324,7 +414,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17173253" sideWeight="0.6559865" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17123288" sideWeight="0.6559865" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -409,13 +499,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
@@ -482,11 +565,6 @@
         <state line="18" column="15" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="48" selection-start="510" selection-end="510" vertical-scroll-proportion="0.69503546" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -501,14 +579,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="51" selection-start="3678" selection-end="3689" vertical-scroll-proportion="0.0">
+        <state line="65" column="0" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="30" selection-start="4596" selection-end="4596" vertical-scroll-proportion="0.027173912">
+        <state line="390" column="14" selection-start="6888" selection-end="6888" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="38" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.7003891">
           <folding />
         </state>
       </provider>

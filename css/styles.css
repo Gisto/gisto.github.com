@@ -299,6 +299,11 @@ img {
     color: #f1f1f1;
 }
 
+.contact a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 15px #fff;
+}
+
 .left {
     float: left;
 }
@@ -375,4 +380,26 @@ img {
 
 .txt_wight {
     color:#fff;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    color:#555;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.main-content b,
+.main-content strong {
+    color:#555;
+}
+
+a,
+a:hover,
+ul li a,
+ul li a:hover {
+    text-decoration: none;
 }
