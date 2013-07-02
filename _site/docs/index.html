@@ -59,11 +59,11 @@
                     <h1>&lt;/Gisto&gt;</h1>
                 </a>
 
-                <a href="/#footer" class="twocol innsite links">
+                <a href="/#footer" class="twocol  links">
                     About
                 </a>
 
-		<a href="/#features" class="twocol innsite links">
+		<a href="/#features" class="twocol  links">
                     Features
                 </a>
 
@@ -75,7 +75,7 @@
                     Changelog
                 </a>             
 
-                <a href="/#contact" class="twocol innsite links last">
+                <a href="/#contact" class="twocol  links last">
                     Contact
                 </a>
 
@@ -232,7 +232,7 @@
     </div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/jquery-2.0.0.js"></script>
 <script src="/js/jquery.cycle2.min.js"></script>
 <script src="/js/jquery.scrollTo-1.4.3.1-min.js"></script>
 <script>
@@ -256,11 +256,11 @@ $(function () {
         mac = /Mac/g;
 
     if (linux.test(platform)) {
-        downloadLink('Linux 64bit', 'download/Gisto-0.1.2a-Linux_x86_64.tar.gz','icon-linux');
+        downloadLink('Linux 64bit', 'http://download.gistoapp.com/Gisto-0.1.3a-Linux_x86_64.tar.gz','icon-linux');
     } else if (mac.test(platform)) {
-        downloadLink('OSX 10.7+', 'download/Gisto-0.1.2a-OSX_x86.dmg','icon-apple');
+        downloadLink('OSX 10.7+', 'http://download.gistoapp.com/Gisto-0.1.3a-OSX_x86.dmg','icon-apple');
     } else if (windows.test(platform)) {
-        downloadLink('Windows', 'download/Gisto-0.1.2a-Win_x86.zip','icon-windows');
+        downloadLink('Windows', 'http://download.gistoapp.com/Gisto-0.1.3a-Win_x86.zip','icon-windows');
     } else {
         $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
     }

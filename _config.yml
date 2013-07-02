@@ -1,4 +1,5 @@
 name: Gisto
-gisto_version: 0.1.2a
-gisto_build_date: 2013-06-21
+gisto_version: 0.1.3a
+gisto_build_date: 2013-07-02
+download_url: http://download.gistoapp.com
 pygments: true
