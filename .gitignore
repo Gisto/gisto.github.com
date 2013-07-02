@@ -48,3 +48,6 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+### Jekyll ###
+_site/

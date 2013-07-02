@@ -403,3 +403,25 @@ ul li a,
 ul li a:hover {
     text-decoration: none;
 }
+
+header a span {
+    background: #57A25B;
+    padding: 5px 15px;
+    color: #fff;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px #555 inset;
+}
+
+a.archive {
+    margin: 0 auto;
+    text-align: center;
+    font-size: smaller;
+    width: 100%;
+    display: block;
+}
+
+ul.older {
+    font-size: small;
+    display: none;
+}

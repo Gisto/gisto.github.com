@@ -81,5 +81,10 @@ $(function () {
         $('.download').html('<a class="btn links download-link" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('[[OS]]', os) );
     };
 
+    $('.archive').click(function(ev){
+        ev.preventDefault();
+        $('.older').slideDown();
+    });
+
 });
 </script>

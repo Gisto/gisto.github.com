@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="">
+    <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="Made changes for v0.1.3a + new urls as download.gistoapp.com">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/changelog/index.html" afterPath="$PROJECT_DIR$/_site/changelog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/docs/index.html" afterPath="$PROJECT_DIR$/_site/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/styles.css" afterPath="$PROJECT_DIR$/_site/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372790389847" ignored="false" />
-    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372785230666" ignored="false" />
+    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805529592" ignored="false" />
+    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805001872" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
     <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371768511788" ignored="false" />
     <file path="D:/gisto/app/api/sample/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
@@ -21,7 +31,7 @@
     <file path="D:/gisto/app/partials/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
     <file path="D:/gisto/app/js/controllers.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
     <file path="D:/gisto/app/api/routes/gists.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
-    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371770671512" ignored="false" />
+    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805185997" ignored="false" />
     <file path="/.gitignore" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1370505182449" ignored="false" />
     <file path="$PROJECT_DIR$/../yvel/modules/plblog/frontent/js/jscripts/tiny_mce/themes/advanced/skins/default/content.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371139278042" ignored="false" />
     <file path="$PROJECT_DIR$/../yvel/modules/plblog/frontent/js/jscripts/tiny_mce/plugins/template/css/template.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371139278042" ignored="false" />
@@ -46,10 +56,13 @@
     <file path="$PROJECT_DIR$/../gisto/app/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371712938351" ignored="false" />
     <file path="/services.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371718821283" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/.gitignore" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372701128718" ignored="false" />
-    <file path="/footer.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372784612482" ignored="false" />
-    <file path="/header.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372785246124" ignored="false" />
-    <file path="/_config.yml" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372790000244" ignored="false" />
-    <file path="$PROJECT_DIR$/_site/nbproject/project.xml" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372790336566" ignored="false" />
+    <file path="/footer.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805223315" ignored="false" />
+    <file path="/header.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803992506" ignored="false" />
+    <file path="/_config.yml" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805275221" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/css/syntax.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803477517" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/css/ie.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803477517" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/css/1140.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803477517" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/css/font-awesome.min.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803477517" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +85,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="69" selection-start="5664" selection-end="5664" vertical-scroll-proportion="-3.75">
+            <state line="169" column="26" selection-start="7111" selection-end="7116" vertical-scroll-proportion="-4.9583335">
               <folding />
             </state>
           </provider>
@@ -90,7 +103,7 @@
       <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="390" column="14" selection-start="6888" selection-end="6888" vertical-scroll-proportion="0.0">
+            <state line="425" column="17" selection-start="7396" selection-end="7396" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,7 +112,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="-43.0">
+            <state line="79" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="-4.3333335">
               <folding />
             </state>
           </provider>
@@ -108,7 +121,7 @@
       <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="24" selection-start="532" selection-end="532" vertical-scroll-proportion="-9.375">
+            <state line="6" column="72" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -117,25 +130,25 @@
       <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="56" selection-start="2511" selection-end="2511" vertical-scroll-proportion="-46.25">
+            <state line="84" column="28" selection-start="3043" selection-end="3043" vertical-scroll-proportion="-15.583333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="62" selection-end="62" vertical-scroll-proportion="0.05514706">
+            <state line="2" column="24" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+            <state line="52" column="6" selection-start="594" selection-end="594" vertical-scroll-proportion="0.9127907">
               <folding />
             </state>
           </provider>
@@ -166,13 +179,13 @@
       <list>
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
-        <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -432,18 +445,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34401348" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="getGist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="getGist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18292683" sideWeight="0.6559865" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09222561" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18292683" sideWeight="0.67071056" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -580,51 +593,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+        <state line="79" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="-4.3333335">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="390" column="14" selection-start="6888" selection-end="6888" vertical-scroll-proportion="0.0">
+        <state line="425" column="17" selection-start="7396" selection-end="7396" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="532" selection-end="532" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="-43.0">
+        <state line="6" column="72" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="56" selection-start="2511" selection-end="2511" vertical-scroll-proportion="-46.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="69" selection-start="5664" selection-end="5664" vertical-scroll-proportion="-3.75">
+        <state line="84" column="28" selection-start="3043" selection-end="3043" vertical-scroll-proportion="-15.583333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="62" selection-end="62" vertical-scroll-proportion="0.05514706">
+        <state line="2" column="24" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="26" selection-start="7111" selection-end="7116" vertical-scroll-proportion="-4.9583335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="6" selection-start="594" selection-end="594" vertical-scroll-proportion="0.9127907">
           <folding />
         </state>
       </provider>
