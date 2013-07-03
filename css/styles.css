@@ -417,11 +417,21 @@ a.archive {
     margin: 0 auto;
     text-align: center;
     font-size: smaller;
-    width: 100%;
     display: block;
+    float: left;
+    width: 48%;
+    border-right: 1px solid #555;
 }
 
 ul.older {
     font-size: small;
     display: none;
+    width: 266px;
+    text-align: center;
+    list-style: none;
+}
+
+
+.no-border {
+    border:none !important;
 }

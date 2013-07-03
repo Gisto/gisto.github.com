@@ -54,33 +54,30 @@
 
 
         <header class="container">
-            <div class="row">
-                <a href="/" class="twocol logo">
-                    <h1>&lt;/Gisto&gt;</h1>
-                </a>
+    <div class="row">
+        <a href="/" class="fourcol logo">
+            <h1>&lt;/Gisto&gt;</h1>
+        </a>
 
-                <a href="/#footer" class="twocol  links">
-                    About
-                </a>
+        <a href="/#footer" class="twocol  links">
+            About
+        </a>
 
-		<a href="/#features" class="twocol  links">
-                    Features
-                </a>
+        <a href="/#features" class="twocol  links">
+            Features
+        </a>
 
-		<a href="/docs/" class="twocol links">
-                    Docs
-                </a>
+        <a href="/docs/" class="twocol links">
+            Docs
+        </a>
 
-		<a href="/changelog/" class="twocol links">
-                    Changelog
-                </a>             
+        <a href="/#footer" class="twocol  links last">
+            <span>Download</span>
+        </a>
 
-                <a href="/#contact" class="twocol  links last">
-                    Contact
-                </a>
 
-            </div>
-        </header>
+    </div>
+</header>
 
 		
 		<div class="container hero">
@@ -108,7 +105,7 @@
 
             <h2 id="doc-preface">Preface:</h2>
 
-            <p>Congrads! You are willing to learn, thats great! <br/>
+            <p>
                 <b>Please note:</b> Because Gisto is in early stage of its life - many documented aspects are subject to
                 change and should not be considered final nor absolute.</p>
 
@@ -268,6 +265,11 @@ $(function () {
     function downloadLink(os, link, icon) {
         $('.download').html('<a class="btn links download-link" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('[[OS]]', os) );
     };
+
+    $('.archive:first').click(function(ev){
+        ev.preventDefault();
+        $('.older').slideDown();
+    });
 
 });
 </script>

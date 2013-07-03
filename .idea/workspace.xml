@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="Made changes for v0.1.3a + new urls as download.gistoapp.com">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/img/dark_theme.png" afterPath="$PROJECT_DIR$/_site/img/dark_theme.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/dark_theme.png" afterPath="$PROJECT_DIR$/img/dark_theme.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/img/lite_theme.png" afterPath="$PROJECT_DIR$/_site/img/lite_theme.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/lite_theme.png" afterPath="$PROJECT_DIR$/img/lite_theme.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/changelog/index.html" afterPath="$PROJECT_DIR$/_site/changelog/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/docs/index.html" afterPath="$PROJECT_DIR$/_site/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog/index.html" afterPath="$PROJECT_DIR$/changelog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/styles.css" afterPath="$PROJECT_DIR$/_site/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805529592" ignored="false" />
-    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805001872" ignored="false" />
+    <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372870002151" ignored="false" />
+    <file path="/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372872292617" ignored="false" />
     <file path="/main.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365037351093" ignored="false" />
     <file path="/main.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371768511788" ignored="false" />
     <file path="D:/gisto/app/api/sample/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
@@ -31,7 +35,7 @@
     <file path="D:/gisto/app/partials/create.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
     <file path="D:/gisto/app/js/controllers.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365032957317" ignored="false" />
     <file path="D:/gisto/app/api/routes/gists.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1365027712666" ignored="false" />
-    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805185997" ignored="false" />
+    <file path="/styles.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372872010756" ignored="false" />
     <file path="/.gitignore" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1370505182449" ignored="false" />
     <file path="$PROJECT_DIR$/../yvel/modules/plblog/frontent/js/jscripts/tiny_mce/themes/advanced/skins/default/content.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371139278042" ignored="false" />
     <file path="$PROJECT_DIR$/../yvel/modules/plblog/frontent/js/jscripts/tiny_mce/plugins/template/css/template.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371139278042" ignored="false" />
@@ -56,8 +60,8 @@
     <file path="$PROJECT_DIR$/../gisto/app/index.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371712938351" ignored="false" />
     <file path="/services.js" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1371718821283" ignored="false" />
     <file path="$PROJECT_DIR$/../gisto/.gitignore" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372701128718" ignored="false" />
-    <file path="/footer.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805223315" ignored="false" />
-    <file path="/header.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803992506" ignored="false" />
+    <file path="/footer.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372871330151" ignored="false" />
+    <file path="/header.html" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372870802929" ignored="false" />
     <file path="/_config.yml" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372805275221" ignored="false" />
     <file path="$PROJECT_DIR$/_site/css/syntax.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803477517" ignored="false" />
     <file path="$PROJECT_DIR$/_site/css/ie.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1372803477517" ignored="false" />
@@ -85,7 +89,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="26" selection-start="7111" selection-end="7116" vertical-scroll-proportion="-4.9583335">
+            <state line="174" column="23" selection-start="7245" selection-end="7245" vertical-scroll-proportion="-8.625">
               <folding />
             </state>
           </provider>
@@ -103,7 +107,16 @@
       <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="425" column="17" selection-start="7396" selection-end="7396" vertical-scroll-proportion="0.0">
+            <state line="432" column="0" selection-start="7514" selection-end="7514" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changelog/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="62" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.6402439">
               <folding />
             </state>
           </provider>
@@ -112,7 +125,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="-4.3333335">
+            <state line="30" column="15" selection-start="686" selection-end="686" vertical-scroll-proportion="10.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="10.125">
               <folding />
             </state>
           </provider>
@@ -121,7 +143,7 @@
       <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="72" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.75">
+            <state line="19" column="26" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -130,7 +152,7 @@
       <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="28" selection-start="3043" selection-end="3043" vertical-scroll-proportion="-15.583333">
+            <state line="83" column="21" selection-start="2998" selection-end="2998" vertical-scroll-proportion="-13.0">
               <folding />
             </state>
           </provider>
@@ -140,15 +162,6 @@
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="24" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="6" selection-start="594" selection-end="594" vertical-scroll-proportion="0.9127907">
               <folding />
             </state>
           </provider>
@@ -179,13 +192,14 @@
       <list>
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/docs/index.html" />
-        <option value="$PROJECT_DIR$/_includes/header.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
+        <option value="$PROJECT_DIR$/_includes/header.html" />
+        <option value="$PROJECT_DIR$/_includes/footer.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/changelog/index.html" />
       </list>
     </option>
   </component>
@@ -222,7 +236,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,6 +306,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="changelog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gisto.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gisto.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="_layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -313,11 +340,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gisto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="PublishConfig">
@@ -432,7 +460,11 @@
       <created>1372790424230</created>
       <updated>1372790424230</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add older versions downloads">
+      <created>1372805657047</created>
+      <updated>1372805657047</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -449,8 +481,8 @@
       <window_info id="getGist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09222561" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18292683" sideWeight="0.67071056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.091859594" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18292683" sideWeight="0.67071056" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -504,7 +536,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made changes for v0.1.3a + new urls as download.gistoapp.com" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add older versions downloads" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -531,25 +563,12 @@
     <MESSAGE value="* Update font awesome.&#10;* Redesigned download buttons a bit." />
     <MESSAGE value="Add version 0.1.2a Linux-x86, Linux-x86, Windows-x86" />
     <MESSAGE value="Made changes for v0.1.3a + new urls as download.gistoapp.com" />
+    <MESSAGE value="Add older versions downloads" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="55" selection-start="1133" selection-end="1187" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="39" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0">
@@ -593,30 +612,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="-4.3333335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="425" column="17" selection-start="7396" selection-end="7396" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="72" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="28" selection-start="3043" selection-end="3043" vertical-scroll-proportion="-15.583333">
+        <state line="52" column="6" selection-start="594" selection-end="594" vertical-scroll-proportion="0.88419116">
           <folding />
         </state>
       </provider>
@@ -628,16 +626,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="26" selection-start="7111" selection-end="7116" vertical-scroll-proportion="-4.9583335">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="10.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="6" selection-start="594" selection-end="594" vertical-scroll-proportion="0.9127907">
+        <state line="19" column="26" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="21" selection-start="2998" selection-end="2998" vertical-scroll-proportion="-13.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="15" selection-start="686" selection-end="686" vertical-scroll-proportion="10.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="23" selection-start="7245" selection-end="7245" vertical-scroll-proportion="-8.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="432" column="0" selection-start="7514" selection-end="7514" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changelog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="62" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.6402439">
           <folding />
         </state>
       </provider>

@@ -54,33 +54,30 @@
 
 
         <header class="container">
-            <div class="row">
-                <a href="/" class="twocol logo">
-                    <h1>&lt;/Gisto&gt;</h1>
-                </a>
+    <div class="row">
+        <a href="/" class="fourcol logo">
+            <h1>&lt;/Gisto&gt;</h1>
+        </a>
 
-                <a href="/#footer" class="twocol innsite links">
-                    About
-                </a>
+        <a href="/#footer" class="twocol innsite links">
+            About
+        </a>
 
-		<a href="/#features" class="twocol innsite links">
-                    Features
-                </a>
+        <a href="/#features" class="twocol innsite links">
+            Features
+        </a>
 
-		<a href="/docs/" class="twocol links">
-                    Docs
-                </a>
+        <a href="/docs/" class="twocol links">
+            Docs
+        </a>
 
-		<a href="/changelog/" class="twocol links">
-                    Changelog
-                </a>             
+        <a href="/#footer" class="twocol innsite links last">
+            <span>Download</span>
+        </a>
 
-                <a href="/#contact" class="twocol innsite links last">
-                    Contact
-                </a>
 
-            </div>
-        </header>
+    </div>
+</header>
 
 		
 		<div class="container hero">
@@ -243,6 +240,20 @@
                 <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.1.3a-Linux_x86_64.tar.gz"><i class="icon-linux icon-3x down-os"></i> Download for <br /> <strong>Linux 64bit</strong></a>
                 <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.1.3a-Linux_x86.tar.gz"><i class="icon-linux icon-3x down-os"></i> Download for <br /> <strong>Linux 32bit</strong></a>
             </p>
+
+<hr />
+            <a class="archive" href="">Older versions</a>
+            <a class="archive no-border" href="/changelog/">Change log</a>
+
+<div class="clear"></div>
+
+            <ul class="older">
+                <li><a href="http://download.gistoapp.com/Gisto-0.1.2a-OSX_x86.dmg">Gisto-0.1.2a-OSX_x86.dmg</a></li>
+                <li><a href="http://download.gistoapp.com/Gisto-0.1.2a-Win_x86.zip">Gisto-0.1.2a-Win_x86.zip</a></li>
+                <li><a href="http://download.gistoapp.com/Gisto-0.1.2a-Linux_x86.tar.gz">Gisto-0.1.2a-Linux_x86.tar.gz</a></li>
+                <li><a href="http://download.gistoapp.com/Gisto-0.1.2a-Linux_x86_64.tar.gz">Gisto-0.1.2a-Linux_x86_64.tar.gz</a></li>
+            </ul>
+
         </div>
         <div class="sixcol last">
             <h1>Who and why</h1>
@@ -338,6 +349,11 @@ $(function () {
     function downloadLink(os, link, icon) {
         $('.download').html('<a class="btn links download-link" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('[[OS]]', os) );
     };
+
+    $('.archive:first').click(function(ev){
+        ev.preventDefault();
+        $('.older').slideDown();
+    });
 
 });
 </script>

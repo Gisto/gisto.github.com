@@ -54,33 +54,30 @@
 
 
         <header class="container">
-            <div class="row">
-                <a href="/" class="twocol logo">
-                    <h1>&lt;/Gisto&gt;</h1>
-                </a>
+    <div class="row">
+        <a href="/" class="fourcol logo">
+            <h1>&lt;/Gisto&gt;</h1>
+        </a>
 
-                <a href="/#footer" class="twocol  links">
-                    About
-                </a>
+        <a href="/#footer" class="twocol  links">
+            About
+        </a>
 
-		<a href="/#features" class="twocol  links">
-                    Features
-                </a>
+        <a href="/#features" class="twocol  links">
+            Features
+        </a>
 
-		<a href="/docs/" class="twocol links">
-                    Docs
-                </a>
+        <a href="/docs/" class="twocol links">
+            Docs
+        </a>
 
-		<a href="/changelog/" class="twocol links">
-                    Changelog
-                </a>             
+        <a href="/#footer" class="twocol  links last">
+            <span>Download</span>
+        </a>
 
-                <a href="/#contact" class="twocol  links last">
-                    Contact
-                </a>
 
-            </div>
-        </header>
+    </div>
+</header>
 
 		
 		<div class="container hero">
@@ -116,6 +113,12 @@
             <p> - Added animations for more aesthetic experience.</p>
 
             <p> - Small UI fixes.</p>
+
+            <p> - Updated angular UI to angular-ui utils 0.0.3.</p>
+
+            <p> - Updated starred gists to update only when gists finished loading.</p>
+
+            <p> - Improved efficiency when loading multiple gist pages.</p>
 
             <h2 id="v0.1.2a">0.1.2a</h2>
 
@@ -230,6 +233,11 @@ $(function () {
     function downloadLink(os, link, icon) {
         $('.download').html('<a class="btn links download-link" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('[[OS]]', os) );
     };
+
+    $('.archive:first').click(function(ev){
+        ev.preventDefault();
+        $('.older').slideDown();
+    });
 
 });
 </script>
