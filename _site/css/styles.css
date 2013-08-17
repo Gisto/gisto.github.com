@@ -58,6 +58,7 @@ body {
 body {
     font-family: 'Roboto', serif,"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 150%;
+    background:#333;
 }
 
 a {
@@ -102,6 +103,12 @@ header .links {
     text-decoration: none;
     color:#555;
 }
+
+header .links:hover {
+    color: #585858;
+    text-shadow: 0px 0px 10px #999;
+}
+
 img {
     border: 3px solid #CCC;
     border-radius: 3px;
@@ -244,6 +251,41 @@ img {
     text-shadow:1px 1px 1px #111;
 }
 
+.btn_more {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    background:#9ef4ce;
+    background: -moz-linear-gradient(
+        top,
+        #9ef4ce 0%,
+        #008ebd);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#9ef4ce),
+        to(#008ebd));
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    border: 1px solid #314A59;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.8),
+        inset 0px 1px 0px rgba(255,255,255,0.8);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.8),
+        inset 0px 1px 0px rgba(255,255,255,0.8);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.8),
+        inset 0px 1px 0px rgba(255,255,255,0.8);
+    text-shadow:1px 1px 1px #111;
+}
+
+.center {
+	text-align: center;
+}
 
 .lowercase {
     text-transform: capitalize
@@ -319,6 +361,11 @@ img {
 
 .features img {
     max-width: 315px;
+}
+
+img.full {
+    width:100%;
+    max-width: 100%;
 }
 .align-center {
     text-align: center;
