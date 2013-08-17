@@ -103,6 +103,12 @@ header .links {
     text-decoration: none;
     color:#555;
 }
+
+header .links:hover {
+    color: #585858;
+    text-shadow: 0px 0px 10px #999;
+}
+
 img {
     border: 3px solid #CCC;
     border-radius: 3px;
@@ -355,6 +361,11 @@ img {
 
 .features img {
     max-width: 315px;
+}
+
+img.full {
+    width:100%;
+    max-width: 100%;
 }
 .align-center {
     text-align: center;

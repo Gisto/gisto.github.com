@@ -26,16 +26,31 @@ title: Gisto | Changelog
 
         <div class="eightcol last">
 
-			<h2 id="v0.2.2b">0.2.0b</h2>
-			
-			<p> - Send gist between gisto installations, users with gisto will be notified and be able to fork or preview sent gist.</p>
-			<p> - Open gist in <a target="_blank" href="http://plnkr.co/">plunker</a></p>
-			<p> - Settings can now be used to set font size for editor editor.</p>
-			<p> - Editors height are sized to the number of lines in the files in the gist (can be altered from the "settings" screen).</p>
-			<p> - Files in gist can be easily navigated from from dropdown.</p>
-			<p> - Copy 'embed' code to clipboard.</p>
-			<p> - Redused network requests to GitHub API.</p>
-			<p> - Minor UI and bug fixes.</p>
+			<h2 id="v0.2.2b">0.2.0 beta</h2>
+<br />
+            <h4>What's new?</h4>
+
+            <p> - Gisto users can now share gists to each other easily! just hit the send button and enter a github username of the person you want to share with. The user will be immdiatly notified and can view/fork the gist!</p>
+            <p> - Open in plunker, You can now load gists with 1 click into plunkr, if the gist contains web files (html, css, js) it automatically loads and runs them!</p>
+            <p> - Added more themes, syntax modes and new adjustable settings to the editor.</p>
+            <p> - Editors height are now based on file height and minimum and maximum height can be adjusted in the settings.</p>
+            <p> - Added "Edit Mode" for unobstructive file editing. when changes are detected to a file the sidebar closes allowing you to focus on the code.</p>
+            <p> - Added dropdown with file list in single gist view to ease navigation between files.</p>
+            <p> - Added "Copy embed code to clipboard".</p>
+            <p> - Added a delete button to files in create new gist screen.</p>
+            <p> - Added online/offline indicator to show status of notifications server.</p>
+
+            <h4>What's fixed?</h4></p>
+
+            <p> - Fixed 404 bad requests.</p>
+            <p> - Added a check to see if a gist has comments, if there are none a request for the comments isn't sent.</p>
+            <p> - Gists are now saved only when changes are detected to prevent a revision increment with no changes.</p>
+            <p> - Added registration link to GitHub for those who do not yet have a GitHub account.</p>
+            <p> - Fixed positioning of data and revision data in single gist for low resolutions.</p>
+            <p> - Gist tags are now added to the list when creating a new gist.</p>
+            <p> - Gravatar fot cached after user logout and another user logging in right after.</p>
+            <p> - Drag & Drop is now working in create gist.</p>
+            <p> - Added caching to github username and updated gravatar so it can appear in the main screen.</p>
 			
 			
             <h2 id="v0.1.3a">0.1.3a</h2>
