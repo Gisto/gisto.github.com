@@ -79,6 +79,38 @@
     </div>
 </header>
 
+<!--
+<header class="container">
+    <div class="row">
+        <a href="/" class="threecol logo">
+            <h1>&lt;/Gisto&gt;</h1>
+        </a>
+
+        <a href="/#footer" class="twocol  links">
+            About
+        </a>
+
+        <a href="/features/" class="twocol links">
+            Features
+        </a>
+
+        <a href="/docs/" class="twocol links">
+            Docs
+        </a>
+
+        <a href="/faq/" class="onecol links">
+            FAQ
+        </a>
+
+        <a href="/#footer" class="twocol  links last">
+            <span>Download</span>
+        </a>
+
+
+    </div>
+</header>
+
+-->
 		
 		<div class="container hero">
     <div class="row">
@@ -94,7 +126,8 @@
 
         <div class="fourcol">
            <h2>Versions</h2>
-			<a href="#v0.2.0b">0.2.2b</a><br/>
+            <a href="#v0.2.1b">0.2.1b</a><br/>
+            <a href="#v0.2.0b">0.2.0b</a><br/>
             <a href="#v0.1.3a">0.1.3a</a><br/>
             <a href="#v0.1.2a">0.1.2a</a><br/>
             <a href="#v0.1.1a">0.1.1a</a><br/>
@@ -103,7 +136,14 @@
 
         <div class="eightcol last">
 
-			<h2 id="v0.2.2b">0.2.0 beta</h2>
+            <h2 id="v0.2.1b">0.2.1 beta</h2>
+
+            <p> - Bugfix: edit mode now exits properly when logging out inside edit mode.</p>
+            <p> - Bugfix: Fixed bug with gists not saving properly when adding new files to gists at some cases.</p>
+            <p> - Modification: Changed discard notification icon to a trash can to better visualize the intent of the button.</p>
+            <p> - Feature: Added 2-factor-authentication (2FA) support to support new GitHub functionality.</p>
+
+			<h2 id="v0.2.0b">0.2.0 beta</h2>
 <br />
             <h4>What's new?</h4>
 
@@ -249,11 +289,11 @@ $(function () {
         mac = /Mac/g;
 
     if (linux.test(platform)) {
-        downloadLink('Linux 64bit', 'http://download.gistoapp.com/Gisto-0.2.0b-Linux_x86_64.tar.gz','icon-linux');
+        downloadLink('Linux 64bit', 'http://download.gistoapp.com/Gisto-0.2.1b-Linux_x86_64.tar.gz','icon-linux');
     } else if (mac.test(platform)) {
-        downloadLink('OSX 10.7+', 'http://download.gistoapp.com/Gisto-0.2.0b-OSX_x86.dmg','icon-apple');
+        downloadLink('OSX 10.7+', 'http://download.gistoapp.com/Gisto-0.2.1b-OSX_x86.dmg','icon-apple');
     } else if (windows.test(platform)) {
-        downloadLink('Windows', 'http://download.gistoapp.com/Gisto-0.2.0b-Win_x86.zip','icon-windows');
+        downloadLink('Windows', 'http://download.gistoapp.com/Gisto-0.2.1b-Win_x86.zip','icon-windows');
     } else {
         $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
     }

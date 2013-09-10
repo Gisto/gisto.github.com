@@ -79,6 +79,38 @@
     </div>
 </header>
 
+<!--
+<header class="container">
+    <div class="row">
+        <a href="/" class="threecol logo">
+            <h1>&lt;/Gisto&gt;</h1>
+        </a>
+
+        <a href="/#footer" class="twocol innsite links">
+            About
+        </a>
+
+        <a href="/features/" class="twocol links">
+            Features
+        </a>
+
+        <a href="/docs/" class="twocol links">
+            Docs
+        </a>
+
+        <a href="/faq/" class="onecol links">
+            FAQ
+        </a>
+
+        <a href="/#footer" class="twocol innsite links last">
+            <span>Download</span>
+        </a>
+
+
+    </div>
+</header>
+
+-->
 		
 		<div class="container hero">
     <div class="row">
@@ -236,14 +268,14 @@
         <div class="sixcol">
             <h1>Application status</h1>
             <p>Gisto is just grew up to a beta.</p>
-            <p class="light" >Current build: 0.2.0b | 2013-08-18</p>
+            <p class="light" >Current build: 0.2.1b | 2013-09-10</p>
             <p>Download here for Windows, OSX And Linux</p>
             <p class="download-links">
-                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.0b-Win_x86.zip"><i class="icon-windows icon-3x down-os"></i> Download for <br /> <strong>Windows</strong></a>
-                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.0b-OSX_x86.dmg"><i class="icon-apple icon-3x down-os"></i> Download for <br /> <strong>OSX 10.7+</strong></a>
+                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.1b-Win_x86.zip"><i class="icon-windows icon-3x down-os"></i> Download for <br /> <strong>Windows</strong></a>
+                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.1b-OSX_x86.dmg"><i class="icon-apple icon-3x down-os"></i> Download for <br /> <strong>OSX 10.7+</strong></a>
                 <br />
-                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.0b-Linux_x86_64.tar.gz"><i class="icon-linux icon-3x down-os"></i> Download for <br /> <strong>Linux 64bit</strong></a>
-                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.0b-Linux_x86.tar.gz"><i class="icon-linux icon-3x down-os"></i> Download for <br /> <strong>Linux 32bit</strong></a>
+                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.1b-Linux_x86_64.tar.gz"><i class="icon-linux icon-3x down-os"></i> Download for <br /> <strong>Linux 64bit</strong></a>
+                <a class="btn links align-center download-link" href="http://download.gistoapp.com/Gisto-0.2.1b-Linux_x86.tar.gz"><i class="icon-linux icon-3x down-os"></i> Download for <br /> <strong>Linux 32bit</strong></a>
             </p>
 
 <hr />
@@ -253,10 +285,10 @@
 <div class="clear"></div>
 
             <ul class="older">
-                <li><a href="http://download.gistoapp.com/Gisto-0.1.3a-OSX_x86.dmg">Gisto-0.1.3a-OSX_x86.dmg</a></li>
-                <li><a href="http://download.gistoapp.com/Gisto-0.1.3a-Win_x86.zip">Gisto-0.1.3a-Win_x86.zip</a></li>
-                <li><a href="http://download.gistoapp.com/Gisto-0.1.3a-Linux_x86.tar.gz">Gisto-0.1.3a-Linux_x86.tar.gz</a></li>
-                <li><a href="http://download.gistoapp.com/Gisto-0.1.3a-Linux_x86_64.tar.gz">Gisto-0.1.3a-Linux_x86_64.tar.gz</a></li>
+                <li><a href="http://download.gistoapp.com/Gisto-0.2.0a-OSX_x86.dmg">Gisto-0.2.0a-OSX_x86.dmg</a></li>
+                <li><a href="http://download.gistoapp.com/Gisto-0.2.0a-Win_x86.zip">Gisto-0.2.0a-Win_x86.zip</a></li>
+                <li><a href="http://download.gistoapp.com/Gisto-0.2.0a-Linux_x86.tar.gz">Gisto-0.2.0a-Linux_x86.tar.gz</a></li>
+                <li><a href="http://download.gistoapp.com/Gisto-0.2.0a-Linux_x86_64.tar.gz">Gisto-0.2.0a-Linux_x86_64.tar.gz</a></li>
             </ul>
 
         </div>
@@ -342,11 +374,11 @@ $(function () {
         mac = /Mac/g;
 
     if (linux.test(platform)) {
-        downloadLink('Linux 64bit', 'http://download.gistoapp.com/Gisto-0.2.0b-Linux_x86_64.tar.gz','icon-linux');
+        downloadLink('Linux 64bit', 'http://download.gistoapp.com/Gisto-0.2.1b-Linux_x86_64.tar.gz','icon-linux');
     } else if (mac.test(platform)) {
-        downloadLink('OSX 10.7+', 'http://download.gistoapp.com/Gisto-0.2.0b-OSX_x86.dmg','icon-apple');
+        downloadLink('OSX 10.7+', 'http://download.gistoapp.com/Gisto-0.2.1b-OSX_x86.dmg','icon-apple');
     } else if (windows.test(platform)) {
-        downloadLink('Windows', 'http://download.gistoapp.com/Gisto-0.2.0b-Win_x86.zip','icon-windows');
+        downloadLink('Windows', 'http://download.gistoapp.com/Gisto-0.2.1b-Win_x86.zip','icon-windows');
     } else {
         $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
     }
