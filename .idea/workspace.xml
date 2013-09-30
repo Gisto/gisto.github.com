@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/1140.css" afterPath="$PROJECT_DIR$/_site/css/1140.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/1140.css" afterPath="$PROJECT_DIR$/css/1140.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/changelog/index.html" afterPath="$PROJECT_DIR$/_site/changelog/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/docs/index.html" afterPath="$PROJECT_DIR$/_site/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog/index.html" afterPath="$PROJECT_DIR$/changelog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq/index.html" afterPath="$PROJECT_DIR$/faq/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/styles.css" afterPath="$PROJECT_DIR$/_site/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gisto.github.com.iws" />
@@ -63,7 +57,6 @@
     <file path="/2013-08-11-github-api-integration.md" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1376204894765" ignored="false" />
     <file path="$PROJECT_DIR$/_site/css/ie.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1378712591687" ignored="false" />
     <file path="$PROJECT_DIR$/_site/css/syntax.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1378712591687" ignored="false" />
-    <file path="$PROJECT_DIR$/_site/nbproject/project.xml" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1378712591687" ignored="false" />
     <file path="$PROJECT_DIR$/_site/css/font-awesome.min.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1378712591687" ignored="false" />
     <file path="/1140.css" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1380490860278" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="4" selection-start="1307" selection-end="1307" vertical-scroll-proportion="-23.166666">
+            <state line="25" column="4" selection-start="608" selection-end="608" vertical-scroll-proportion="0.7338552">
               <folding />
             </state>
           </provider>
@@ -148,10 +141,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1140.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="1140.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/1140.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="16" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.88505745">
+            <state line="112" column="16" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -207,11 +200,11 @@
         <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/faq/index.html" />
         <option value="$PROJECT_DIR$/changelog/index.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/css/1140.css" />
+        <option value="$PROJECT_DIR$/_includes/header.html" />
       </list>
     </option>
   </component>
@@ -644,20 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="4" selection-start="1307" selection-end="1307" vertical-scroll-proportion="-23.166666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faq/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="426" selection-end="426" vertical-scroll-proportion="-8.166667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/changelog/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="-11.875">
@@ -674,7 +653,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/1140.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="16" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.88505745">
+        <state line="112" column="16" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="426" selection-end="426" vertical-scroll-proportion="-8.166667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="4" selection-start="608" selection-end="608" vertical-scroll-proportion="0.7338552">
           <folding />
         </state>
       </provider>
