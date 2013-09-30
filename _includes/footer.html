@@ -62,7 +62,7 @@ $(function () {
 /* Determine OS and provide ling respectively */
 
     var platform = window.navigator.platform,
-        mainText = ' <a class="download innsite" href="#footer">Not running [[OS]]? Click Here</a>',
+        mainText = ' <a class="download innsite" href="#footer">Not running [[OS]]? Click Here</a> | <a class="download" href="/download/">Mirror list</a>',
         linux = /Linux/g,
         windows = /Win/g,
         mac = /Mac/g;
@@ -80,6 +80,18 @@ $(function () {
     function downloadLink(os, link, icon) {
         $('.download').html('<a class="btn links download-link" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('[[OS]]', os) );
     };
+
+    var prev_versions_tpl = '<h3>%%v%%</h3>' +
+            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-Linux_x86.tar.gz"><i class="icon-linux"></i> version <i>%%v%%</i> for Linux x86</a></p>' +
+            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-Linux_x86_64.tar.gz"><i class="icon-linux"></i> version <i>%%v%%</i> %%v%% for Linux x86_64</a></p>' +
+            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-OSX_x86.dmg"><i class="icon-apple"></i> version <i>%%v%%</i> for Mac</a></p>' +
+            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-Win_x86.zip"><i class="icon-windows"></i> version <i>%%v%%</i> for Windows</a></p>';
+
+    var versions = "{{ site.prev_versions }}".split(',');
+
+    for(var i=0;i<versions.length;i++) {
+        $('.prev_versions').append(prev_versions_tpl.replace(new RegExp("%%v%%", "gm"), versions[i]));
+    }
 
     $('.archive:first').click(function(ev){
         ev.preventDefault();

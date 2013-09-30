@@ -13,6 +13,10 @@ body {
 
 @media handheld, only screen and (max-width: 767px) {
 
+    body {
+        text-align: center;
+        font-size: 80%;
+    }
     .logo {
         text-align: center;
         display: block;
@@ -27,6 +31,13 @@ body {
         margin-bottom: 10px;
     }
 
+    .download-meta {
+        width:100% !important;
+        display:block;
+        border:none !important;
+        text-align: center;
+    }
+
 }
 
 
@@ -35,7 +46,10 @@ body {
 /* ========================================== */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-
+    body {
+        text-align: center;
+        font-size: 80%;
+    }
     .logo {
         text-align: center;
         display: block;
@@ -57,6 +71,12 @@ body {
     }
     .hero a {
         margin-bottom: 10px;
+    }
+    .download-meta {
+        width:100% !important;
+        display:block;
+        border:none !important;
+        text-align: center;
     }
 
 }
@@ -154,7 +174,8 @@ img {
     color: #f2f2f2;
 }
 
-.features {
+.features,
+.downloads {
     padding: 30px 10px;
     background: #e5e5e5;
     /*box-shadow: 0px 0px 20px #555 inset;*/
@@ -313,6 +334,16 @@ img {
     text-decoration: none;
 }
 
+.downloads p {
+    font-weight: 400;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.downloads h3 {
+    margin: 20px 0;
+}
+
 .footer {
     background: #f4f4f4;
     padding: 50px 10px;
@@ -421,7 +452,7 @@ img.full {
 .download {
     font-size: 15px;
     margin: 10px auto 0;
-    display: block;
+    /*display: block;*/
 }
 
 .download-links a {
@@ -477,12 +508,12 @@ header a span {
 }
 
 a.archive {
-    margin: 0 auto;
+    margin: 0 8% 0 0;
     text-align: center;
     font-size: smaller;
     display: block;
     float: left;
-    width: 48%;
+    width: 36%;
     border-right: 1px solid #555;
 }
 
