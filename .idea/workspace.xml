@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="Fix mobile layout">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="42f781d5-7780-40cf-83d5-3441998335ec" name="Default" comment="Fix mobile layout" />
     <ignored path="gisto.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="42f781d5-7780-40cf-83d5-3441998335ec" time="1380526677640" ignored="false" />
