@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/webflow.css">
     <link rel="stylesheet" type="text/css" href="css/gisto.webflow.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script>
         WebFont.load({
@@ -17,6 +18,7 @@
             }
         });
     </script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -48,7 +50,7 @@
 
         <div class="w-container">
             <div class="w-row">
-                <div class="w-col w-col-6 w-clearfix">
+                <div class="w-col w-col-6 w-clearfix not-a-player">
                     <p>Gisto is a Cross-platform gist snippets management desktop application that allows you and your
                         team share code snippets fast and easily. Based on GitHub Gists Infrastructure which means you
                         can use all your existing snippets by connecting your GitHub account!</p>
@@ -56,12 +58,12 @@
                     <button class="bg-sky txt-white"><i class="icon-twitter"></i> Twitter</button>
                     <button class="bg-grey txt-white">Read more <i class="icon-arrow-right"></i></button>
                 </div>
-                <div class="w-col w-col-6 w-clearfix">
+                <div class="w-col w-col-6 w-clearfix" id="ytplayer">
                     <!--<img src="images/gisto.png">-->
-                    <iframe id="ytplayer" type="text/html" width="100%" height="230"
+                    <!--<iframe type="text/html" width="100%" height="230"
                             src="https://www.youtube.com/embed/lICNPYgv7Ac?controls=0&modestbranding=1&rel=0&showinfo=0&color=white&theme=light"
                             frameborder="0" allowfullscreen>
-                        </iframe>
+                        </iframe>-->
                 </div>
             </div>
         </div>
