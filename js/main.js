@@ -6,7 +6,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player('ytplayer', {
+    player = new YT.Player('ytplayerdiv', {
         width: '100%',
         height: 230,
         videoId: 'lICNPYgv7Ac',
@@ -15,9 +15,7 @@ function onYouTubeIframeAPIReady() {
             'controls': 0,
             'modestbranding': 1,
             'rel': 0,
-            'showinfo': 0,
-            'color': 'white',
-            'theme': 'light'
+            'showinfo': 0
         },
         events: {
             'onReady': onReady
@@ -28,16 +26,19 @@ function onYouTubeIframeAPIReady() {
 function onReady() {
     player.addEventListener('onStateChange', function (e) {
         if (e.data === 1) {
-            $('.not-a-player').fadeOut('fast');
-            $('#ytplayer').removeClass('w-col-6');
-            $('#ytplayer').addClass('w-col-12');
-            $('#ytplayer iframe').width('100%').height('500px');
+            player.setPlaybackQuality('highres');
+            $('.not-a-player').slideUp('fast');
+            $('#ytplayerdiv')
+                .removeClass('w-col-6')
+                .addClass('w-col-12')
+                .attr('height','500');
         }
-        if (e.data === 0) {
-            $('.not-a-player').fadeIn('fast');
-            $('#ytplayer').removeClass('w-col-12');
-            $('#ytplayer').addClass('w-col-6');
-            $('#ytplayer iframe').width('100%').height('230px');
+        if (e.data === 0 || e.data === 2) {
+            $('.not-a-player').fadeIn('slow');
+            $('#ytplayerdiv')
+                .removeClass('w-col-12')
+                .addClass('w-col-6')
+                .attr('height','230');
         }
     });
 }
