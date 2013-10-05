@@ -13,7 +13,7 @@ function onYouTubeIframeAPIReady() {
         playerVars: {
             'autoplay': 0,
             'controls': 0,
-            'modestbranding': 1,
+            modestbranding: true,
             'rel': 0,
             'showinfo': 0
         },
@@ -26,19 +26,29 @@ function onYouTubeIframeAPIReady() {
 function onReady() {
     player.addEventListener('onStateChange', function (e) {
         if (e.data === 1) {
-            player.setPlaybackQuality('highres');
+
             $('.not-a-player').slideUp('fast');
             $('#ytplayerdiv')
                 .removeClass('w-col-6')
-                .addClass('w-col-12')
-                .attr('height','500');
+                .addClass('w-col-12');
+            var vid_width = $('#ytplayerdiv').width();
+            var vid_ratio = 16/9;
+
+            $('#ytplayerdiv')
+                .attr('width',vid_width)
+                .attr('height',vid_width/vid_ratio);
         }
         if (e.data === 0 || e.data === 2) {
             $('.not-a-player').fadeIn('slow');
             $('#ytplayerdiv')
                 .removeClass('w-col-12')
-                .addClass('w-col-6')
-                .attr('height','230');
+                .addClass('w-col-6');
+            var vid_width = $('#ytplayerdiv').width();
+            var vid_ratio = 16/9;
+
+            $('#ytplayerdiv')
+                .attr('width',vid_width)
+                .attr('height',vid_width/vid_ratio);
         }
     });
 }
