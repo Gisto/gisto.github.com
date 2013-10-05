@@ -1,5 +1,48 @@
+@media screen and (max-width: 479px) {
+  .w-col {
+    text-align: center;
+    & p {
+      text-align: justify;
+    }
+    & h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+  }
+  .boxes {
+    & h1, h2, h3, h4, h5, h6 {
+      text-align: left;
+    }
+  }
+  button {
+    width: 60%;
+    margin: 0px auto 10px;
+  }
+  .mobile-menu {
+    background: #000;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 74px;
+    color: #FFF;
+  }
+  .nav-column {
+    text-align: center;
+    display:none;
+  }
+  .nav-link {
+    width: 80%;
+    display: block;
+    font-weight: 700;
+    margin: 0 auto 10px;
+    background: #CCC;
+    padding: 5px 0 !important;
+  }
+}
+
 html {
-  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background: url(../images/bg.jpg) no-repeat center center fixed #f2f2f2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,7 +57,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   font-family: 'Open Sans', sans-serif;
-  color: #333; 
+  color: #333;
   font-size: 12px;
   margin-top: 0;
   line-height: 20px;
@@ -125,8 +168,7 @@ nav {
 }
 
 .nav-link {
-  margin-right: 11px;
-  margin-left: 11px;
+  padding: 0 10px;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -149,7 +191,7 @@ nav {
 }
 
 .under-nav,
- .under-nav p {
+.under-nav p {
   padding: 10px 0px 10px 0px;
   font: normal 19px/28px 'open sans';
 
@@ -175,7 +217,7 @@ header {
   font-weight: 100;
   text-decoration: none;
   &:hover {
-    background: lighten(#555,20%);
+    background: lighten(#555, 20%);
   }
   &:hover i.pull-left {
     text-shadow: 0 0 10px #fff;

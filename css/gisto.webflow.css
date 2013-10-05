@@ -1,5 +1,41 @@
+@media screen and (max-width: 479px) {
+  .w-col {
+    text-align: center; }
+    .w-col p {
+      text-align: justify; }
+    .w-col h1, .w-col h2, .w-col h3, .w-col h4, .w-col h5, .w-col h6 {
+      text-align: center; }
+
+  .boxes h1, .boxes h2, .boxes h3, .boxes h4, .boxes h5, .boxes h6 {
+    text-align: left; }
+
+  button {
+    width: 60%;
+    margin: 0px auto 10px; }
+
+  .mobile-menu {
+    background: #000;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 74px;
+    color: #FFF; }
+
+  .nav-column {
+    text-align: center;
+    display: none; }
+
+  .nav-link {
+    width: 80%;
+    display: block;
+    font-weight: 700;
+    margin: 0 auto 10px;
+    background: #CCC;
+    padding: 5px 0 !important; } }
 html {
-  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background: url(../images/bg.jpg) no-repeat center center fixed #f2f2f2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -104,8 +140,7 @@ nav {
   margin: 30px auto; }
 
 .nav-link {
-  margin-right: 11px;
-  margin-left: 11px;
+  padding: 0 10px;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;

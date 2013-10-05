@@ -1,3 +1,24 @@
+$(function(){
+    initMobile();
+    $(window).resize(function(){
+        initMobile();
+    });
+
+});
+
+function initMobile() {
+    if ($(".nav-link").css("display") == "block" ){
+        $('.nav-column').hide();
+        $('header').append('<div class="mobile-menu"><i class="icon-reorder icon-2x"></i></div>');
+        $('.mobile-menu').click(function(){
+            $('.nav-column').slideToggle();
+        });
+    } else {
+        $('.mobile-menu').hide();
+        $('.nav-column').show();
+    }
+}
+
 var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
