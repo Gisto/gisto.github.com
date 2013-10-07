@@ -32,7 +32,7 @@
   }
   .nav-column {
     text-align: center;
-    display:none;
+    display: none;
   }
   .nav-link {
     width: 99%;
@@ -44,17 +44,17 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
 
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
 
 }
 
 html {
-/*  background: url(../images/bg.jpg) no-repeat center center fixed #f2f2f2;*/
-  background: url('http://fc03.deviantart.net/fs27/f/2008/070/1/f/Background_by_xishan1.jpg') no-repeat center center fixed #f2f2f2;
+  /*  background: url(../images/bg.jpg) no-repeat center center fixed #f2f2f2;*/
+  background: url('../images/orig1.jpg') no-repeat center center fixed #f2f2f2; /* http://xishan1.deviantart.com */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -73,7 +73,7 @@ body {
   color: #333;
   font-size: 12px;
   margin-top: 0;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 a, button {
@@ -105,6 +105,11 @@ p {
 
 .bg-sky {
   background: skyblue;
+}
+
+.gisto {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -188,7 +193,7 @@ nav {
   text-transform: uppercase;
   font-weight: 400;
   &:hover {
-    color: tomato;
+    text-shadow: 1px 1px 1px #fff,0px 1px 3px #555;
   }
 }
 
@@ -213,7 +218,7 @@ nav {
 
 header {
   background: #fff;
-  box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #555;
   h1 {
     padding: 10px 0px;
     margin: 0;
@@ -265,7 +270,7 @@ header {
 
 .whiter {
   background: #fff;
-  box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #555;
   padding: 20px 0;
   & h2 {
     text-align: center;
@@ -280,6 +285,11 @@ header {
   border-radius: 50%;
   width: 90%;
   border: 1px solid #CCC;
+}
+
+.the-who img {
+  border-radius: 50%;
+  border: 1px solid #333;
 }
 
 .push {
@@ -306,6 +316,10 @@ footer {
   text-align: left;
 }
 
+.txt-center {
+  text-align: center;
+}
+
 .twitter:hover {
   background: #3cf;
 }
@@ -316,4 +330,58 @@ footer {
 
 .fb:hover {
   background: #3b5998;
+}
+
+ul {
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+  line-height: 25px;
+}
+
+.inner {
+  & h2, h3, h4, h5, h6 {
+    text-align: left;
+  }
+  & nav ul {
+    list-style: none;
+    font-size: 16px;
+    padding: 0;
+    & a {
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      display: block;
+      border-radius: 3px;
+      padding: 5px 10px;
+      &:hover {
+        background: tomato;
+        border: 1px solid tomato;
+        color:#fff;
+      }
+    }
+  }
+}
+
+.icons-ul {
+  margin-left:0 !important;
+  & i {
+    color:tomato;
+  }
+}
+
+.btn-center {
+  margin: 20px auto 0;
+  display: block;
+}
+
+.download {
+&:hover {
+  padding: 20px;
+  border:1px dashed #ccc;
+  background:#f2f2f2;
+  border-radius: 3px;
+  & i {
+    text-shadow: 0px 0px 10px #fff;
+  }
+}
 }
