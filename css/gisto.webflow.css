@@ -14,7 +14,7 @@
     margin: 0px auto 10px; }
 
   .mobile-menu {
-    background: #000;
+    background: #333;
     width: 64px;
     height: 64px;
     position: absolute;
@@ -22,30 +22,34 @@
     text-align: center;
     line-height: 74px;
     color: #FFF; }
+    .mobile-menu:active {
+      opacity: 0.5; }
 
   .nav-column {
     text-align: center;
     display: none; }
 
   .nav-link {
-    width: 80%;
+    width: 99%;
     display: block;
     font-weight: 700;
     margin: 0 auto 10px;
     background: #CCC;
-    padding: 5px 0 !important; } }
+    padding: 10px 0 !important; } }
 html {
-  background: url(../images/bg.jpg) no-repeat center center fixed #f2f2f2;
+  /*  background: url(../images/bg.jpg) no-repeat center center fixed #f2f2f2;*/
+  background: url("http://fc03.deviantart.net/fs27/f/2008/070/1/f/Background_by_xishan1.jpg") no-repeat center center fixed #f2f2f2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100%;
+  position: relative; }
 
 body {
   position: static;
   display: block;
   width: auto;
-  /* max-width: 1024px; */
   margin-right: auto;
   margin-left: auto;
   font-family: 'Open Sans', sans-serif;
@@ -56,6 +60,7 @@ body {
 
 a, button {
   color: inherit;
+  text-decoration: none;
   -webkit-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease; }
@@ -190,6 +195,9 @@ header {
   .box h3 {
     margin-top: 0; }
 
+.txt-red {
+  color: tomato; }
+
 .txt-grey {
   color: #555; }
 
@@ -199,11 +207,45 @@ header {
 .uppercase {
   text-transform: uppercase; }
 
-section.whiter {
+.whiter {
   background: #fff;
   box-shadow: 0 0 5px #999;
   padding: 20px 0; }
-  section.whiter h2 {
+  .whiter h2 {
     text-align: center; }
-  section.whiter h3 {
-    text-transform: uppercase; }
+  .whiter h3 {
+    text-transform: uppercase;
+    text-align: center; }
+
+.feat {
+  border-radius: 50%;
+  width: 90%;
+  border: 1px solid #CCC; }
+
+.push {
+  height: 55px; }
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 55px;
+  width: 100%; }
+  footer p {
+    font-size: 10px;
+    padding: 0 10px; }
+
+.txt-right {
+  text-align: right; }
+
+.txt-left {
+  text-align: left; }
+
+.twitter:hover {
+  background: #3cf; }
+
+.gplus:hover {
+  background: #d34836; }
+
+.fb:hover {
+  background: #3b5998; }
