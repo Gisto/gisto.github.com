@@ -1,78 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Gisto | Snippets made awesome | Manage your github gists on desktop</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/webflow.css">
-    <link rel="stylesheet" type="text/css" href="css/gisto.webflow.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ["Open Sans:300,400,600,700,800"]
-            }
-        });
-    </script>
-    <script src="js/main.js"></script>
-</head>
-<body>
-
-
-<header class="section header">
-
-    <div class="header">
-        <h1><strong>&lt;/Gisto&gt;</strong></h1>
-    </div>
-
-    <div class="w-container">
-        <div class="w-row">
-            <nav class="w-col w-col-12 w-clearfix nav-column">
-                <a class="nav-link" href="#" target="_self">Home</a>
-                <a class="nav-link" href="#" target="_self">Features</a>
-                <a class="nav-link" href="#" target="_self">Documentation</a>
-                <a class="nav-link" href="#" target="_self">FAQ</a>
-                <a class="nav-link nav-link-download" href="#" target="_self">Download</a>
-            </nav>
-        </div>
-    </div>
-</header>
-
-
-<section>
-
-    <div class="under-nav">
-        <h1>Snippets Made Awesome</h1>
-
-        <div class="w-container">
-            <div class="w-row">
-                <div class="w-col w-col-6 w-clearfix not-a-player">
-                    <p>Gisto is a Cross-platform gist snippets management desktop application that allows you and your
-                        team share code snippets fast and easily. Based on GitHub Gists Infrastructure which means you
-                        can use all your existing snippets by connecting your GitHub account!</p>
-                    <button class="bg-grey txt-white"><i class="icon-github"></i></button>
-                    <button class="bg-grey twitter txt-white"><i class="icon-twitter"></i></button>
-                    <button class="bg-grey fb txt-white"><i class="icon-facebook"></i></button>
-                    <button class="bg-grey gplus txt-white"><i class="icon-google-plus"></i></button>
-                    <button class="bg-grey txt-white">Read more <i class="icon-arrow-right"></i></button>
-                </div>
-                <div class="w-col w-col-6 w-clearfix" id="ytplayerdiv">
-                    <!--<img src="images/gisto.png">-->
-                    <!--<iframe type="text/html" width="100%" height="230"
-                            src="https://www.youtube.com/embed/lICNPYgv7Ac?controls=0&modestbranding=1&rel=0&showinfo=0&color=white&theme=light"
-                            frameborder="0" allowfullscreen>
-                        </iframe>-->
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
+---
+layout: default
+name: home
+title: Gisto | Snippets made awesome | Manage your github gists on desktop
+---
 
 <section class="boxes">
     <div class="w-container">
@@ -106,8 +36,6 @@
 </section>
 
 
-
-
 <h1>Features</h1>
 <section class="whiter boxes">
 
@@ -115,26 +43,45 @@
     <div class="w-container">
         <div class="w-row">
 
-            <div class="w-col w-col-4 w-clearfix">
-                <img src="http://www.gistoapp.com/img/themes.png" width="270" height="201"  class="feat" />
-                <h3>Feature #1</h3>
-                <p>Feature number 1 from the list of features. Feature number 1 from the list of features. Feature number 1 from the list of features.</p>
+            <div class="w-col w-col-4 w-clearfix feat">
+                <img src="../images/themes.png"/>
+
+                <h3>UI themes</h3>
+
+                <p>Several UI themes available in dark and light flavors.</p>
+                <p>Themes are not layout based, rather color shades of fonts and elements for now. This may change in the future.</p>
             </div>
 
-            <div class="w-col w-col-4 w-clearfix">
-                <img src="http://www.gistoapp.com/img/search.png" width="270" height="201"  class="feat" />
-                <h3>Feature #1</h3>
-                <p>Feature number 1 from the list of features. Feature number 1 from the list of features. Feature number 1 from the list of features.</p>
+            <div class="w-col w-col-4 w-clearfix feat">
+                <img src="../images/search.png"/>
+
+                <h3>Search</h3>
+
+                <p>Gists can be filtered by search filter from within the application.
+                    </p>
+<p>
+    Searching criteria may be gist's description, file name / extention, tag or by public/secret status of a gist.</p>
             </div>
 
-            <div class="w-col w-col-4 w-clearfix">
-                <img src="http://www.gistoapp.com/img/tagging.png" width="270" height="201" class="feat" />
-                <h3>Feature #1</h3>
-                <p>Feature number 1 from the list of features. Feature number 1 from the list of features. Feature number 1 from the list of features.</p>
+            <div class="w-col w-col-4 w-clearfix feat">
+                <img src="../images/tagging.png"/>
+
+                <h3>Tags</h3>
+
+                <p>Gisto allows to tag each gist with unlimited number of tags.
+                </p>
+
+                <p>Tags can be used for simply sorting gist snippets into groups for what makes it easy to search and
+                    maintain.
+                </p>
             </div>
 
         </div>
-        <button class="bg-grey txt-white btn-center">All features <i class="icon-arrow-right"></i></button>
+        <div class="center-holder">
+            <a href="features/" class="btn bg-grey txt-white btn-center">
+                All features <i class="icon-arrow-right"></i>
+            </a>
+        </div>
     </div>
 </section>
 
@@ -149,7 +96,8 @@
             <div class="w-col w-col-4 w-clearfix">
                 <h3>The <b>why</b></h3>
 
-                <p>Gisto started as an attempt to fulfill the lack of a syntax highlighted and cloud synchronized code snippet solution.
+                <p>Gisto started as an attempt to fulfill the lack of a syntax highlighted and cloud synchronized code
+                    snippet solution.
 
                     You may think of Gisto as Evernote for code.</p>
             </div>
@@ -160,10 +108,6 @@
                 <p>
                     Gisto is developed by a team of two web developers and uses web standard technologies such as HTML5
                     and JavaScript.
-                </p>
-                <p class="txt-center">
-                    <a href="#"><img src="https://secure.gravatar.com/avatar/3a615b34ef2060face8fcd481c6377e1?s=48" alt="Maayan" title="Maayan" /></a>
-                    <a href="#"><img src="https://secure.gravatar.com/avatar/7ddad1a9a1c8de452badaf82b6c30c76?s=48" alt="Sasha" title="Sasha" /></a>
                 </p>
 
             </div>
@@ -183,48 +127,62 @@
 <h1>Downloads</h1>
 <section class="whiter boxes">
 
-
     <div class="w-container">
-        <div class="w-row">
 
-            <a href="#" class="download w-col w-col-3 w-clearfix txt-center">
-                <p><i class="icon-windows icon-4x"></i></p>
-                <h3>Windows<br /> <b>Download</b></h3>
-                <p class="txt-red" href="">v0.2.1b</p>
-                <p>Packed with automatic installer.</p>
-            </a>
+        <p class="txt-grey txt-center" href=""><b>CURRENT VERSION:</b>
+            {% for v in site.releases %}
+            {% if forloop.first %}
+            {% assign current_version=v.version %}
+            {{ current_version }}
+            {% endif %}
+            {% endfor %} - <b>RELESED:</b> {{ site.gisto_build_date }}</p>
+        <br/>
 
-            <a href="#" class="download w-col w-col-3 w-clearfix txt-center">
-                <p class="txt-center"><i class="icon-apple icon-4x"></i></p>
-                <h3>OSX<br />  <b>Download</b></h3>
-                <p class="txt-red" href="">v0.2.1b</p>
-                <p class="txt-center">Packed with automatic installer.</p>
-            </a>
+        <div class="w-container">
 
-            <a href="#" class="download w-col w-col-3 w-clearfix txt-center">
-                <p class="txt-center"><i class="icon-linux icon-4x"></i></p>
-                <h3>Linux 64bit<br />  <b>Download</b></h3>
-                <p class="txt-red" href="">v0.2.1b</p>
-                <p class="txt-center">Packed with automatic installer via shell.</p>
-            </a>
+            <div class="w-row">
 
-            <a href="#" class="download w-col w-col-3 w-clearfix txt-center">
-                <p><i class="icon-linux icon-4x"></i></p>
-                <h3>Linux 32bit<br />  <b>Download</b></h3>
-                <p class="txt-red" href="">v0.2.1b</p>
-                <p>Packed with automatic installer via shell.</p>
-            </a>
+                <a href="{{ site.download_url }}/Gisto-{{ current_version }}-Win_x86.zip"
+                   class="download w-col w-col-3 w-clearfix txt-center">
+                    <p><i class="icon-windows icon-4x"></i></p>
 
+                    <h3>Windows<br/> <b>Download</b></h3>
+
+                    <p>Packed with automatic installer.</p>
+                </a>
+
+                <a href="{{ site.download_url }}/Gisto-{{ current_version }}-OSX_x86.dmg"
+                   class="download w-col w-col-3 w-clearfix txt-center">
+                    <p class="txt-center"><i class="icon-apple icon-4x"></i></p>
+
+                    <h3>OSX<br/> <b>Download</b></h3>
+
+                    <p class="txt-center">Packed with automatic installer.</p>
+                </a>
+
+                <a href="{{ site.download_url }}/Gisto-{{ current_version }}-Linux_x86_64.tar.gz"
+                   class="download w-col w-col-3 w-clearfix txt-center">
+                    <p class="txt-center"><i class="icon-linux icon-4x"></i></p>
+
+                    <h3>Linux 64bit<br/> <b>Download</b></h3>
+
+                    <p class="txt-center">Packed with automatic installer via shell.</p>
+                </a>
+
+                <a href="{{ site.download_url }}/Gisto-{{ current_version }}-Linux_x86.tar.gz"
+                   class="download w-col w-col-3 w-clearfix txt-center">
+                    <p><i class="icon-linux icon-4x"></i></p>
+
+                    <h3>Linux 32bit<br/> <b>Download</b></h3>
+
+                    <p>Packed with automatic installer via shell.</p>
+                </a>
+
+            </div>
+            <div class="center-holder">
+                <a href="download/" class="btn bg-grey txt-white btn-center">
+                    Mirrors and prev. versions <i class="icon-arrow-right"></i>
+                </a>
+            </div>
         </div>
-        <button class="bg-grey txt-white btn-center">Mirrors and prev. versions <i class="icon-arrow-right"></i></button>
-    </div>
 </section>
-
-
-<div class="push"></div>
-<footer>
-    <p>&copy; 2013 Gisto</p>
-</footer>
-
-</body>
-</html>

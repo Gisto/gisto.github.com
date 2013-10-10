@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="/css/gisto.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Open Sans:300,400,600,700,800"]
+            }
+        });
+    </script>
+    <script src="/js/main.js"></script>
+
+    {% include ga.html%}
+
+</head>
+<body class="{% if page.name == 'home'%}home{% else %}inner{% endif %}">
+
+
+<header class="section header">
+
+    <div class="header">
+        <h1><strong>&lt;/Gisto&gt;</strong></h1>
+    </div>
+
+    <div class="w-container">
+        <div class="w-row">
+            <nav class="w-col w-col-12 w-clearfix nav-column">
+                {% for link in site.navigation %}
+                <a class="nav-link {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}nav-link-download{% endif %}"
+                   href="{% if forloop.first %}/{% else %}{{ link.url }}{% endif %}" target="_self">
+                    {{ link.text }}
+                </a>
+                {% endfor %}
+            </nav>
+        </div>
+    </div>
+</header>

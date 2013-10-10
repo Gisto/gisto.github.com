@@ -1,0 +1,90 @@
+---
+layout: default
+name: documentation
+title: Documentation | Gisto
+---
+
+<h1>Documentation</h1>
+
+<section class="whiter boxes">
+
+
+    <div class="w-container">
+        <div class="w-row">
+
+            <div class="w-col w-col-3 w-clearfix">
+                <h2>NAV</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#pre">Preface</a></li>
+                        <li><a href="#tags">Tag gist</a></li>
+                        <li><a href="#devs">For developers</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="w-col w-col-9 w-clearfix">
+
+                <h2 id="pre">Preface:</h2>
+
+                <p>Please note: Because Gisto is in early stage of its life - many documented aspects are subject to
+                    change and should not be considered final nor absolute.</p>
+
+                <h2 id="tags" >Tag gist</h2>
+
+                <p>Every gist can be easy tagged by adding hash-tag to it's title.</p>
+
+                <p>For example: You have a gist titled</p>
+                <pre><span>TEXT</span>Simple html template</pre>
+                <p>and you'd like to tag it with "template" and "html" tags. All you need to do, is to add this tags as
+                    hash-tags to the end of the title like so:</p>
+                <pre><span>TEXT</span>Simple html template #html #template</pre>
+                <p>Gisto will then use the hash-tags to display tags in the gist list and search by this tags.</p>
+
+                <h2 id="devs">Setting up for development</h2>
+                <h4>Pre-installed requirements:</h4>
+                <ul class="icons-ul">
+                    <li class="icons-li"><i class="icon-angle-right"></i> IDE of your choosing</li>
+                    <li class="icons-li"><i class="icon-angle-right"></i> <a href="http://git-scm.com/downloads">GIT</a>
+                        - distributed version control
+                    </li>
+                    <li class="icons-li"><i class="icon-angle-right"></i> <a href="http://nodejs.org/">Node.js</a> -
+                        server-side software system written in JavaScript
+                    </li>
+                    <li class="icons-li"><i class="icon-angle-right"></i> <a
+                            href="https://github.com/rogerwang/node-webkit#downloads">Node-webkit</a> - app runtime
+                        based on Chromium and node.js
+                    </li>
+                    <li class="icons-li"><i class="icon-angle-right"></i> <a href="http://gruntjs.com/">Grunt</a> - the
+                        JavaScript Task Runner
+                    </li>
+                </ul>
+                <h2>Set it all to work together:</h2>
+
+                <p>- Clone the latest source with the following command to a directory of your choice:</p>
+                <pre><span>SHELL</span>git clone https://github.com/Gisto/Gisto.git</pre>
+                <p>- Enter into the newly created directory:</p>
+                <pre><span>SHELL</span>cd Gisto</pre>
+                <p>- Run:</p>
+                <pre><span>SHELL</span>npm install</pre>
+                <p>this will install all necessary dependencies.</p>
+
+                <p>- Run:</p>
+                <pre><span>SHELL</span>grunt --env=dev</pre>
+                <p>This will switch the file layout to development state (all files are concatenated)</p>
+
+                <p>- You can download a 'web-server.js' script used in AngularJS phonecat tutorial to gisto
+                    directory.</p>
+
+                <p>- Run:</p>
+                <pre><span>SHEL</span>node web-server.js</pre>
+                <p>- (optionaly) Run:</p>
+                <pre><span>SHELL</span>grunt watch</pre>
+                <p>- Navigate your Chrome/Chromium browser to http://localhost:8000/app/index.html</p>
+                <h4><b>Congrats!</b> If all went well, you are now running local version of Gisto in your machine.</h4>
+            </div>
+
+
+        </div>
+    </div>
+</section>

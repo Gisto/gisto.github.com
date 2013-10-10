@@ -93,7 +93,8 @@ h1 {
   font-size: 38px;
   line-height: 44px;
   font-weight: 100;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 0px 1px 0px #FFF; }
 
 h2 {
   margin: 10px 0px;
@@ -125,7 +126,7 @@ h6 {
   line-height: 18px;
   font-weight: 100; }
 
-.button {
+.button, .btn {
   display: inline-block;
   padding: 4px 15px;
   background-color: tomato;
@@ -156,7 +157,8 @@ nav {
   text-transform: uppercase;
   font-weight: 400; }
   .nav-link:hover {
-    text-shadow: 1px 1px 1px #fff,0px 1px 3px #555; }
+    text-shadow: 1px 1px 1px #fff, 0px 1px 3px tomato;
+    color: tomato; }
 
 .nav-link-download {
   color: tomato; }
@@ -223,27 +225,33 @@ header {
     text-align: center; }
 
 .feat {
-  border-radius: 50%;
-  width: 90%;
-  border: 1px solid #CCC; }
+  text-align: center; }
+  .feat img {
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    width: 90%; }
+  .feat p {
+    text-align: left; }
 
 .the-who img {
   border-radius: 50%;
   border: 1px solid #333; }
 
-.push {
-  height: 55px; }
+.push,
+footer {
+  height: 150px; }
 
 footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 55px;
   width: 100%;
-  padding: 20px 0;
-  text-align: center; }
-  footer p {
-    padding: 0 10px; }
+  padding: 20px 0; }
+  footer img {
+    border-radius: 50%;
+    border: 1px solid #333; }
+  footer > p {
+    padding: 20px 0; }
 
 .txt-right {
   text-align: right; }
@@ -293,11 +301,13 @@ ul {
 
 .btn-center {
   margin: 20px auto 0;
-  display: block; }
+  display: inline-block; }
 
 .download {
   padding: 20px;
   border: 1px solid #fff; }
+  .download h4 {
+    text-align: center; }
   .download:hover {
     padding: 20px;
     border: 1px dashed #ccc;
@@ -305,3 +315,39 @@ ul {
     border-radius: 3px; }
     .download:hover i {
       text-shadow: 0px 0px 10px #fff; }
+    .download:hover:active {
+      background: skyblue; }
+
+.center-holder {
+  position: relative;
+  text-align: center; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: beige;
+  font-family: monospace;
+  position: relative;
+  color: #555;
+  font-size: 15px;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px #ccc inset; }
+  pre span {
+    position: absolute;
+    display: block;
+    background: #FFF;
+    top: 0;
+    right: 0;
+    border-radius: 0px 3px;
+    padding: 0px 5px;
+    font-size: 10px;
+    box-shadow: -2px 2px 5px #CCC;
+    color: #999;
+    transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out; }
+  pre:hover span {
+    opacity: 0; }

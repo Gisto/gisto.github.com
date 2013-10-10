@@ -1,0 +1,81 @@
+---
+layout: default
+name: download
+title: Downloads | Gisto
+---
+
+<h1>Download</h1>
+
+<section class="whiter boxes">
+
+    <div class="w-container">
+        <div class="w-row">
+
+            <div class="w-col w-col-3 w-clearfix">
+
+                <h2>NAV</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#mirror">Mirror</a></li>
+                        <li><a href="#prevs">Previous version</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="w-col w-col-9 w-clearfix">
+
+                <h2 id="mirror">Mirror</h2>
+
+                <h3>Download <b>
+                    {% for v in site.releases %}
+                    {% if forloop.first %}
+                    {% assign current_version=v.version %}
+                    {{ current_version }}
+                    {% endif %}
+                    {% endfor %}</b> from mirror</h3>
+
+                <div class="w-row">
+
+                    <a href="{{ site.download_url_mirror }}/Gisto-{{ current_version }}-Win_x86.zip"
+                       class="download w-col w-col-3 w-clearfix txt-center">
+                        <p><i class="icon-windows icon-2x"></i></p>
+
+                        <h4>Windows<br/> <b>Download</b></h4>
+
+                    </a>
+
+                    <a href="{{ site.download_url_mirror }}/Gisto-{{ current_version }}-OSX_x86.dmg"
+                       class="download w-col w-col-3 w-clearfix txt-center">
+                        <p class="txt-center"><i class="icon-apple icon-2x"></i></p>
+
+                        <h4>OSX<br/> <b>Download</b></h4>
+
+                    </a>
+
+                    <a href="{{ site.download_url_mirror }}/Gisto-{{ current_version }}-Linux_x86_64.tar.gz"
+                       class="download w-col w-col-3 w-clearfix txt-center">
+                        <p class="txt-center"><i class="icon-linux icon-2x"></i></p>
+
+                        <h4>Linux 64bit<br/> <b>Download</b></h4>
+
+                    </a>
+
+                    <a href="{{ site.download_url_mirror }}/Gisto-{{ current_version }}-Linux_x86.tar.gz"
+                       class="download w-col w-col-3 w-clearfix txt-center">
+                        <p><i class="icon-linux icon-2x"></i></p>
+
+                        <h4>Linux 32bit<br/> <b>Download</b></h4>
+
+                    </a>
+
+                </div>
+
+
+                <h2 id="prevs">Previous versions</h2>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>

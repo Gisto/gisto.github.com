@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include head.html %}
+
+{% if page.name == 'home'%}
+    {% include hero.html %}
+{% endif %}
+
+{{ content }}
+
+{% include footer.html %}

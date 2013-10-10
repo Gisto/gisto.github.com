@@ -1,16 +1,16 @@
-$(function(){
+$(function () {
     initMobile();
-    $(window).resize(function(){
+    $(window).resize(function () {
         initMobile();
     });
 
 });
 
 function initMobile() {
-    if ($(".nav-link").css("display") == "block" ){
+    if ($(".nav-link").css("display") == "block") {
         $('.nav-column').hide();
         $('header').append('<div class="mobile-menu"><i class="icon-reorder icon-2x"></i></div>');
-        $('.mobile-menu').click(function(){
+        $('.mobile-menu').click(function () {
             $('.nav-column').slideToggle();
         });
     } else {
@@ -53,11 +53,11 @@ function onReady() {
                 .removeClass('w-col-6')
                 .addClass('w-col-12');
             var vid_width = $('#ytplayerdiv').width();
-            var vid_ratio = 16/9;
+            var vid_ratio = 16 / 9;
 
             $('#ytplayerdiv')
-                .attr('width',vid_width)
-                .attr('height',vid_width/vid_ratio);
+                .attr('width', vid_width)
+                .attr('height', vid_width / vid_ratio);
         }
         if (e.data === 0 || e.data === 2) {
             $('.not-a-player').fadeIn('slow');
@@ -65,11 +65,11 @@ function onReady() {
                 .removeClass('w-col-12')
                 .addClass('w-col-6');
             var vid_width = $('#ytplayerdiv').width();
-            var vid_ratio = 16/9;
+            var vid_ratio = 16 / 9;
 
             $('#ytplayerdiv')
-                .attr('width',vid_width)
-                .attr('height',vid_width/vid_ratio);
+                .attr('width', vid_width)
+                .attr('height', vid_width / vid_ratio);
         }
     });
 }
