@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/webflow.css">
     <link rel="stylesheet" type="text/css" href="/css/gisto.css">
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script>
         WebFont.load({
@@ -23,7 +23,7 @@
     {% include ga.html%}
 
 </head>
-<body class="{% if page.name == 'home'%}home{% else %}inner{% endif %}">
+<body id="top" class="{% if page.name == 'home'%}home{% else %}inner{% endif %}">
 
 
 <header class="section header">

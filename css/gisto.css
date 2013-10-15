@@ -35,7 +35,19 @@
     font-weight: 700;
     margin: 0 auto 10px;
     background: #CCC;
-    padding: 10px 0 !important; } }
+    padding: 10px 0 !important; }
+
+  a.txt-center p, i, footer p {
+    text-align: center !important; }
+
+  .not-a-player {
+    padding-bottom: 20px; }
+
+  footer .w-col.w-col-1.w-clearfix {
+    margin: 40px 0 0 0; }
+
+  pre {
+    text-align: left; } }
 html {
   /*  background: url(../images/bg.jpg) no-repeat center center fixed #f2f2f2;*/
   background: url("../images/orig1.jpg") no-repeat center center fixed #f2f2f2;
@@ -224,15 +236,6 @@ header {
     text-transform: uppercase;
     text-align: center; }
 
-.feat {
-  text-align: center; }
-  .feat img {
-    border-radius: 50%;
-    border: 1px solid #CCC;
-    width: 90%; }
-  .feat p {
-    text-align: left; }
-
 .the-who img {
   border-radius: 50%;
   border: 1px solid #333; }
@@ -294,6 +297,27 @@ ul {
       border: 1px solid tomato;
       color: #fff; }
 
+.inner .feat {
+  margin: 0 0 50px 0; }
+
+.feat {
+  text-align: center; }
+  .feat img {
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    width: 90%; }
+    .feat img:hover {
+      border-radius: 3px;
+      box-shadow: 0px 4px 10px #555;
+      border: 1px solid #333; }
+  .feat p {
+    text-align: left; }
+  .feat h3 {
+    text-align: center; }
+
 .icons-ul {
   margin-left: 0 !important; }
   .icons-ul i {
@@ -351,3 +375,18 @@ pre {
     -webkit-transition: opacity 0.5s ease-in-out; }
   pre:hover span {
     opacity: 0; }
+
+.main p a, .main ul a {
+  color: tomato; }
+  .main p a:hover, .main ul a:hover {
+    color: skyblue; }
+
+a.top {
+  background: #555;
+  display: none;
+  color: #FFF;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  padding: 0px 5px 0px 10px;
+  border-radius: 50% 0 0 50%; }

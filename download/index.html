@@ -52,14 +52,6 @@ title: Downloads | Gisto
 
                     </a>
 
-                    <a href="{{ site.download_url_mirror }}/Gisto-{{ current_version }}-Linux_x86_64.tar.gz"
-                       class="download w-col w-col-3 w-clearfix txt-center">
-                        <p class="txt-center"><i class="icon-linux icon-2x"></i></p>
-
-                        <h4>Linux 64bit<br/> <b>Download</b></h4>
-
-                    </a>
-
                     <a href="{{ site.download_url_mirror }}/Gisto-{{ current_version }}-Linux_x86.tar.gz"
                        class="download w-col w-col-3 w-clearfix txt-center">
                         <p><i class="icon-linux icon-2x"></i></p>
@@ -68,10 +60,33 @@ title: Downloads | Gisto
 
                     </a>
 
+                    <a href="{{ site.download_url_mirror }}/Gisto-{{ current_version }}-Linux_x86_64.tar.gz"
+                       class="download w-col w-col-3 w-clearfix txt-center">
+                        <p class="txt-center"><i class="icon-linux icon-2x"></i></p>
+
+                        <h4>Linux 64bit<br/> <b>Download</b></h4>
+
+                    </a>
+
+
                 </div>
 
 
                 <h2 id="prevs">Previous versions</h2>
+
+                {% for v in site.releases %}
+                    {% if forloop.first %}
+                <!-- current version don't need to be here -->
+                {% else %}
+                    <h3>Verison {{ v.version }}</h3>
+                <p><i class="icon-windows"></i> <a href="{{ site.download_url_mirror }}/Gisto-{{ v.version }}-Win_x86.zip">Download for Windows</a></p>
+                <p><i class="icon-apple"></i> <a href="{{ site.download_url_mirror }}/Gisto-{{ v.version }}-OSX_x86.dmg">Download for OSX</a></p>
+                <p><i class="icon-linux"></i> <a href="{{ site.download_url_mirror }}/Gisto-{{ v.version }}-Linux_x86.tar.gz">Download for Linux 32bit</a></p>
+                <p><i class="icon-linux"></i> <a href="{{ site.download_url_mirror }}/Gisto-{{ v.version }}-Linux_x86_64.tar.gz">Download for Linux 64bit</a></p>
+
+                {% endif %}
+                {% endfor %}
+
 
             </div>
 

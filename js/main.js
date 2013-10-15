@@ -4,7 +4,23 @@ $(function () {
         initMobile();
     });
 
+    $('body').on('click', '.innsite', function (e) {
+        e.preventDefault();
+        $('body').animate({
+            scrollTop: $(e.currentTarget.hash).offset().top
+        }, 1000);
+    });
 });
+
+
+$(document).scroll(function() {
+    if( $(this).scrollTop() > 300 ) {
+        $('.top').fadeIn(1000);
+    } else {
+        $('.top').fadeOut(1000);
+    }
+});
+
 
 function initMobile() {
     if ($(".nav-link").css("display") == "block") {
