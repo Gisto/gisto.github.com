@@ -18,11 +18,11 @@ $(function () {
         mac = /Mac/g;
 
     if (linux.test(platform)) {
-        downloadLink('Linux 64bit', 'download/Gisto-0.1.2a-Linux_x86_64.tar.gz','icon-linux');
+        downloadLink('Linux 64bit', 'download/Gisto-0.2.2b-Linux_x86_64.tar.gz','icon-linux');
     } else if (mac.test(platform)) {
-        downloadLink('OSX 10.7+', 'download/Gisto-0.1.2a-OSX_x86.dmg','icon-apple');
+        downloadLink('OSX 10.7+', 'download/Gisto-0.2.2b-OSX_x86.dmg','icon-apple');
     } else if (windows.test(platform)) {
-        downloadLink('Windows', 'download/Gisto-0.1.2a-Win_x86.zip','icon-windows');
+        downloadLink('Windows', 'download/Gisto-0.2.2b-Win_x86.zip','icon-windows');
     } else {
         $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
     }
