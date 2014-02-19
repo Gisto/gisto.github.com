@@ -1,8 +1,8 @@
 name: Gisto
-gisto_version: 0.2.2b
-gisto_old_version: 0.2.1a
-gisto_build_date: 2014-01-20
+gisto_version: 0.2.3b
+gisto_old_version: 0.2.2a
+gisto_build_date: 2014-02-20
 download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
-prev_versions: 0.2.1b,0.2.0b,0.1.3a,0.1.2a
+prev_versions: 0.2.2b,0.2.1b,0.2.0b,0.1.3a,0.1.2a
 pygments: true
