@@ -10,6 +10,29 @@ $(function () {
             scrollTop: $(e.currentTarget.hash).offset().top
         }, 1000);
     });
+
+    $('.video-run').click(function(){
+        $('.under-nav').slideUp('slow');
+        $('.hero-video').slideDown('slow');
+        $("#movie").click();
+    });
+
+    $('.close-video').click(function(){
+        $('.under-nav').slideDown('slow');
+        $('.hero-video').slideUp('slow');
+        $("#movie").click();
+    });
+
+    $("#movie").click(function(){
+        if (this.paused) {
+            this.play();
+        } else {
+            this.pause();
+            this.currentTime = 0;
+            console.log(this);
+        }
+    });
+
 });
 
 
@@ -34,6 +57,7 @@ function initMobile() {
         $('.nav-column').show();
     }
 }
+/*
 
 var tag = document.createElement('script');
 
@@ -89,3 +113,4 @@ function onReady() {
         }
     });
 }
+*/

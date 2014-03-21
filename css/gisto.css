@@ -48,9 +48,18 @@
 
   pre {
     text-align: left; } }
+@media screen and (max-width: 991px) {
+  .under-nav p {
+    font-size: 15px !important; } }
+@font-face {
+  font-family: 'flexo';
+  src: url("../font/Flexo-CapsDEMO-webfont.eot");
+  src: url("../font/Flexo-CapsDEMO-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Flexo-CapsDEMO-webfont.woff") format("woff"), url("../font/Flexo-CapsDEMO-webfont.ttf") format("truetype"), url("../font/Flexo-CapsDEMO-webfont.svg#FertigoProRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 html {
-  background: url("../images/orig2.jpg") no-repeat center center fixed #f2f2f2;
-  /* http://xishan1.deviantart.com */
+  background: url("../images/sky.jpg") no-repeat center center fixed #f2f2f2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -67,6 +76,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #333;
   font-size: 12px;
+  background: transparent;
   margin-top: 0;
   line-height: 25px; }
 
@@ -98,9 +108,11 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'flexo','Open Sans', sans-serif; }
+
 h1 {
   margin: 30px 0px;
-  font-family: 'Open Sans', sans-serif;
   font-size: 38px;
   line-height: 44px;
   font-weight: 100;
@@ -159,7 +171,7 @@ button {
   background: #999; }
 
 nav {
-  margin: 30px auto; }
+  margin: 0px auto 10px; }
 
 .nav-link {
   padding: 0 10px;
@@ -168,7 +180,7 @@ nav {
   text-transform: uppercase;
   font-weight: 400; }
   .nav-link:hover {
-    text-shadow: 1px 1px 1px #fff, 0px 1px 3px tomato;
+    text-shadow: 1px 1px 1px white, 0px 1px 3px tomato;
     color: tomato; }
 
 .nav-link-download {
@@ -182,15 +194,52 @@ nav {
 
 .under-nav,
 .under-nav p {
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
   font: normal 19px/28px 'open sans'; }
+
+.hero-video {
+  display: none; }
+
+.video-run {
+  display: block;
+  height: 214px;
+  background: url("../images/gisto.png");
+  background-size: 100%;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px #555; }
+  .video-run i {
+    text-align: center;
+    display: none !important;
+    margin: 17% auto;
+    font-size: 62px;
+    border: 4px solid #555;
+    width: inherit;
+    padding: 15px;
+    border-radius: 10px; }
+  .video-run:hover i {
+    display: block !important;
+    opacity: 1; }
+
+.close-video {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #fff;
+  background: tomato;
+  padding: 5px 10px;
+  opacity: 0.5; }
+  .close-video:hover {
+    opacity: 1; }
 
 header {
   background: #fff;
   box-shadow: 0 0 5px #555; }
   header h1 {
     padding: 10px 0px;
-    margin: 0; }
+    margin: 0;
+    font-family: 'open sans';
+    font-weight: 100; }
 
 .boxes {
   margin: 30px 0; }
@@ -207,9 +256,12 @@ header {
     text-shadow: 0 0 10px #fff; }
   .box span {
     text-align: right;
-    display: inline-block;
+    display: table-cell;
+    line-height: 18px;
     width: 100%;
     padding: 0px 5px; }
+    .box span i {
+      font-size: small; }
   .box h3 {
     margin-top: 0; }
 
@@ -387,5 +439,15 @@ a.top {
   position: fixed;
   bottom: 10px;
   right: 0;
-  padding: 0px 5px 0px 10px;
-  border-radius: 50% 0 0 50%; }
+  padding: 10px 10px;
+  border-radius: 50% 0 0 50%;
+  font-size: 20px; }
+
+.hero-video {
+  position: relative; }
+
+.hero-video video {
+  width: 100%; }
+
+.features-boxes {
+  margin-top: 0; }

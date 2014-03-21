@@ -51,3 +51,4 @@ local.properties
 
 ### Jekyll ###
 _site/
+npm-debug.log
