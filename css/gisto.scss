@@ -64,12 +64,23 @@ $gisto-color-red: tomato;
 }
 
 @media screen and (max-width: 767px) {
-
+  footer {
+    text-align: center;
+    & h3 {
+        text-align: center !important;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
   .under-nav p {
     font-size: 15px !important;
+  }
+  footer {
+    text-align: center;
+    & h3 {
+      text-align: center !important;
+    }
   }
 }
 

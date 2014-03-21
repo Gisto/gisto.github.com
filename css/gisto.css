@@ -48,9 +48,19 @@
 
   pre {
     text-align: left; } }
+@media screen and (max-width: 767px) {
+  footer {
+    text-align: center; }
+    footer h3 {
+      text-align: center !important; } }
 @media screen and (max-width: 991px) {
   .under-nav p {
-    font-size: 15px !important; } }
+    font-size: 15px !important; }
+
+  footer {
+    text-align: center; }
+    footer h3 {
+      text-align: center !important; } }
 @font-face {
   font-family: 'flexo';
   src: url("../font/Flexo-CapsDEMO-webfont.eot");
