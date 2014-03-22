@@ -27,7 +27,8 @@
 
   .nav-column {
     text-align: center;
-    display: none; }
+    display: none;
+    margin: 10px 0px 0px 0px; }
 
   .nav-link {
     width: 99%;
@@ -380,7 +381,8 @@ ul {
     text-align: center; }
 
 .icons-ul {
-  margin-left: 0 !important; }
+  margin-left: 0 !important;
+  text-align: left; }
   .icons-ul i {
     color: tomato; }
 
