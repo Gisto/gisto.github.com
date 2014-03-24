@@ -11,7 +11,7 @@ $gisto-color-red: tomato;
   font-style: normal;
 }
 
-html {
+html,body {
   background: url('../images/sky.jpg') no-repeat center center fixed #f2f2f2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -521,6 +521,9 @@ a.top {
 
 /* Mediaqueries */
 @media screen and (max-width: 479px) {
+  html {
+    background: url('../images/sky_mob.jpg') no-repeat top center fixed #afbfd9;
+  }
   .w-col {
     text-align: center;
     & p {
