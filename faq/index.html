@@ -16,19 +16,58 @@ title: Frequently asked questions | Gisto
                 <h2>QUESTIONS</h2>
                 <nav>
                     <ul>
-                        <li><a class="innsite" href="#q1">How do I do that cool thing I saw on TV last night?</a></li>
-                        <li><a class="innsite" href="#q2">Some question?</a></li>
-                        <li><a class="innsite" href="#q2">For developers?</a></li>
+                        <li><a class="innsite" href="#q1">Where's the changelog?</a></li>
+                        <li><a class="innsite" href="#q2">Authentication</a></li>
+                        <li><a class="innsite" href="#q3">Do you use backend server?</a></li>
+                        <li><a class="innsite" href="#q4">How secure is Gisto?</a></li>
+                        <li><a class="innsite" href="#q5">Do you plan to support / add support for &laquo;future-name-here&raquo;?</a>
+                        </li>
+                        <li><a class="innsite" href="#q5">Why Gisto exists?</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="w-col w-col-9 w-clearfix">
 
-                <h2 id="q1">Question #1</h2>
+                <h2 id="q1">Where's the changelog?</h2>
 
-                <p>Feature number 1 from the list of features. Feature number 1 from the list of features. Feature
-                    number 1 from the list of features.</p>
+                <p>We have a change.log page listing all recent changes by version <a href="/changelog">here</a></p>
+
+                <h2 id="q2">Authentication</h2>
+
+                <p>Gisto authenticates to GitHub by using basic authentication over SSL and retrieving an oAuth2 token.
+                    Thus the need for your GitHub user and password.</p>
+
+                <p>Gisto only saves the oAuth2 token received after authenticating and nothing else.
+                    If you would rather to supply your own access token without providing Gisto your login details you
+                    may manually create an access token from the account settings at GitHub and login using the
+                    generated token.</p>
+
+                <p>This token will be saved permanently until you log out.</p>
+
+
+                <h2 id="q3">Do you use backend server?</h2>
+
+                <p>Gisto is using GitHub gist API and communicates directly with Github, no 3rd party server or database
+                    involved in gist management. </p>
+
+                <p>However we do use server for notifications and sharing service, the only data is stored is username
+                    and gist ID and this is to allow gisto to notify user if there are shares waiting for him/her to
+                    accept.
+                </p>
+
+                <h2 id="q4">How secure is Gisto?</h2>
+
+                <p>Gisto ipsum codelor app sit a met.</p>
+
+                <h2 id="q5">Do you plan to support / add support for &laquo;future-name-here&raquo;?</h2>
+
+                <p>Gisto ipsum codelor app sit a met.</p>
+
+                <h2 id="q6">Why Gisto exists?</h2>
+
+                <p>Gisto ipsum codelor app sit a met.</p>
+
             </div>
 
         </div>

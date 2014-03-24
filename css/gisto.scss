@@ -1,90 +1,5 @@
 $gisto-color-red: tomato;
 
-@media screen and (max-width: 479px) {
-  .w-col {
-    text-align: center;
-    & p {
-      text-align: justify;
-    }
-    & h1, h2, h3, h4, h5, h6 {
-      text-align: center;
-    }
-  }
-  .boxes {
-    & h1, h2, h3, h4, h5, h6 {
-      text-align: left;
-    }
-  }
-  button {
-    width: 60%;
-    margin: 0px auto 10px;
-  }
-  .mobile-menu {
-    background: #333;
-    width: 64px;
-    height: 64px;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    line-height: 74px;
-    color: #FFF;
-    &:active {
-      opacity: 0.5;
-    }
-  }
-  .nav-column {
-    text-align: center;
-    display: none;
-    margin: 10px 0px 0px 0px;
-  }
-  .nav-link {
-    width: 99%;
-    display: block;
-    font-weight: 700;
-    margin: 0 auto 10px;
-    background: #CCC;
-    padding: 10px 0 !important;
-  }
-
-  a.txt-center p, i, footer p {
-    text-align: center !important;
-  }
-
-  .not-a-player {
-    padding-bottom: 20px;
-  }
-
-  footer .w-col.w-col-1.w-clearfix {
-    margin:40px 0 0 0;
-  }
-
-  pre {
-    text-align: left;
-  }
-
-}
-
-@media screen and (max-width: 767px) {
-  footer {
-    text-align: center;
-    & h3 {
-        text-align: center !important;
-    }
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .under-nav p {
-    font-size: 15px !important;
-  }
-  footer {
-    text-align: center;
-    & h3 {
-      text-align: center !important;
-    }
-  }
-}
-
 @font-face {
   font-family: 'flexo';
   src: url('../font/Flexo-CapsDEMO-webfont.eot');
@@ -116,7 +31,7 @@ body {
   color: #333;
   font-size: 12px;
   background: transparent;
-  margin-top: 0;
+  margin-top: 137px;
   line-height: 25px;
 }
 
@@ -270,16 +185,22 @@ nav {
 }
 
 .video-run {
-  display:block;
-  height: 214px;
-  background: url('../images/gisto.png');
-  background-size: 100%;
   cursor: pointer;
-  box-shadow: 0px 2px 3px #555;
+  position: relative;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  & img {
+    box-shadow: 0px 2px 3px #555;
+    padding: 0;
+    margin: 0;
+  }
   & i {
     text-align: center;
+    top:0;
+    position: absolute;
     display: none !important;
-    margin: 17% auto;
+    margin: 17% 25%;
     font-size: 62px;
     border: 4px solid #555;
     width: inherit;
@@ -288,7 +209,9 @@ nav {
   }
   &:hover i {
     display: block !important;
+    background: #fff;
     opacity: 1;
+    box-shadow: 0px 0px 20px #000;
   }
 }
 
@@ -309,7 +232,15 @@ nav {
 header {
   background: #fff;
   box-shadow: 0 0 5px #555;
-  h1 {
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  & h1 {
     padding: 10px 0px;
     margin: 0;
     font-family: 'open sans';
@@ -585,4 +516,109 @@ a.top {
 
 .features-boxes {
   margin-top:0;
+}
+
+
+/* Mediaqueries */
+@media screen and (max-width: 479px) {
+  .w-col {
+    text-align: center;
+    & p {
+      text-align: justify;
+    }
+    & h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+  }
+  .boxes {
+    & h1, h2, h3, h4, h5, h6 {
+      text-align: left;
+    }
+  }
+  button {
+    width: 60%;
+    margin: 0px auto 10px;
+  }
+  .mobile-menu {
+    background: #333;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 74px;
+    color: #FFF;
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  .nav-column {
+    text-align: center;
+    display: none;
+    margin: 10px 0px 0px 0px;
+    & .active {
+      border-bottom: 3px solid;
+      padding-bottom: 10px;
+    }
+  }
+  .nav-link {
+    width: 99%;
+    display: block;
+    font-weight: 700;
+    margin: 0 auto 10px;
+    background: #CCC;
+    padding: 10px 0 !important;
+  }
+
+  a.txt-center p, i, footer p {
+    text-align: center !important;
+  }
+
+  .not-a-player {
+    padding-bottom: 20px;
+  }
+
+  footer .w-col.w-col-1.w-clearfix {
+    margin:40px 0 0 0;
+  }
+
+  pre {
+    text-align: left;
+  }
+  body {
+    margin-top: 100px;
+  }
+  .video-run:hover i {
+    width: 50%;
+  }
+  .download h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    text-align: center;
+    & h3 {
+      text-align: center !important;
+    }
+  }
+  body {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .under-nav p {
+    font-size: 15px !important;
+  }
+  footer {
+    text-align: center;
+    & h3 {
+      text-align: center !important;
+    }
+  }
+  body {
+    margin-top: 100px;
+  }
 }

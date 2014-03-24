@@ -3,32 +3,27 @@
 
     <div class="w-container">
         <div class="w-row">
+
+            {% for contributer in site.contributers %}
+
             <div class="w-col w-col-1 w-clearfix">
-                <img src="https://secure.gravatar.com/avatar/3a615b34ef2060face8fcd481c6377e1?s=80" alt="Maayan"/>
+                <img src="{{ contributer.gravatar }}" alt="{{ contributer.name }}"/>
             </div>
             <div class="w-col w-col-5 w-clearfix">
-                <h3>Maayan Glikser</h3>
+                <h3>{{ contributer.name }}</h3>
 
                 <p>
-                    Software developer based in Israel <br/> <a target="_blank" href="http://www.glikm.com">www.glikm.com</a>
-                    | <i class="icon-twitter"></i> <a target="_blank" href="https://twitter.com/MaayanGlikser">@MaayanGlikser</a>
+                    {{ contributer.description }} <br/> <a target="_blank" href="http://{{ contributer.site }}">{{ contributer.site }}</a>
+                    | <i class="icon-twitter"></i> <a target="_blank" href="https://twitter.com/{{ contributer.twitter_name }}">@{{ contributer.twitter_name }}</a>
                 </p>
             </div>
-            <div class="w-col w-col-1 w-clearfix">
-                <img src="https://secure.gravatar.com/avatar/7ddad1a9a1c8de452badaf82b6c30c76?s=80" alt="Sasha"/>
-            </div>
-            <div class="w-col w-col-5 w-clearfix">
-                <h3>Sasha Khamkov</h3>
 
-                <p>
-                    Web designer/developer from Israel <br/> <a target="_blank" href="http://www.sanusart.com">www.sanusart.com</a>
-                    | <i class="icon-twitter"></i> <a target="_blank" href="https://twitter.com/sanusart">@sanusart</a>
-                </p>
-            </div>
+            {% endfor %}
+
         </div>
     </div>
 
-    <p class="txt-center">&copy; 2014 Gisto</p>
+    <p class="txt-center">&copy; {{ site.year }} {{ site.name }}</p>
 
 </footer>
 

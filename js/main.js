@@ -35,18 +35,33 @@ $(function () {
 
 });
 
+function isMobile() {
+    if($(".nav-link").css("display") == "block") {
+        return true;
+    }
+}
+
+console.log('mobile',isMobile());
 
 $(document).scroll(function() {
     if( $(this).scrollTop() > 300 ) {
         $('.top').fadeIn(1000);
+        if (isMobile() !== true) {
+            $('header h1').slideUp('slow');
+            $('nav.nav-column').css({'margin-top': '12px'});
+        }
     } else {
         $('.top').fadeOut(1000);
+        if (isMobile() !== true) {
+            $('header h1').slideDown('slow');
+            $('nav.nav-column').css({'margin-top': 'inherit'});
+        }
     }
 });
 
 
 function initMobile() {
-    if ($(".nav-link").css("display") == "block") {
+    if (isMobile() === true) {
         $('.nav-column').hide();
         $('header').append('<div class="mobile-menu"><i class="icon-reorder icon-2x"></i></div>');
         $('.mobile-menu').click(function () {
