@@ -11,8 +11,8 @@ $gisto-color-red: tomato;
   font-style: normal;
 }
 
-html,body {
-  background: url('../images/sky.jpg') no-repeat center center fixed #f2f2f2;
+html {
+  background: url('../images/sky2.jpg') no-repeat center center fixed #afbfd9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,8 +31,11 @@ body {
   color: #333;
   font-size: 12px;
   background: transparent;
-  margin-top: 137px;
+  margin-top: 100px;
   line-height: 25px;
+  &.inner {
+    margin-top: 137px;
+  }
 }
 
 a, button {
@@ -368,6 +371,19 @@ ul {
   & h2, h3, h4, h5, h6 {
     text-align: left;
   }
+  & .whiter p a {
+    text-decoration: underline;
+    &:hover {
+      color:$gisto-color-red;
+      opacity: 1;
+    }
+    &:active {
+      color:#fff;
+      background: $gisto-color-red;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+  }
   & nav ul {
     list-style: none;
     font-size: 16px;
@@ -533,11 +549,19 @@ a.top {
       text-align: center;
     }
   }
-  .boxes {
+
+.under-nav .box,
+.content-container {
     & h1, h2, h3, h4, h5, h6 {
       text-align: left;
     }
   }
+  .side-container {
+    & h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+  }
+
   button {
     width: 60%;
     margin: 0px auto 10px;
@@ -589,10 +613,22 @@ a.top {
     text-align: left;
   }
   body {
-    margin-top: 100px;
+    margin-top: 64px;
+    &.inner {
+      margin-top: 100px;
+    }
   }
-  .video-run:hover i {
-    width: 50%;
+  .video-run i {
+      text-align: center;
+      top: 0;
+      position: absolute;
+      display: none !important;
+      margin: 17% 25%;
+      font-size: 62px;
+      border: 4px solid #555;
+      width: 50%;
+      padding: 15px;
+      border-radius: 10px;
   }
   .download h3 {
     text-align: center;
@@ -606,9 +642,6 @@ a.top {
       text-align: center !important;
     }
   }
-  body {
-    margin-top: 100px;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -621,7 +654,16 @@ a.top {
       text-align: center !important;
     }
   }
-  body {
-    margin-top: 100px;
+  .video-run i {
+    text-align: center;
+    top: 0;
+    position: absolute;
+    display: none !important;
+    margin: 17% 25%;
+    font-size: 62px;
+    border: 4px solid #555;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
   }
 }

@@ -5,8 +5,8 @@
   font-weight: normal;
   font-style: normal; }
 
-html, body {
-  background: url("../images/sky.jpg") no-repeat center center fixed #f2f2f2;
+html {
+  background: url("../images/sky2.jpg") no-repeat center center fixed #afbfd9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,8 +24,10 @@ body {
   color: #333;
   font-size: 12px;
   background: transparent;
-  margin-top: 137px;
+  margin-top: 100px;
   line-height: 25px; }
+  body.inner {
+    margin-top: 137px; }
 
 a, button {
   color: inherit;
@@ -295,6 +297,16 @@ ul {
 
 .inner h2, .inner h3, .inner h4, .inner h5, .inner h6 {
   text-align: left; }
+.inner .whiter p a {
+  text-decoration: underline; }
+  .inner .whiter p a:hover {
+    color: tomato;
+    opacity: 1; }
+  .inner .whiter p a:active {
+    color: #fff;
+    background: tomato;
+    border-radius: 3px;
+    text-decoration: none; }
 .inner nav ul {
   list-style: none;
   font-size: 16px;
@@ -427,8 +439,17 @@ a.top {
     .w-col h1, .w-col h2, .w-col h3, .w-col h4, .w-col h5, .w-col h6 {
       text-align: center; }
 
-  .boxes h1, .boxes h2, .boxes h3, .boxes h4, .boxes h5, .boxes h6 {
+  .under-nav .box h1, .under-nav .box h2, .under-nav .box h3, .under-nav .box h4, .under-nav .box h5, .under-nav .box h6,
+  .content-container h1,
+  .content-container h2,
+  .content-container h3,
+  .content-container h4,
+  .content-container h5,
+  .content-container h6 {
     text-align: left; }
+
+  .side-container h1, .side-container h2, .side-container h3, .side-container h4, .side-container h5, .side-container h6 {
+    text-align: center; }
 
   button {
     width: 60%;
@@ -475,10 +496,21 @@ a.top {
     text-align: left; }
 
   body {
-    margin-top: 100px; }
+    margin-top: 64px; }
+    body.inner {
+      margin-top: 100px; }
 
-  .video-run:hover i {
-    width: 50%; }
+  .video-run i {
+    text-align: center;
+    top: 0;
+    position: absolute;
+    display: none !important;
+    margin: 17% 25%;
+    font-size: 62px;
+    border: 4px solid #555;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px; }
 
   .download h3 {
     text-align: center; } }
@@ -486,10 +518,7 @@ a.top {
   footer {
     text-align: center; }
     footer h3 {
-      text-align: center !important; }
-
-  body {
-    margin-top: 100px; } }
+      text-align: center !important; } }
 @media screen and (max-width: 991px) {
   .under-nav p {
     font-size: 15px !important; }
@@ -499,5 +528,14 @@ a.top {
     footer h3 {
       text-align: center !important; }
 
-  body {
-    margin-top: 100px; } }
+  .video-run i {
+    text-align: center;
+    top: 0;
+    position: absolute;
+    display: none !important;
+    margin: 17% 25%;
+    font-size: 62px;
+    border: 4px solid #555;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px; } }
