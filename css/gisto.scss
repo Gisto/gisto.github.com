@@ -534,8 +534,21 @@ a.top {
   margin-top:0;
 }
 
+.social {
+  text-align: center;
+}
+
+div .fb_reset {
+  display: inline;
+}
+.fb_iframe_widget {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+}
 
 /* Mediaqueries */
+
 @media screen and (max-width: 479px) {
   html {
     background: url('../images/sky_mob.jpg') no-repeat top center fixed #afbfd9;

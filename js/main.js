@@ -29,7 +29,7 @@ $(function () {
         } else {
             this.pause();
             this.currentTime = 0;
-            console.log(this);
+            //console.log(this);
         }
     });
 
