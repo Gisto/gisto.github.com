@@ -6,3 +6,4 @@ download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
 prev_versions: 0.2.3b,0.2.2b,0.2.1b,0.2.0b,0.1.3a,0.1.2a
 pygments: true
+markdown: kramdown
