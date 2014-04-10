@@ -5,6 +5,7 @@ download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
 year: 2014
 pygments: true
+markdown: kramdown
 
 releases:
  - version: 0.2.4b
