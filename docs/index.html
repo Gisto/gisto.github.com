@@ -51,7 +51,7 @@ title: Gisto | Documentation
 
             <h3>Pre-installed requirements:</h3>
 
-            <p> - IDE of your choosing</p>
+            <p> - IDE of your choosing (we use <a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a>)</p>
 
             <p> - <a href="http://git-scm.com/downloads">GIT</a> - distributed version control</p>
 
@@ -60,7 +60,7 @@ title: Gisto | Documentation
             <p> - <a href="https://github.com/rogerwang/node-webkit#downloads">Node-webkit</a> - app runtime based on
                 Chromium and node.js</p>
 
-            <p> - <a href="http://gruntjs.com/">Grunt</a> - the JavaScript Task Runner</p>
+            <p> - <s><a href="http://gruntjs.com/">Grunt</a> - the JavaScript Task Runner</s> <a href="http://gulpjs.com/">gulp.js</a> - The streaming build system</p>
 
             <h3>Set it all to work together:</h3>
 
@@ -75,7 +75,7 @@ title: Gisto | Documentation
             <p>this will install all necessary dependencies.</p>
 
             <p> - Run:</p>
-            {% highlight bash %}grunt --env=dev{% endhighlight %}
+            {% highlight bash %}gulp dev{% endhighlight %}
             <p>This will switch the file layout to development state (all files are concatenated)</p>
 
             <p> - You can download a 'web-server.js' script used in <a
@@ -84,9 +84,6 @@ title: Gisto | Documentation
 
             <p> - Run:</p>
             {% highlight bash %}node web-server.js{% endhighlight %}
-
-            <p> - (optionaly) Run:</p>
-            {% highlight bash %}grunt watch{% endhighlight %}
 
             <p> - Navigate your Chrome/Chromium browser to <a href="http://localhost:8000/app/index.html">http://localhost:8000/app/index.html</a>
             </p>
