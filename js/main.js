@@ -6,7 +6,7 @@ $(function () {
 
     $('body').on('click', '.innsite', function (e) {
         e.preventDefault();
-        $('body').animate({
+        $('html,body').animate({
             scrollTop: $(e.currentTarget.hash).offset().top
         }, 1000);
     });
