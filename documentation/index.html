@@ -16,8 +16,8 @@ title: Documentation | Gisto
                 <h2>NAV</h2>
                 <nav>
                     <ul>
-                        <li><a class="innsite" href="#pre">Preface</a></li>
                         <li><a class="innsite" href="#tags">Tag gist</a></li>
+                        <li><a class="innsite" href="#sharing">Sharing gists</a></li>
                         <li><a class="innsite" href="#devs">For developers</a></li>
                     </ul>
                 </nav>
@@ -25,26 +25,26 @@ title: Documentation | Gisto
 
             <div class="w-col w-col-9 w-clearfix main">
 
-                <h2 id="pre">Preface:</h2>
-
-                <p>Please note: Because Gisto is in early stage of its life - many documented aspects are subject to
-                    change and should not be considered final nor absolute.</p>
-
                 <h2 id="tags" >Tag gist</h2>
 
-                <p>Every gist can be easy tagged by adding hash-tag to it's title.</p>
+                <p>Every gist can be tagged by adding hash-tag to it's title.</p>
 
                 <p>For example: You have a gist titled</p>
                 <pre><span>TEXT</span>Simple html template</pre>
-                <p>and you'd like to tag it with "template" and "html" tags. All you need to do, is to add this tags as
+                <p>and you'd like to tag it with "template" and "html" tags. All you need to do, is to add these tags as
                     hash-tags to the end of the title like so:</p>
                 <pre><span>TEXT</span>Simple html template #html #template</pre>
                 <p>Gisto will then use the hash-tags to display tags in the gist list and search by this tags.</p>
 
+                <h2 id="sharing">Sharing gists between Gisto users</h2>
+                <p>In order to share a gist with another Gisto user all you need to do is open a gist and click
+                share on the top bar and type in the github username of the recipient.</p>
+
+                <p>The recipient will receive a notification that a gist has been sent by you and will be able to view and fork the gist.</p>
+
                 <h2 id="devs">Setting up for development</h2>
                 <h4>Pre-installed requirements:</h4>
                 <ul class="icons-ul">
-                    <li class="icons-li"><i class="icon-chevron-sign-right"></i> IDE of your choosing</li>
                     <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a href="http://git-scm.com/downloads">GIT</a>
                         - distributed version control
                     </li>
@@ -57,6 +57,8 @@ title: Documentation | Gisto
                     </li>
                     <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a href="http://gruntjs.com/">Grunt</a> - the
                         JavaScript Task Runner
+                    </li>
+                    <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a href="http://gruntjs.com/">MongoDB</a> - NoSQL Database
                     </li>
                 </ul>
                 <h2>Set it all to work together:</h2>
@@ -78,10 +80,19 @@ title: Documentation | Gisto
 
                 <p>- Run:</p>
                 <pre><span>SHEL</span>node web-server.js</pre>
-                <p>- (optionaly) Run:</p>
-                <pre><span>SHELL</span>grunt watch</pre>
+
+                <p>- Run the notifications server: (optional)</p>
+                <p>Configure the notification server tokens: you will find 2 config file samples, one in the app directory and another in the server directory.
+                Fill in a random token which matches in both files (This is used for client authentication)</p>
+                <p>Start a mongoDB instance</p>
+                <p>- Run:</p>
+                <pre><span>SHELL</span>mongod</pre>
+                <p>Start the nodejs notifications server</p>
+                <pre><span>SHELL</span>node server/app.js</pre>
+
                 <p>- Navigate your Chrome/Chromium browser to http://localhost:8000/app/index.html</p>
-                <h4><b>Congrats!</b> If all went well, you are now running local version of Gisto in your machine.</h4>
+                <p>Or you may optionally run using node-webkit directly on the app directory using the <a target="_blank" href="https://github.com/rogerwang/node-webkit/wiki/How-to-run-apps">Following instructions from node-webkit</a> </p>
+                <h4><b>Congratulations!</b> If all went well, you are now running local version of Gisto in your machine.</h4>
             </div>
 
 
