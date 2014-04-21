@@ -33,7 +33,24 @@ $(function () {
         }
     });
 
+    $('#fader').css({height: fheight});
+    $('#fader img:gt(0)').hide();
+
+    setInterval(function(){
+        var fheight = $('#fader img:first').height();
+        $('#fader').css({height: fheight});
+        $('#fader :first-child')
+            .fadeTo(500, 0)
+            .next('img')
+            .fadeTo(1500, 1)
+            .end()
+            .appendTo('#fader');
+    }, 4000);
+
+
 });
+
+var fheight = $('#fader img:first').height();
 
 function isMobile() {
     if($(".nav-link").css("display") == "block") {

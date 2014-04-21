@@ -1,4 +1,5 @@
 $gisto-color-red: tomato;
+$gisto-color-blue: skyblue;
 
 @font-face {
   font-family: 'flexo';
@@ -221,6 +222,7 @@ nav {
 .close-video {
   position: absolute;
   top: 10px;
+  z-index: 999;
   right: 10px;
   font-size: 28px;
   color: #fff;
@@ -230,6 +232,18 @@ nav {
   &:hover {
     opacity: 1;
   }
+}
+
+.next-video {
+  @extend .close-video;
+  right: 62px;
+  background: $gisto-color-blue;
+}
+
+.prev-video {
+  @extend .close-video;
+  right: 118px;
+  background: $gisto-color-blue;
 }
 
 header {
@@ -678,5 +692,19 @@ div .fb_reset {
     width: 50%;
     padding: 15px;
     border-radius: 10px;
+  }
+}
+
+#fader {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  top: 0px;
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
   }
 }
