@@ -44,7 +44,7 @@ $(function () {
             }, 2500, function () {
                 console.log('ANIM');
             });
-            interval = window.setInterval(fader, 4000);
+            interval = window.setInterval(fader, 6000);
         } else {
             window.clearInterval(interval);
             interval = null;
