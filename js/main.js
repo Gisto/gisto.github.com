@@ -67,7 +67,13 @@ $(function () {
         _gaq.push(['_trackEvent', 'Gisto Download', 'Downloaded', this.href]);
     });
 
+    $('body').on('click', '.video-run', function() {
+        _gaq.push(['_trackEvent', 'Gisto screenshots run', 'Screenshots']);
+    });
+
+
 });
+
 
 function isMobile() {
     if ($(".nav-link").css("display") == "block") {
