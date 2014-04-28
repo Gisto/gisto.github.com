@@ -1,155 +1,273 @@
 ---
 layout: default
-title: Gisto | Changelog
+name: changelog
+title: Changelog | Gisto
 ---
 
-<div class="container hero">
-    <div class="row">
-        <div class="sixcol">
-            <h1><i class="icon-tasks"></i> Changelog</h1>
-        </div>
-    </div>
+<h1>Changelog</h1>
+
+<section class="whiter boxes">
+
+<div class="w-container content-container">
+<div class="w-row">
+
+<div class="w-col w-col-3 w-clearfix side-container">
+
+    <h2>VERSIONS</h2>
+    <nav>
+        <ul>
+            <li><a class="innsite" href="#v024b">v0.2.4b</a></li>
+            <li><a class="innsite" href="#v023b">v0.2.3b</a></li>
+            <li><a class="innsite" href="#v022b">v0.2.2b</a></li>
+            <li><a class="innsite" href="#v021b">v0.2.1b</a></li>
+            <li><a class="innsite" href="#v020b">v0.2.0b</a></li>
+            <li><a class="innsite" href="#v013a">v0.1.3a</a></li>
+            <li><a class="innsite" href="#v012a">v0.1.2a</a></li>
+        </ul>
+    </nav>
 </div>
 
-<div class="container features main-content">
+<div class="w-col w-col-9 w-clearfix main">
 
-    <div class="row">
+<h2 id="v024b">0.2.4b</h2>
 
-        <div class="fourcol">
-           <h2>Versions</h2>
+<ul class="icons-ul">
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: Editor overflow where pasted text would appear
+        visually broken
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: Better controll of editor size - line based</li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Update: ACE editor with additions to 2 new themes and a
+        few new highlighters
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: When Cancelling a gist edit now the gist is
+        returned to original state
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Emmet and status bar plugins to ace editor</li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Drag & drop support for folders and sub-folders
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Auto completion to ace editor (enable from
+        settings)
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Range selector to control application size in
+        settings. Fixes #69
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Confirmation when deleting a file from a gist.
+        Fixes #76.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Update: Comments are now paginated due to changes in
+        GitHub API.
+    </li>
+</ul>
 
-            <ul>
-                <li><a href="#v0.2.4b">0.2.4b</a></li>
-                <li><a href="#v0.2.3b">0.2.3b</a></li>
-                <li><a href="#v0.2.2b">0.2.2b</a></li>
-                <li><a href="#v0.2.1b">0.2.1b</a></li>
-                <li><a href="#v0.2.0b">0.2.0b</a></li>
-                <li><a href="#v0.1.3a">0.1.3a</a></li>
-                <li><a href="#v0.1.2a">0.1.2a</a></li>
-                <li><a href="#v0.1.1a">0.1.1a</a></li>
-                <li><a href="#v0.1.3a">0.1.0a</a></li>
-                <li></li>
-            </ul>
+<h2 id="v023b">0.2.3b</h2>
 
-        </div>
+<ul class="icons-ul">
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Fix: Fixed Fork gist bug
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Fix: Switch token generation to the new oAuth token generation per application
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        New: Copy gist ID to clipboard
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Small UI/CSS fixes
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Repository maintains
+    </li>
+</ul>
+<h2 id="v022b">0.2.2b</h2>
+<ul class="icons-ul">
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: Text selection is now disabled on
+        appropriate parts of the application, making a more streamlined
+        native feel. Thanks to @tusharmath.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: You are now able to browse gists
+        revisions and link to specific revisions of your gists.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Allow to change the state of an
+        existing gist from private to secret and vice versa.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: Dates meta on single gist toolbar now
+        adopt more responsive design and should not break on small
+        resolutions.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: You can now post and delete (your own)
+        comments on gists within Gisto with markdown preview.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: Removing a gist after editing but not
+        applying any changes now works.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: Notifications now clear when switching
+        between users on a single session.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Added the ability to disable
+        animations. Thanks to @juristr
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Users without gravatar will now user
+        the identicon generated by GitHub
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: Optimized settings service layer
+        performance and will now respond better to slower network
+        connections.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Fix: User preferences do not delete when a
+        user logs out, all the application specific settings are
+        kept.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> New: Added the ability to login with a
+        manual oAuth2 token generated by GitHub Account settings for
+        users that do not wish to user the current authentication system.
+    </li>
+</ul>
 
-        <div class="eightcol last">
+<h2 id="v021b">0.2.1b</h2>
 
-            <h2 id="v0.2.4b">0.2.4 beta</h2>
-            <p> - Fix: Editor overflow where pasted text would appear visually broken</p>
-            <p> - Fix: Better controll of editor size - line based</p>
-            <p> - Update: ACE editor with additions to 2 new themes and a few new highlighters</p>
-            <p> - Fix: When Cancelling a gist edit now the gist is returned to original state</p>
-            <p> - New: Emmet and status bar plugins to ace editor</p>
-            <p> - New: Drag & drop support for folders and sub-folders</p>
-            <p> - New: Auto completion to ace editor (enable from settings)</p>
-            <p> - New: Range selector to control application size in settings. Fixes #69</p>
-            <p> - New: Confirmation when deleting a file from a gist. Fixes #76.</p>
-            <p> - Update: Comments are now paginated due to changes in GitHub API.</p>
-
-            <h2 id="v0.2.3b">0.2.3 beta</h2>
-
-            <h4>Maintains release</h4>
-            <p> - Fix: Fixed Fork gist bug</p>
-            <p> - Fix: Switch token generation to the new oAuth token generation per application</p>
-            <p> - New: Copy gist ID to clipboard</p>
-            <p> - Small UI/CSS fixes</p>
-            <p> - Repository maintains</p>
-
-            <h2 id="v0.2.2b">0.2.2 beta</h2>
-
-            <p> - Fix: Text selection is now disabled on appropriate parts of the application, making a more streamlined native feel. Thanks to @tusharmath.</p>
-            <p> - New: You are now able to browse gists revisions and link to specific revisions of your gists.</p>
-            <p> - New: Allow to change the state of an existing gist from private to secret and vice versa.</p>
-            <p> - Fix: Dates meta on single gist toolbar now adopt more responsive design and should not break on small resolutions.</p>
-            <p> - New: You can now post and delete (your own) comments on gists within Gisto with markdown preview.</p>
-            <p> - Fix: Removing a gist after editing but not applying any changes now works.</p>
-            <p> - Fix: Notifications now clear when switching between users on a single session.</p>
-            <p> - New: Added the ability to disable animations. Thanks to @juristr</p>
-            <p> - New: Users without gravatar will now user the identicon generated by GitHub</p>
-            <p> - Fix: Optimized settings service layer performance and will now respond better to slower network connections.</p>
-            <p> - Fix: User preferences do not delete when a user logs out, all the application specific settings are kept.</p>
-            <p> - New: Added the ability to login with a manual oAuth2 token generated by GitHub Account settings for users that do not wish to user the current authentication system.</p>
+<ul class="icons-ul">
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Bugfix: edit mode now exits properly when logging out inside edit mode
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Bugfix: Fixed bug with gists not saving properly when adding new files to gists at some
+        cases
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Modification: Changed discard notification icon to a trash can to better visualize the
+        intent of
+        the button
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+        Feature: Added 2-factor-authentication (2FA) support to support new GitHub functionality
+    </li>
+</ul>
 
 
-            <h2 id="v0.2.1b">0.2.1 beta</h2>
+<h2 id="v020b">0.2.0b</h2>
 
-            <p> - Bugfix: edit mode now exits properly when logging out inside edit mode.</p>
-            <p> - Bugfix: Fixed bug with gists not saving properly when adding new files to gists at some cases.</p>
-            <p> - Modification: Changed discard notification icon to a trash can to better visualize the intent of the button.</p>
-            <p> - Feature: Added 2-factor-authentication (2FA) support to support new GitHub functionality.</p>
+<ul class="icons-ul">
 
-			<h2 id="v0.2.0b">0.2.0 beta</h2>
-<br />
-            <h4>What's new?</h4>
-
-            <p> - Gisto users can now share gists to each other easily! just hit the send button and enter a github username of the person you want to share with. The user will be immdiatly notified and can view/fork the gist!</p>
-            <p> - Open in plunker, You can now load gists with 1 click into plunkr, if the gist contains web files (html, css, js) it automatically loads and runs them!</p>
-            <p> - Added more themes, syntax modes and new adjustable settings to the editor.</p>
-            <p> - Editors height are now based on file height and minimum and maximum height can be adjusted in the settings.</p>
-            <p> - Added "Edit Mode" for unobstructive file editing. when changes are detected to a file the sidebar closes allowing you to focus on the code.</p>
-            <p> - Added dropdown with file list in single gist view to ease navigation between files.</p>
-            <p> - Added "Copy embed code to clipboard".</p>
-            <p> - Added a delete button to files in create new gist screen.</p>
-            <p> - Added online/offline indicator to show status of notifications server.</p>
-
-            <h4>What's fixed?</h4></p>
-
-            <p> - Fixed 404 bad requests.</p>
-            <p> - Added a check to see if a gist has comments, if there are none a request for the comments isn't sent.</p>
-            <p> - Gists are now saved only when changes are detected to prevent a revision increment with no changes.</p>
-            <p> - Added registration link to GitHub for those who do not yet have a GitHub account.</p>
-            <p> - Fixed positioning of data and revision data in single gist for low resolutions.</p>
-            <p> - Gist tags are now added to the list when creating a new gist.</p>
-            <p> - Gravatar fot cached after user logout and another user logging in right after.</p>
-            <p> - Drag & Drop is now working in create gist.</p>
-            <p> - Added caching to github username and updated gravatar so it can appear in the main screen.</p>
-			
-			
-            <h2 id="v0.1.3a">0.1.3a</h2>
-
-            <p> - Added indication to gist list for stared gists.</p>
-
-            <p> - Notify if empty file is to be saved.</p>
-
-            <p> - Add "Open file at GitHub Gist website" to gist files.</p>
-
-            <p> - Added animations for more aesthetic experience.</p>
-
-            <p> - Small UI fixes.</p>
-
-            <p> - Updated angular UI to angular-ui utils 0.0.3.</p>
-
-            <p> - Updated starred gists to update only when gists finished loading.</p>
-
-            <p> - Improved efficiency when loading multiple gist pages.</p>
-
-            <h2 id="v0.1.2a">0.1.2a</h2>
-
-            <p> - Added version checker</p>
-
-            <p> - Rewrote the save function of application settings to be more versatile.</p>
-
-            <p> - Changed appearance of main application screen.</p>
-
-            <p> - Changed notifications to bottom right corner in order to avoid movement of the entire screen.</p>
-
-            <p> - Updated node-webkit to version 0.6.0/Chromium 28</p>
-
-            <h2 id="v0.1.1a">0.1.1a</h2>
-
-            <p> - Edit mode is now triggered after dragging and dropping a file inside a gist.</p>
-
-            <p> - Deleting single files from gists is now available.</p>
-
-            <p> - Updates are now reflected on gist list</p>
-
-            <h2 id="v0.1.0a">0.1.0a</h2>
-
-            <p> - Initial version - Alpha release</p>
-
-        </div>
-
-    </div>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Gisto users can now share gists to
+        each
+        other easily! just hit the send button and enter a github username of the person you want to
+        share with. The user will be immdiatly notified and can view/fork the gist!
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Open in plunker, You can now load
+        gists
+        with 1 click into plunker, if the gist contains web files (html, css, js) it automatically
+        loads
+        and runs them!
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added more themes, syntax modes and
+        new
+        adjustable settings to the editor.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Editors height are now based on
+        file
+        height and minimum and maximum height can be adjusted in the settings.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added "Edit Mode" for unobstructive
+        file editing. when changes are detected to a file the sidebar closes allowing you to focus
+        on
+        the code.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added drop-down with file list in
+        single gist view to ease navigation between files.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added "Copy embed code to
+        clipboard".
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added a delete button to files in
+        create new gist screen.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added online/offline indicator to
+        show
+        status of notifications server.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Bugfix: 404 bad requests.</li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added a check to see if a gist has
+        comments, if there are none a request for the comments isn't sent.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Gists are now saved only when
+        changes
+        are detected to prevent a revision increment with no changes.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added registration link to GitHub
+        for
+        those who do not yet have a GitHub account.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Bugfix: positioning of data and
+        revision data in single gist for low resolutions.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Gist tags are now added to the list
+        when creating a new gist.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Gravatar not cached after user
+        logout
+        and another user logging in right after.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Drag & Drop is now working in
+        create
+        gist.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added caching to github username
+        and
+        updated gravatar so it can appear in the main screen.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> See more at:
+        http://www.gistoapp.com/changelog/
+    </li>
+</ul>
+<h2 id="v013a">0.1.3a</h2>
+<ul class="icons-ul">
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added indication to gist list for
+        stared gists.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Notify if empty file is to be
+        saved.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Add "Open file at GitHub Gist
+        website"
+        to gist files.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added animations for more aesthetic
+        experience.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Small UI fixes.</li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Updated angular UI to angular-ui
+        utils
+        0.0.3.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Updated starred gists to update
+        only
+        when gists finished loading.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Improved efficiency when loading
+        multiple gist pages.
+    </li>
+</ul>
+<h2 id="v012a">0.1.2a</h2>
+<ul class="icons-ul">
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Added version checker</li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Rewrote the save function of
+        application settings to be more versatile.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Changed appearance of main
+        application
+        screen.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Changed notifications to bottom
+        right
+        corner in order to avoid movement of the entire screen.
+    </li>
+    <li class="icons-li"><i class="icon-chevron-sign-right"></i> Updated node-webkit to version
+        0.6.0/Chromium 28
+    </li>
+</ul>
+</div>
 
 </div>
+</div>
+
+</section>

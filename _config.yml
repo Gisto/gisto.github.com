@@ -1,9 +1,41 @@
 name: Gisto
-gisto_version: 0.2.4b
-gisto_old_version: 0.2.3a
-gisto_build_date: 2014-04-02
+url: http://gistoapp.com
+gisto_build_date: 2014-03-20
 download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
-prev_versions: 0.2.3b,0.2.2b,0.2.1b,0.2.0b,0.1.3a,0.1.2a
+year: 2014
 pygments: true
 markdown: kramdown
+
+releases:
+ - version: 0.2.4b
+ - version: 0.2.3b
+ - version: 0.2.2b
+ - version: 0.2.1b
+ - version: 0.2.0b
+ - version: 0.1.3a
+ - version: 0.1.2a
+
+navigation:
+- text: Home
+  url: /
+- text: Features
+  url: /features/
+- text: Documentation
+  url: /documentation/
+- text: FAQ
+  url: /faq/
+- text: Downloads
+  url: /download/
+
+contributers:
+- name: Maayan Glikser
+  gravatar: https://secure.gravatar.com/avatar/3a615b34ef2060face8fcd481c6377e1?s=80
+  site: www.glikm.com
+  twitter_name: MaayanGlikser
+  description: Software Developer
+- name: Sasha Khamkov
+  gravatar: https://secure.gravatar.com/avatar/7ddad1a9a1c8de452badaf82b6c30c76?s=80
+  site: www.sanusart.com
+  twitter_name: sanusart
+  description: Web Developer

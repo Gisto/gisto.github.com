@@ -1,102 +1,44 @@
+<div class="push"></div>
+<footer>
 
-<div class="container horizontal">
-    <div class="row">
-        <div class="twelvecol last">
-            <p>
-                Who are we?
-            </p>
+    <div class="w-container">
+        <div class="w-row">
+
+            {% for contributer in site.contributers %}
+
+            <div class="w-col w-col-1 w-clearfix">
+                <img src="{{ contributer.gravatar }}" alt="{{ contributer.name }}"/>
+            </div>
+            <div class="w-col w-col-5 w-clearfix">
+                <h3>{{ contributer.name }}</h3>
+
+                <p>
+                    {{ contributer.description }} <br/> <a target="_blank" href="http://{{ contributer.site }}">{{ contributer.site }}</a>
+                    | <i class="icon-twitter"></i> <a target="_blank" href="https://twitter.com/{{ contributer.twitter_name }}">@{{ contributer.twitter_name }}</a>
+                </p>
+            </div>
+
+            {% endfor %}
+
         </div>
     </div>
-</div>
 
+    <p class="txt-center">&copy; {{ site.year }} {{ site.name }}</p>
 
+</footer>
 
+<a href="#top" class="top innsite"><i class="icon-arrow-up"></i></a>
 
-<div class="container contact" id="contact">
-    <div class="row">
-
-        <div class="onecol">
-            <p class="light">
-                <img src="https://secure.gravatar.com/avatar/3a615b34ef2060face8fcd481c6377e1?s=80" alt="Maayan" />
-            </p>
-        </div>
-
-        <div class="fivecol">
-            <h2>Maayan Glikser</h2>
-            <p>
-                Software developer based in Israel <br /> <a target="_blank" href="http://www.glikm.com">www.glikm.com</a> | <i class="icon-twitter"></i> <a target="_blank" href="https://twitter.com/MaayanGlikser">@MaayanGlikser</a></p>
-        </div>
-
-
-
-        <div class="onecol">
-            <p class="light">
-                <img src="https://secure.gravatar.com/avatar/7ddad1a9a1c8de452badaf82b6c30c76?s=80" alt="Sasha" />
-            </p>
-        </div>
-
-        <div class="fivecol last">
-            <h2>Sasha Khamkov</h2>
-            <p>
-                Web designer/developer from Israel <br /> <a target="_blank" href="http://www.sanusart.com">www.sanusart.com</a> | <i class="icon-twitter"></i> <a target="_blank" href="https://twitter.com/sanusart">@sanusart</a></p>
-        </div>
-
-    </div>
-</div>
-
-<script src="/js/jquery-2.0.0.js"></script>
-<script src="/js/jquery.cycle2.min.js"></script>
-<script src="/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="//cdn.jsdelivr.net/g/jquery@1.11,jquery.migrate@1.2.1"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 <script>
-$(function () {
-
-    $('body').on('click', '.innsite', function (e) {
-        e.preventDefault();
-        $.scrollTo(e.currentTarget.hash, 800);
+    WebFont.load({
+        google: {
+            families: ["Open Sans:300,400,600,700,800"]
+        }
     });
-
-    $('body').on('click', '.download-link', function() {
-        _gaq.push(['_trackEvent', 'Gisto Download', 'Downloaded', this.href]);
-    });
-
-/* Determine OS and provide ling respectively */
-
-    var platform = window.navigator.platform,
-        mainText = ' <a class="download innsite" href="#footer">Not running [[OS]]? Click Here</a> | <a class="download" href="/download/">Mirror list</a>',
-        linux = /Linux/g,
-        windows = /Win/g,
-        mac = /Mac/g;
-
-    if (linux.test(platform)) {
-        downloadLink('Linux 64bit', '{{ site.download_url }}/Gisto-{{ site.gisto_version }}-Linux_x86_64.tar.gz','icon-linux');
-    } else if (mac.test(platform)) {
-        downloadLink('OSX 10.7+', '{{ site.download_url }}/Gisto-{{ site.gisto_version }}-OSX_x86.dmg','icon-apple');
-    } else if (windows.test(platform)) {
-        downloadLink('Windows', '{{ site.download_url }}/Gisto-{{ site.gisto_version }}-Win_x86.zip','icon-windows');
-    } else {
-        $('.download').html('<a class="btn links innsite" href="#footer">View download options</a>');
-    }
-
-    function downloadLink(os, link, icon) {
-        $('.download').html('<a class="btn links download-link" href="' + link + '"><i class="' + icon + ' icon-3x down-os"></i> Download for <br /> <strong>' + os + '</strong> </a>' + ' <br />' +mainText.replace('[[OS]]', os) );
-    };
-
-    var prev_versions_tpl = '<h3>%%v%%</h3>' +
-            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-Linux_x86.tar.gz"><i class="icon-linux"></i> version <i>%%v%%</i> for Linux x86</a></p>' +
-            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-Linux_x86_64.tar.gz"><i class="icon-linux"></i> version <i>%%v%%</i> %%v%% for Linux x86_64</a></p>' +
-            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-OSX_x86.dmg"><i class="icon-apple"></i> version <i>%%v%%</i> for Mac</a></p>' +
-            '<p><a href="{{ site.download_url }}/Gisto-%%v%%-Win_x86.zip"><i class="icon-windows"></i> version <i>%%v%%</i> for Windows</a></p>';
-
-    var versions = "{{ site.prev_versions }}".split(',');
-
-    for(var i=0;i<versions.length;i++) {
-        $('.prev_versions').append(prev_versions_tpl.replace(new RegExp("%%v%%", "gm"), versions[i]));
-    }
-
-/*    $('.archive:first').click(function(ev){
-        ev.preventDefault();
-        $('.older').slideDown();
-    });*/
-
-});
 </script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

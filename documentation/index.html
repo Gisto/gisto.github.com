@@ -1,0 +1,118 @@
+---
+layout: default
+name: documentation
+title: Documentation | Gisto
+---
+
+<h1>Documentation</h1>
+
+<section class="whiter boxes">
+
+
+    <div class="w-container content-container">
+        <div class="w-row">
+
+            <div class="w-col w-col-3 w-clearfix side-container">
+                <h2>NAV</h2>
+                <nav>
+                    <ul>
+                        <li><a class="innsite" href="#tags">Tag gist</a></li>
+                        <li><a class="innsite" href="#sharing">Sharing gists</a></li>
+                        <li><a class="innsite" href="#devs">For developers</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="w-col w-col-9 w-clearfix main">
+
+                <h2 id="tags">Tag gist</h2>
+
+                <p>Every gist can be tagged by adding hash-tag to it's title.</p>
+
+                <p>For example: You have a gist titled</p>
+                <pre><span>TEXT</span>Simple html template</pre>
+                <p>and you'd like to tag it with "template" and "html" tags. All you need to do, is to add these tags as
+                    hash-tags to the end of the title like so:</p>
+                <pre><span>TEXT</span>Simple html template #html #template</pre>
+                <p>Gisto will then use the hash-tags to display tags in the gist list and search by this tags.</p>
+
+                <h2 id="sharing">Sharing gists between Gisto users</h2>
+
+                <p>In order to share a gist with another Gisto user all you need to do is open a gist and click
+                    share on the top bar and type in the github username of the recipient.</p>
+
+                <p>The recipient will receive a notification that a gist has been sent by you and will be able to view
+                    and fork the gist.</p>
+
+                <h2 id="devs">Setting up for development</h2>
+                <h4>Pre-installed requirements:</h4>
+                <ul class="icons-ul">
+                    <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a href="http://git-scm.com/downloads">GIT</a>
+                        - distributed version control
+                    </li>
+                    <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a
+                            href="http://nodejs.org/">Node.js</a> -
+                        server-side software system written in JavaScript
+                    </li>
+                    <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a
+                            href="https://github.com/rogerwang/node-webkit#downloads">Node-webkit</a> - app runtime
+                        based on Chromium and node.js
+                    </li>
+                    <li class="icons-li"><i class="icon-chevron-sign-right"></i>
+                        <s><a href="http://gruntjs.com/">Grunt</a> - the
+                            JavaScript Task Runner</s> <a href="http://gulpjs.com/">gulp.js</a> - The streaming build
+                        system
+
+                    </li>
+                    <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a
+                            href="http://gruntjs.com/">MongoDB</a> - NoSQL Database
+                    </li>
+                </ul>
+                <h2>Set it all to work together:</h2>
+
+                <p><i class="icon-chevron-sign-right"></i> Clone the latest source with the following command to a
+                    directory of your choice:</p>
+                <pre><span>SHELL</span>git clone https://github.com/Gisto/Gisto.git</pre>
+                <p><i class="icon-chevron-sign-right"></i> Enter into the newly created directory:</p>
+                <pre><span>SHELL</span>cd Gisto</pre>
+                <p><i class="icon-chevron-sign-right"></i> Run:</p>
+                <pre><span>SHELL</span>npm install</pre>
+                <p>this will install all necessary dependencies.</p>
+
+                <p><i class="icon-chevron-sign-right"></i> Run:</p>
+                <pre><span>SHELL</span>gulp dev</pre>
+                <p>This will switch the file layout to development state (all files are concatenated)</p>
+
+                <p class="center-holder"> - or - </p>
+                <pre><span>SHELL</span>gulp</pre>
+                <p>This will switch the file layout to development state, show current version and start the server</p>
+
+                <p><blockquote><i class="icon-info-sign"></i> See <a href="https://github.com/Gisto/Gisto/blob/master/gulpfile.js">gulpfile.js</a> fore more details, usage is documented in comments.</blockquote></p>
+
+                <p><i class="icon-chevron-sign-right"></i> Run the notifications server: (optional)</p>
+
+                <p>Configure the notification server tokens: you will find 2 config file samples, one in the <i>app</i>
+                    directory and another in the <i>server</i> directory.
+                    Fill in a random token which matches in both files (This is used for client authentication)</p>
+
+                <p>Start a mongoDB instance</p>
+
+                <p><i class="icon-chevron-sign-right"></i> Run:</p>
+                <pre><span>SHELL</span>mongod</pre>
+                <p>Start the nodejs notifications server</p>
+                <pre><span>SHELL</span>node server/app.js</pre>
+
+                <p><i class="icon-chevron-sign-right"></i> Navigate your Chrome/Chromium browser to
+                    <a href="http://localhost:8080">http://localhost:8080</a></p>
+
+                <p>Or you may optionally run using node-webkit directly on the app directory using the <a
+                        target="_blank" href="https://github.com/rogerwang/node-webkit/wiki/How-to-run-apps">Following
+                    instructions from node-webkit</a></p>
+                <h4><b>Congratulations!</b> If all went well, you are now running local version of Gisto in your
+                    machine.</h4>
+            </div>
+
+
+        </div>
+    </div>
+</section>
