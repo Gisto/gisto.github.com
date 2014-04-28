@@ -8,7 +8,7 @@ $(function () {
     $('body').on('click', '.innsite', function (e) {
         e.preventDefault();
         $('html,body').animate({
-            scrollTop: $(e.currentTarget.hash).offset().top
+            scrollTop: $(e.currentTarget.hash).offset().top -50
         }, 1000);
     });
 
@@ -85,7 +85,7 @@ function isMobile() {
 //console.log('mobile', isMobile());
 
 $(document).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 100) {
         $('.top').fadeIn(1000);
         if (isMobile() !== true) {
             $('header h1').slideUp('slow');
