@@ -698,6 +698,7 @@ div .fb_reset {
 #fader {
   position: relative;
   width: 100%;
+  max-width: 1366px;
   margin: 0 auto;
   top: 0px;
   text-align: center;
@@ -709,4 +710,30 @@ div .fb_reset {
     width: 100%;
     height: auto;
   }
+}
+
+.page-docs,
+.page-faq {
+  & h2 {
+    border-top: 1px dotted #ccc;
+    padding: 50px 0px 0px 0px;
+    &:first-child {
+      border-top: none;
+      padding: 0px 0px 0px 0px;
+    }
+  }
+}
+
+.home .box {
+  font-size: 0.9em;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 15px;
+  font-style: italic;
+  color: $gisto-color-red;
+  border-left: 5px solid $gisto-color-red;
+  padding: 10px 0px 10px 10px;
+  background: #f2f2f2;
 }

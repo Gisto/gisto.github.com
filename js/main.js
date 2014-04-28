@@ -35,6 +35,7 @@ $(function () {
         }
     });
     var interval = null;
+
     function Slides(play) {
         if (play === 'play') {
             var fheight = $('#fader img:first').height();
@@ -54,20 +55,20 @@ $(function () {
 
     function fader() {
         $('#fader :first-child')
-            .fadeTo(500, 0)
+            .fadeTo(1000,0)
             .next('img')
-            .fadeTo(1500, 1)
+            .fadeTo(1000,1)
             .end()
             .appendTo('#fader');
         console.log('slide run');
     }
 
 
-    $('body').on('click', '.download', function() {
+    $('body').on('click', '.download', function () {
         _gaq.push(['_trackEvent', 'Gisto Download', 'Downloaded', this.href]);
     });
 
-    $('body').on('click', '.video-run', function() {
+    $('body').on('click', '.video-run', function () {
         _gaq.push(['_trackEvent', 'Gisto screenshots run', 'Screenshots']);
     });
 

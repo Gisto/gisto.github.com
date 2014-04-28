@@ -6,7 +6,7 @@ title: Documentation | Gisto
 
 <h1>Documentation</h1>
 
-<section class="whiter boxes">
+<section class="whiter boxes page-docs">
 
 
     <div class="w-container content-container">
@@ -17,6 +17,7 @@ title: Documentation | Gisto
                 <nav>
                     <ul>
                         <li><a class="innsite" href="#tags">Tag gist</a></li>
+                        <li><a class="innsite" href="#publicprivate">Change gist state secret / public</a></li>
                         <li><a class="innsite" href="#sharing">Sharing gists</a></li>
                         <li><a class="innsite" href="#devs">For developers</a></li>
                     </ul>
@@ -35,6 +36,11 @@ title: Documentation | Gisto
                     hash-tags to the end of the title like so:</p>
                 <pre><span>TEXT</span>Simple html template #html #template</pre>
                 <p>Gisto will then use the hash-tags to display tags in the gist list and search by this tags.</p>
+
+                <h2 id="publicprivate">Change gist state secret / public</h2>
+
+                <p>Gist state can be changed from "secret" to public and vise-versa via the <i class="icon-lock"></i> or <i class="icon-unlock"></i> on the top panel when viewing gist.</p>
+                <p><blockquote>Note! That all comments and revisions of this gist will be lost upon this action.</blockquote></p>
 
                 <h2 id="sharing">Sharing gists between Gisto users</h2>
 
@@ -87,7 +93,7 @@ title: Documentation | Gisto
                 <pre><span>SHELL</span>gulp</pre>
                 <p>This will switch the file layout to development state, show current version and start the server</p>
 
-                <p><blockquote><i class="icon-info-sign"></i> See <a href="https://github.com/Gisto/Gisto/blob/master/gulpfile.js">gulpfile.js</a> fore more details, usage is documented in comments.</blockquote></p>
+                <p><blockquote>See <a href="https://github.com/Gisto/Gisto/blob/master/gulpfile.js">gulpfile.js</a> fore more details, usage is documented in comments.</blockquote></p>
 
                 <p><i class="icon-chevron-sign-right"></i> Run the notifications server: (optional)</p>
 

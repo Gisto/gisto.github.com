@@ -3,13 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Maayan Glikser  --  Dev --  @MaayanGlikser
+    Sasha Khamkov   --  Dev --  @sanusart
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    AngularJS, jQuery, Jekyll, SCSS
+
