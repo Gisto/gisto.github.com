@@ -4,8 +4,11 @@ gisto_build_date: 2014-03-20
 download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
 year: 2014
-pygments: true
+highlighter: true
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
 
 releases:
  - version: 0.2.4b
