@@ -29,7 +29,7 @@
     <script type="text/javascript">stLight.options({publisher: "6ccdc1be-66dc-486b-bd54-e41e194e96d5", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </head>
-<body class="{% if page.name == 'home'%}home{% else %}inner{% endif %}">
+<body class="is-page-{{page.page_name}} {% if page.page_name == 'home'%}home{% else %}inner{% endif %}">
 
 
 <header class="section header">
