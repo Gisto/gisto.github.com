@@ -3,6 +3,7 @@ url: http://gistoapp.com
 gisto_build_date: 2014-06-29
 download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
+nightly_url: http://build.gistoapp.com
 year: 2014
 highlighter: true
 markdown: kramdown
