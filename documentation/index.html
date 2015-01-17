@@ -135,8 +135,11 @@ title: Documentation | Gisto
                 <p><i class="icon-chevron-sign-right"></i> Change to build directory:</p>
                 <pre><span>SHELL</span>cd build/script</pre>
 
+                <p><i class="icon-chevron-sign-right"></i> View build script help/usage:</p>
+                <pre><span>SHELL</span>./build/script/node-webkit-build.sh --help</pre>
+                
                 <p><i class="icon-chevron-sign-right"></i> Execute the build script:</p>
-                <pre><span>SHELL</span>./node-webkit-build.sh --build</pre>
+                <pre><span>SHELL</span>./build/script/node-webkit-build.sh --src=$DRONE_BUILD_DIR/dist --name=gisto --win-icon=$DRONE_BUILD_DIR/app/icon.ico --osx-icon=$DRONE_BUILD_DIR/build/resources/osx/gisto.icns --osx-plist=$DRONE_BUILD_DIR/build/resources/osx/Info.plist --build</pre>
 
             </div>
 
