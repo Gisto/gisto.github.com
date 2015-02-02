@@ -75,8 +75,8 @@ p {
   font-weight: 700;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'flexo','Open Sans', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'flexo', 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -185,7 +185,7 @@ nav {
 }
 
 .hero-video {
-  display:none;
+  display: none;
 }
 
 .video-run {
@@ -201,7 +201,7 @@ nav {
   }
   & i {
     text-align: center;
-    top:0;
+    top: 0;
     position: absolute;
     display: none !important;
     margin: 14% 25%;
@@ -388,11 +388,11 @@ ul {
   & .whiter p a {
     text-decoration: underline;
     &:hover {
-      color:$gisto-color-red;
+      color: $gisto-color-red;
       opacity: 1;
     }
     &:active {
-      color:#fff;
+      color: #fff;
       background: $gisto-color-red;
       border-radius: 3px;
       text-decoration: none;
@@ -517,9 +517,9 @@ pre {
 
 .main {
   & p a, ul a {
-    color:$gisto-color-red;
+    color: $gisto-color-red;
     &:hover {
-      color:skyblue;
+      color: skyblue;
     }
   }
 }
@@ -541,11 +541,11 @@ a.top {
 }
 
 .hero-video video {
-  width:100%;
+  width: 100%;
 }
 
 .features-boxes {
-  margin-top:0;
+  margin-top: 0;
 }
 
 .social {
@@ -555,6 +555,7 @@ a.top {
 div .fb_reset {
   display: inline;
 }
+
 .fb_iframe_widget {
   display: inline-block;
   position: relative;
@@ -577,8 +578,8 @@ div .fb_reset {
     }
   }
 
-.under-nav .box,
-.content-container {
+  .under-nav .box,
+  .content-container {
     & h1, h2, h3, h4, h5, h6 {
       text-align: left;
     }
@@ -633,7 +634,7 @@ div .fb_reset {
   }
 
   footer .w-col.w-col-1.w-clearfix {
-    margin:40px 0 0 0;
+    margin: 40px 0 0 0;
   }
 
   pre {
@@ -646,16 +647,16 @@ div .fb_reset {
     }
   }
   .video-run i {
-      text-align: center;
-      top: 0;
-      position: absolute;
-      display: none !important;
-      margin: 17% 25%;
-      font-size: 62px;
-      border: 4px solid #555;
-      width: 50%;
-      padding: 15px;
-      border-radius: 10px;
+    text-align: center;
+    top: 0;
+    position: absolute;
+    display: none !important;
+    margin: 17% 25%;
+    font-size: 62px;
+    border: 4px solid #555;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
   }
   .download h3 {
     text-align: center;
@@ -736,4 +737,17 @@ blockquote {
   border-left: 5px solid $gisto-color-red;
   padding: 10px 0px 10px 10px;
   background: #f2f2f2;
+}
+
+.post {
+  & h3 {
+    text-align: center;
+  }
+  & img {
+    position: relative;
+    float: left;
+    margin: 5px 20px 20px 0;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px #555;
+  }
 }

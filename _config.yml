@@ -31,6 +31,8 @@ navigation:
   url: /documentation/
 - text: FAQ
   url: /faq/
+- text: Blog
+  url: /blog/
 - text: Downloads
   url: /download/
 
