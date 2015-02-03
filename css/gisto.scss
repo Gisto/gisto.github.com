@@ -1,5 +1,6 @@
 $gisto-color-red: tomato;
 $gisto-color-blue: skyblue;
+$gisto-color-grey: grey;
 
 @font-face {
   font-family: 'flexo';
@@ -460,8 +461,19 @@ ul {
 .download {
   padding: 20px;
   border: 1px solid #fff;
-  & h4 {
+  & h4, & h3 {
     text-align: center;
+  }
+  & a {
+    color:$gisto-color-grey;
+//    border: 1px solid $gisto-color-grey;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 3px;
+    &:hover {
+      color:#fff;
+      background: #555;
+    }
   }
   &:hover {
     padding: 20px;

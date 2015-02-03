@@ -364,8 +364,16 @@ ul {
 .download {
   padding: 20px;
   border: 1px solid #fff; }
-  .download h4 {
+  .download h4, .download h3 {
     text-align: center; }
+  .download a {
+    color: grey;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 3px; }
+    .download a:hover {
+      color: #fff;
+      background: #555; }
   .download:hover {
     padding: 20px;
     border: 1px dashed #ccc;

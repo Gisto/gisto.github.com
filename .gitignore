@@ -51,4 +51,5 @@ local.properties
 
 ### Jekyll ###
 _site/
-npm-debug.logGemfile.lock
+npm-debug.log
+Gemfile.lock
