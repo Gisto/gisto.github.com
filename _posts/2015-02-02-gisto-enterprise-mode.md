@@ -5,12 +5,10 @@ title: "Gisto enterprise mode"
 description: ""
 post_title: "All you need to know about working with Gisto on enterprise endpoint"
 author: "Gisto team"
-image: "/images/enterprise.png"
+image: "/images/enterprise.gif"
 excerpt_separator: "<!--more-->"
 
 ---
-
-
 
 In a past few month we've been working hard on GitHub enterprise integration into Gisto as well as few more cool features, but let's leave that for another post.
 
@@ -21,6 +19,8 @@ Instead, let's concentrate on enterprise integration and all that boils down to 
 Enterprise mode in Gisto allows connecting to your GitHub Enterprise (on-premise) instead of public GitHub.
 
 In both modes you can use the same features, the only thing that changes is the endpoint of connection.
+
+
 
 ## So how does it works now?
 
@@ -37,6 +37,6 @@ Fortunately relatively small portion of Gisto functionality was disabled in "Ent
 
 ## Gisto in "Enterprise mode" can be totally independent 
 
-Ye can even run gist sharing notification server from your own server if you want. Detailed instruction is available in
+You can even run gist sharing notification server from your own server if you want. Detailed instruction is available in
    [Documentation](/documentation) section.
 
