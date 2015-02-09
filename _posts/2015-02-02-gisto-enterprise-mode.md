@@ -3,40 +3,67 @@
 layout: "post"
 title: "Gisto enterprise mode"
 description: ""
-post_title: "All you need to know about working with Gisto on enterprise endpoint"
+post_title: "All you need to know about working with Gisto on GitHub Enterprise"
 author: "Gisto team"
-image: "/images/enterprise.gif"
 excerpt_separator: "<!--more-->"
 
 ---
 
-In a past few month we've been working hard on GitHub enterprise integration into Gisto as well as few more cool features, but let's leave that for another post.
+In a past few month we've been working hard on GitHub Enterprise integration into Gisto as well as few more cool features, but let's leave that for another post.
 
-Instead, let's concentrate on enterprise integration and all that boils down to that.
+Instead, let's concentrate on enterprise integration and everything that boils down to that.
 
 <!--more-->
 
 Enterprise mode in Gisto allows connecting to your GitHub Enterprise (on-premise) instead of public GitHub.
 
-In both modes you can use the same features, the only thing that changes is the endpoint of connection.
+Gisto works the same it does as it did until now except for a small subset of features that do not make sense on GitHub Enterprise.
 
+## How can I use it?
 
+When you open Gisto you will notice you will have a GitHub Enterprise toggle button, this is where you can choose to connect to
+either public GitHub or your Enterprise instance.
 
-## So how does it works now?
+When turning on GitHub Enterprise for the first time you will automatically be redirected to the enterprise settings page.
+We ask for a few details so we can connect to your GitHub Instance.
 
-The approach we chosen is to let user select endpoint at the log-in screen, this way you can switch fast between enterprise user and public account.
+* API Url - Your Enterprise api URL usually /api/v3 after your instance url which you use to access your Enterprise instance.
+* Client ID
+* Client Secret
 
-Enterprise endpoint need to be set ahead (but only once), after that it is saved in the settings.
+Client ID and Client Secret can be acquired by creating an application in your GitHub Enterprise account settings page.
 
-Just log-in to ether mode, and done. You can easily switch between the modes.  
+![Account settings](/images/blog/post-enterprise-mode/step1.png)
 
-## What's the difference regarding the features?
+Click on Applications on the left sidebar
 
-To tell the truth I was thinking there will be much more differences and we'll have to cut out some features. 
-Fortunately relatively small portion of Gisto functionality was disabled in "Enterprise mode".
+![Account settings](/images/blog/post-enterprise-mode/step2.png)
 
-## Gisto in "Enterprise mode" can be totally independent 
+Under the Developer Applications click Register new application
 
-You can even run gist sharing notification server from your own server if you want. Detailed instruction is available in
-   [Documentation](/documentation) section.
+![Developer Applications](/images/blog/post-enterprise-mode/step3.png)
+
+In the following screen fill the application name as Gisto
+
+Homepage URL and Authorization callback URL fields may be anything so you can just insert something like http://test.com
+
+![Register Application](/images/blog/post-enterprise-mode/step4.png)
+
+Once you created the application you should see the Client ID and Client Secret like in the following screenshot
+
+![Application Details](/images/blog/post-enterprise-mode/step5.png)
+
+**Note:** You can share your Client ID and Client Secret with other members of your organization, please note that to allow
+notifications being sent only on your organization we had to differentiate between organizations based on the Client ID.
+
+This means that if you want to share a gist with another co-worker you should use the same Client ID.
+
+## Sharing and notifications under a private notifications server
+
+Currently, all notifications are handled by our servers, the only things we actually send are your username, client id and gist Id.
+
+If you do not want this data shared across the public internet or have no access to internet from your workstation you can run
+the notifications server in premise and connect to that server.
+
+You can see all the detailed instructions on how to get the notifications server up and running at the [Documentation](/documentation) section.
 
