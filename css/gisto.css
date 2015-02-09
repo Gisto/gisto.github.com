@@ -610,5 +610,10 @@ blockquote {
     box-shadow: 0px 4px 10px #555;
     margin: 5px 0px 20px 20px;
     width: auto !important; }
+.post ul li {
+  list-style-type: square;
+  margin: 0px 0px 0px 16px;
+  list-style-position: outside;
+  text-align: left; }
 
 /*# sourceMappingURL=gisto.css.map */
