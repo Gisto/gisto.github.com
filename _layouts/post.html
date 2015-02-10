@@ -23,6 +23,8 @@ layout: post
 
             {{content}}
 
+            <br />
+
             <a href="javascript:sharePost('http://twitter.com/share?url={{site.url}}{{page.url}}&amp;text={{page.title}} @gistoapp','Sahare {{page.title}} via Twitter',520,350);" class="btn bg-grey twitter txt-white"><i class="icon-twitter"></i></a>
             <a href="javascript:sharePost('http://www.facebook.com/sharer.php?p[title]=Gisto&p[summary]={{page.title}}&p[url]={{site.url}}{{page.url}}{%if page.image %}&p[images][0]={{site.url}}{{page.image}}{% else %}{% endif %}','Sahare {{page.title}} via Facebook',520,350);" class="btn bg-grey fb txt-white"><i class="icon-facebook"></i></a>
             <a href="javascript:sharePost('https://plus.google.com/share?url={{site.url}}{{page.url}}','Sahare {{page.title}} via Google+',520,350);" class="btn bg-grey gplus txt-white"><i class="icon-google-plus"></i></a>
@@ -40,7 +42,7 @@ layout: post
 <section class="whiter boxes">
 
     <div class="w-container main content-container">
-        <div class="w-row">
+        <div class="w-row w-col">
             <div id="disqus_thread"></div>
             <script type="text/javascript">
                 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

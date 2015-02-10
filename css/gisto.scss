@@ -761,4 +761,10 @@ blockquote {
       width: auto !important;
     }
   }
+  & ul li {
+    list-style-type: square;
+    margin: 0px 0px 0px 16px;
+    list-style-position: outside;
+    text-align: left;
+  }
 }

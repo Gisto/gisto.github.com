@@ -5,7 +5,7 @@ title: "Gisto enterprise mode"
 description: ""
 post_title: "All you need to know about working with Gisto on GitHub Enterprise"
 author: "Gisto team"
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 
 ---
 
@@ -31,9 +31,9 @@ either public GitHub or your Enterprise instance.
 When turning on GitHub Enterprise for the first time you will automatically be redirected to the enterprise settings page.
 We ask for a few details so we can connect to your GitHub Instance.
 
-* API Url - Your Enterprise api URL usually /api/v3 after your instance url which you use to access your Enterprise instance.
-* Client ID
-* Client Secret
+- API Url - Your Enterprise api URL usually /api/v3 after your instance url which you use to access your Enterprise instance.
+- Client ID
+- Client Secret
 
 Client ID and Client Secret can be acquired by creating an application in your GitHub Enterprise account settings page.
 
@@ -57,7 +57,7 @@ Once you created the application you should see the Client ID and Client Secret 
 
 ![Application Details](/images/blog/post-enterprise-mode/step5.png)
 
-**Important Note:** You can share your Client ID and Client Secret with other members of your organization, please note that to allow
+> **Important Note:** You can share your Client ID and Client Secret with other members of your organization, please note that to allow
 notifications being sent only on your organization we had to differentiate between organizations based on the Client ID.
 
 This means that if you want to share a gist with another co-worker you should use the same Client ID.
@@ -70,5 +70,5 @@ description.
 If you do not want this data shared across the public internet or have no access to internet from your workstation you can run
 the notifications server in premise and connect to that server.
 
-You can see all the detailed instructions on how to get the notifications server up and running at the [Documentation](/documentation) section.
+> You can see all the detailed instructions on how to get the notifications server up and running at the [Documentation](/documentation) section.
 
