@@ -9,14 +9,19 @@ excerpt_separator: <!--more-->
 
 ---
 
-In a past few month we've been working hard on GitHub Enterprise integration into Gisto as well as few more cool features, but let's leave that for another post.
-Instead, let's concentrate on enterprise integration and everything that boils down to that.
+In the past few months we've been working hard on the next major release of Gisto which come with a variety of cool features.
+This time we want to focus on a major feature that we've added this release. GitHub Enterprise support.
+
+For those of you who would love to save snippets of your work but could not do so due to company regulations, or would simply
+like to have these snippets available to your co-workers outside of public GitHub, this is for you.
+
+You can now connect to your private GitHub Enterprise using Gisto.
 
 <!--more-->
 
 Enterprise mode in Gisto allows connecting to your GitHub Enterprise (on-premise) instead of public GitHub.
 
-Gisto works the same it does as it did until now except for a small subset of features that do not make sense on GitHub Enterprise.
+Gisto works the same as it did until now except for a small subset of features that do not make sense on GitHub Enterprise.
 
 ## How can I use it?
 
@@ -52,14 +57,15 @@ Once you created the application you should see the Client ID and Client Secret 
 
 ![Application Details](/images/blog/post-enterprise-mode/step5.png)
 
-> **Note:** You can share your Client ID and Client Secret with other members of your organization, please note that to allow
+> **Important Note:** You can share your Client ID and Client Secret with other members of your organization, please note that to allow
 notifications being sent only on your organization we had to differentiate between organizations based on the Client ID.
 
 This means that if you want to share a gist with another co-worker you should use the same Client ID.
 
 ## Sharing and notifications under a private notifications server
 
-Currently, all notifications are handled by our servers, the only things we actually send are your username, client id and gist Id.
+Currently, all notifications are handled by our servers, the only things we actually send are your username, client id, gist Id and gist
+description.
 
 If you do not want this data shared across the public internet or have no access to internet from your workstation you can run
 the notifications server in premise and connect to that server.
