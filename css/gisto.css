@@ -97,6 +97,18 @@ h6 {
   line-height: 18px;
   font-weight: 100; }
 
+code {
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  background: beige;
+  font-family: monospace;
+  position: relative;
+  color: #555;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #fff;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px #ccc inset; }
+
 .button, .btn {
   display: inline-block;
   padding: 4px 15px;
@@ -391,6 +403,7 @@ pre {
   position: relative;
   color: #555;
   font-size: 15px;
+  text-shadow: 1px 1px 1px #fff;
   border-radius: 3px;
   box-shadow: 0px 5px 10px #ccc inset; }
   pre span {

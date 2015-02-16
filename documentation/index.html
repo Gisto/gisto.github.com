@@ -67,18 +67,17 @@ title: Documentation | Gisto
                         based on Chromium and node.js
                     </li>
                     <li class="icons-li"><i class="icon-chevron-sign-right"></i>
-                        <s><a href="http://gruntjs.com/">Grunt</a> - the
-                            JavaScript Task Runner</s> <a href="http://gulpjs.com/">gulp.js</a> - The streaming build
+                        <a href="http://gulpjs.com/">gulp.js</a> - The streaming build
                         system
 
                     </li>
                     <li class="icons-li"><i class="icon-chevron-sign-right"></i> <a
-                            href="http://gruntjs.com/">MongoDB</a> - NoSQL Database
+                            href="http://gruntjs.com/">MongoDB</a> - NoSQL Database (Optional - used only by notification server)
                     </li>
                 </ul>
                 <h2>Set it all to work together:</h2>
 
-                <p><i class="icon-chevron-sign-right"></i> Clone the latest source with the following command to a
+                <p><i class="icon-chevron-sign-right"></i> Clone the latest source (and submodules) with the following command to a
                     directory of your choice:</p>
                 <pre><span>SHELL</span>git clone --recursive https://github.com/Gisto/Gisto.git</pre>
 
@@ -94,10 +93,9 @@ title: Documentation | Gisto
 
                 <p><blockquote>See <a href="https://github.com/Gisto/Gisto/blob/master/gulpfile.js">gulpfile.js</a> fore more details, usage is documented in comments.</blockquote></p>
 
-                <p><i class="icon-chevron-sign-right"></i> Create app <b>config.json</b> (example can be found <a href="https://github.com/Gisto/Gisto/blob/master/app/config.json.sample">here</a>)</p>
+                <p><i class="icon-chevron-sign-right"></i> Rename <code>app/config.json.sample</code> file to <code>app/config.json</code> and fill required fields</p>
 
                 <pre><span>JSON</span>{
-    "server_token": "",
     "client_id":"",
     "client_secret":""
 }</pre>
@@ -106,48 +104,33 @@ title: Documentation | Gisto
 
                 <p><i class="icon-chevron-sign-right"></i> Run Gisto</p>
 
-                <pre><span>SHELL</span>/path/to/node-webkit/nw ./app</pre>
+                <pre><span>SHELL</span>npm start</pre>
+
+                <p>This will run Gisto via node-webkit (pre-installed by npm as dependency)</p>
 
                 <p><i class="icon-chevron-sign-right"></i> Run the notifications server: (optional)</p>
 
-                <p>Configure the notification server tokens: you will find 2 config file samples, one in the <i>app</i>
-                    directory (mentioned above) and another in the <i>server</i> directory.
-                    Fill in a random "server_token" which matches in both files (This is used for client authentication)</p>
+                <p>Configure the notification server connection string: you will find <code>config.js.sample</code> sample file, in the <i>server</i>
+                    directory. Rename it to <code>config.js</code> and fill in the "connectionString" which is the full connection string of mongo e.g. <code>mongodb://server/collection</code></p>
+
+                <pre><span>JavaScript</span>exports.connectionString = '';</pre>
 
                 <p>Start a mongoDB instance</p>
 
                 <p><i class="icon-chevron-sign-right"></i> Run:</p>
                 <pre><span>SHELL</span>mongod</pre>
+
                 <p>Start the nodejs notifications server</p>
                 <pre><span>SHELL</span>node server/app.js</pre>
 
-                <p><i class="icon-chevron-sign-right"></i> Navigate your Chrome/Chromium browser to
-                    <a href="http://localhost:8080">http://localhost:8080</a></p>
-
-                <p>Or you may optionally run using node-webkit directly on the app directory using the <a
-                        target="_blank" href="https://github.com/rogerwang/node-webkit/wiki/How-to-run-apps">Following
-                    instructions from node-webkit</a></p>
                 <h4><b>Congratulations!</b> If all went well, you are now have set-up local version of Gisto in your
                     machine.</h4>
 
                 <h2>Build</h2>
 
-                <p><i class="icon-chevron-sign-right"></i> Change to build directory:</p>
-                <pre><span>SHELL</span>cd build/script</pre>
-
                 <p><i class="icon-chevron-sign-right"></i> View build script help/usage:</p>
-                <pre><span>SHELL</span>./build/script/node-webkit-build.sh --help</pre>
+                <pre><span>SHELL</span>./build/script/nwjs-build.sh --help</pre>
                 
-                <p><i class="icon-chevron-sign-right"></i> Execute the build script:</p>
-                <pre><span>SHELL</span>./build/script/node-webkit-build.sh \
-                    --src=/PATH-TO-GISTO-PROJECT-ROOT/dist \
-                    --name=gisto \
-                    --win-icon=/PATH-TO-GISTO-PROJECT-ROOT/app/icon.ico \
-                    --osx-icon=/PATH-TO-GISTO-PROJECT-ROOT/build/resources/osx/gisto.icns \
-                    --osx-plist=/PATH-TO-GISTO-PROJECT-ROOT/build/resources/osx/Info.plist \
-                    --build</pre>
-<p><blockquote>Remember to replace "PATH-TO-GISTO-PROJECT-ROOT" with yours.</blockquote></p>
-
             </div>
 
 
