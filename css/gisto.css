@@ -97,6 +97,18 @@ h6 {
   line-height: 18px;
   font-weight: 100; }
 
+code {
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  background: beige;
+  font-family: monospace;
+  position: relative;
+  color: #555;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #fff;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px #ccc inset; }
+
 .button, .btn {
   display: inline-block;
   padding: 4px 15px;
@@ -399,6 +411,7 @@ pre {
   position: relative;
   color: #555;
   font-size: 15px;
+  text-shadow: 1px 1px 1px #fff;
   border-radius: 3px;
   box-shadow: 0px 5px 10px #ccc inset; }
   pre span {
@@ -604,10 +617,24 @@ blockquote {
 .post h3 {
   text-align: center; }
 .post img {
-  position: relative;
-  float: left;
-  margin: 5px 20px 20px 0;
   border-radius: 3px;
   box-shadow: 0px 4px 10px #555; }
+  .post img.alignleft {
+    float: left;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px #555;
+    margin: 5px 20px 20px 0px;
+    width: auto !important; }
+  .post img.alignright {
+    float: right;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px #555;
+    margin: 5px 0px 20px 20px;
+    width: auto !important; }
+.post ul li {
+  list-style-type: square;
+  margin: 0px 0px 0px 16px;
+  list-style-position: outside;
+  text-align: left; }
 
 /*# sourceMappingURL=gisto.css.map */

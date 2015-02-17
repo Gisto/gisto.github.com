@@ -113,3 +113,9 @@ function initMobile() {
         $('.nav-column').show();
     }
 }
+
+function sharePost(wUrl, wTitle, wWidth, wHeight) {
+    var wTop = (screen.height / 2) - (wHeight / 2);
+    var wLeft = (screen.width / 2) - (wWidth / 2);
+    window.open(wUrl, wTitle, 'top=' + wTop + ',left=' + wLeft + ',toolbar=0,status=0,width=' + wWidth + ',height=' + wHeight);
+}

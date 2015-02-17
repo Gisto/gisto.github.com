@@ -12,22 +12,22 @@ layout: post
 
 
     <div class="w-container main content-container">
-        <div class="w-row">
+        <div class="w-row w-col">
             <h2>{{page.post_title}}</h2>
 
             <p>
                 <i>by <b>{%if page.author %}{{ page.author }}{% else %}Gisto team{% endif %}</b> | {{ page.date | date: "%B %d, %Y" }}</i>
             </p>
 
-            {%if page.image %}<img src="{{ page.image }}" alt="{{page.title}}" />{% else %}page.image{% endif %}
+            {%if page.image %}<img src="{{ page.image }}" alt="{{page.title}}" />{% else %}<!-- No image -->{% endif %}
 
             {{content}}
 
-            <!--<p><i class="icon-tags"></i> gisto, enterprise, how-to</p>-->
+            <br />
 
-            <a href="http://twitter.com/share?url={{site.url}}{{page.url}}&amp;text={{page.title}} @gistoapp" class="btn bg-grey twitter txt-white"><i class="icon-twitter"></i></a>
-            <a href="http://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" class="btn bg-grey fb txt-white"><i class="icon-facebook"></i></a>
-            <a href="https://plus.google.com/share?url={{site.url}}{{page.url}}" class="btn bg-grey gplus txt-white"><i class="icon-google-plus"></i></a>
+            <a href="javascript:sharePost('http://twitter.com/share?url={{site.url}}{{page.url}}&amp;text={{page.title}} @gistoapp','Sahare {{page.title}} via Twitter',520,350);" class="btn bg-grey twitter txt-white"><i class="icon-twitter"></i></a>
+            <a href="javascript:sharePost('http://www.facebook.com/sharer.php?p[title]=Gisto&p[summary]={{page.title}}&p[url]={{site.url}}{{page.url}}{%if page.image %}&p[images][0]={{site.url}}{{page.image}}{% else %}{% endif %}','Sahare {{page.title}} via Facebook',520,350);" class="btn bg-grey fb txt-white"><i class="icon-facebook"></i></a>
+            <a href="javascript:sharePost('https://plus.google.com/share?url={{site.url}}{{page.url}}','Sahare {{page.title}} via Google+',520,350);" class="btn bg-grey gplus txt-white"><i class="icon-google-plus"></i></a>
             <a href="mailto:?Subject=Gisto: {{page.title}}&amp;Body={{page.title}} at {{site.url}}{{page.url}}" class="btn bg-grey txt-white"><i class="icon-envelope"></i></a>
 
         </div>
@@ -42,7 +42,7 @@ layout: post
 <section class="whiter boxes">
 
     <div class="w-container main content-container">
-        <div class="w-row">
+        <div class="w-row w-col">
             <div id="disqus_thread"></div>
             <script type="text/javascript">
                 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
