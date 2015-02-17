@@ -20,6 +20,8 @@ title: Documentation | Gisto
                         <li><a class="innsite" href="#publicprivate">Change gist state secret / public</a></li>
                         <li><a class="innsite" href="#sharing">Sharing gists</a></li>
                         <li><a class="innsite" href="#devs">For developers</a></li>
+                        <li><a class="innsite" href="#notification-server">Notification server</a></li>
+                        <li><a class="innsite" href="#build">Build Gisto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -108,12 +110,13 @@ title: Documentation | Gisto
 
                 <p>This will run Gisto via node-webkit (pre-installed by npm as dependency)</p>
 
-                <p><i class="icon-chevron-sign-right"></i> Run the notifications server: (optional)</p>
+                <h2 id="notification-server">Run the notifications server: (optional)</h2>
 
                 <p>Configure the notification server connection string: you will find <code>config.js.sample</code> sample file, in the <i>server</i>
-                    directory. Rename it to <code>config.js</code> and fill in the "connectionString" which is the full connection string of mongo e.g. <code>mongodb://server/collection</code></p>
+                    directory. Rename it to <code>config.js</code> and fill in the "connectionString" which is the full connection string of mongo e.g. <code>mongodb://server/collection</code> and OAuth application "clientId".</p>
 
-                <pre><span>JavaScript</span>exports.connectionString = '';</pre>
+<pre><span>JavaScript</span>exports.connectionString = '';
+exports.clientId = '';</pre>
 
                 <p>Start a mongoDB instance</p>
 
@@ -123,10 +126,12 @@ title: Documentation | Gisto
                 <p>Start the nodejs notifications server</p>
                 <pre><span>SHELL</span>node server/app.js</pre>
 
+                <p><blockquote>Even better, run it with <a href="https://www.npmjs.com/package/forever" title="A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)">forever</a> or <a href="https://www.npmjs.com/package/pm2" title="Production process manager for Node.JS applications. Perfectly designed for microservice architecture">PM2</a> (both available as NPM packages) on persistent server.</blockquote></p>
+
                 <h4><b>Congratulations!</b> If all went well, you are now have set-up local version of Gisto in your
                     machine.</h4>
 
-                <h2>Build</h2>
+                <h2 id="build">Build</h2>
 
                 <p><i class="icon-chevron-sign-right"></i> View build script help/usage:</p>
                 <pre><span>SHELL</span>./build/script/nwjs-build.sh --help</pre>
