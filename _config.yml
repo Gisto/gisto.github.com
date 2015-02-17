@@ -26,15 +26,17 @@ navigation:
 - text: Home
   url: /
 - text: Features
-  url: /features/
-- text: Documentation
-  url: /documentation/
+  url: features
+- text: Docs
+  url: documentation
 - text: FAQ
-  url: /faq/
+  url: faq
 - text: Blog
-  url: /blog/
+  url: blog
+- text: Changelog
+  url: changelog
 - text: Downloads
-  url: /download/
+  url: download
 
 contributers:
 - name: Maayan Glikser

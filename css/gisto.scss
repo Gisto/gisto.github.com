@@ -167,12 +167,35 @@ nav {
   margin: 0px auto 10px;
 }
 
-.nav-link {
+a.nav-link {
   padding: 0 10px;
   font-size: 16px;
   text-decoration: none;
+  position: relative;
   text-transform: uppercase;
   font-weight: 400;
+  &.active:after, &.active:before {
+    bottom: -33px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &.active:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #fff;
+    border-width: 12px;
+    margin-left: -12px;
+  }
+  &.active:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: rgba(0, 0, 0, 0.16);
+    border-width: 10px;
+    margin-left: -10px;
+  }
   &:hover {
     text-shadow: 1px 1px 1px #fff, 0px 1px 3px $gisto-color-red;
     color: $gisto-color-red;
