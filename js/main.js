@@ -119,3 +119,38 @@ function sharePost(wUrl, wTitle, wWidth, wHeight) {
     var wLeft = (screen.width / 2) - (wWidth / 2);
     window.open(wUrl, wTitle, 'top=' + wTop + ',left=' + wLeft + ',toolbar=0,status=0,width=' + wWidth + ',height=' + wHeight);
 }
+
+if(window.location.href.match('tour')) {
+var enjoyhint_instance = new EnjoyHint({});
+var enjoyhint_script_steps = [
+    {
+        'next .tour_logo' : 'Welcome to Gisto, take a small tour or just hit "SKIP"'
+    },
+    {
+        'next .tour_search' : 'This is the search box, you can search tags too something like "#css" or "#build-process"'
+    },
+    {
+        'next .tour_star' : 'This is indicator of starred gist'
+    },
+    {
+        'next .tour_lock' : 'This is indicator of public or private gist'
+    },
+    {
+        'next .tour_gist1' : 'This is gist...'
+    },
+    {
+        'next .tour_gist1_file1' : '... and it\'s files'
+    },
+    {
+        'next .tour_gist_count' : 'I got 61 gits in total. Hmmm.'
+    },
+    {
+        'next .tour_notification_server_online' : 'The notification server is on-line!'
+    },
+    {
+        'last .tour_gist_comments' : ':( I have no comments'
+    }
+];
+enjoyhint_instance.set(enjoyhint_script_steps);
+enjoyhint_instance.run();
+}

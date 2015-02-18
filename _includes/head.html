@@ -5,10 +5,6 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/g/normalize@3.0.0">
-    <link rel="stylesheet" type="text/css" href="/css/webflow.css">
-    <link rel="stylesheet" type="text/css" href="/css/gisto.css">
-    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@gistoapp">
@@ -25,8 +21,11 @@
 
     {% include ga.html%}
 
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "6ccdc1be-66dc-486b-bd54-e41e194e96d5", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/g/normalize@3.0.0">
+    <link rel="stylesheet" type="text/css" href="/css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="/css/gisto.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link href="/css/enjoyhint.css" rel="stylesheet">
 
 </head>
 <body class="is-page-{{page.page_name}} {% if page.page_name == 'home'%}home{% else %}inner{% endif %}">
