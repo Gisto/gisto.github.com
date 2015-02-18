@@ -2,6 +2,7 @@ $gisto-color-red: tomato;
 $gisto-color-blue: skyblue;
 $gisto-color-grey: grey;
 
+
 @font-face {
   font-family: 'flexo';
   src: url('../font/Flexo-CapsDEMO-webfont.eot');
@@ -388,15 +389,15 @@ footer {
 }
 
 .txt-right {
-  text-align: right;
+  text-align: right !important;
 }
 
 .txt-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .txt-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .twitter:hover {
@@ -611,6 +612,83 @@ div .fb_reset {
   top: -8px;
 }
 
+#fader {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  top: 0px;
+  text-align: center;
+  & img {
+    position: relative;
+    top: 0;
+    //left: 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.page-docs,
+.page-faq {
+  & h2 {
+    border-top: 1px dotted #ccc;
+    padding: 50px 0px 0px 0px;
+    &:first-child {
+      border-top: none;
+      padding: 0px 0px 0px 0px;
+    }
+  }
+}
+
+.home .box {
+  font-size: 0.9em;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 15px;
+  font-style: italic;
+  color: $gisto-color-red;
+  border-left: 5px solid $gisto-color-red;
+  padding: 10px 0px 10px 10px;
+  background: #f2f2f2;
+  text-align: left;
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.post {
+  & h3 {
+    text-align: center;
+  }
+  & img {
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px #555;
+    &.alignleft {
+      float: left;
+      border-radius: 3px;
+      box-shadow: 0px 4px 10px #555;
+      margin: 5px 20px 20px 0px;
+      width: auto !important;
+    }
+    &.alignright {
+      float: right;
+      border-radius: 3px;
+      box-shadow: 0px 4px 10px #555;
+      margin: 5px 0px 20px 20px;
+      width: auto !important;
+    }
+  }
+  & ul li {
+    list-style-type: square;
+    margin: 0px 0px 0px 16px;
+    list-style-position: outside;
+    text-align: left;
+  }
+}
+
 /* Mediaqueries */
 
 @media screen and (max-width: 479px) {
@@ -622,15 +700,25 @@ div .fb_reset {
     & p {
       text-align: justify;
     }
+    & p i {
+      margin: 0 auto;
+    }
     & h1, h2, h3, h4, h5, h6 {
       text-align: center;
+    }
+    & .inner h2,
+    .inner h3,
+    .inner h4,
+    .inner h5,
+    .inner h6 {
+      text-align: center !important;
     }
   }
 
   .under-nav .box,
   .content-container {
     & h1, h2, h3, h4, h5, h6 {
-      text-align: left;
+      text-align: center;
     }
   }
   .side-container {
@@ -742,81 +830,5 @@ div .fb_reset {
     width: 50%;
     padding: 15px;
     border-radius: 10px;
-  }
-}
-
-#fader {
-  position: relative;
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  top: 0px;
-  text-align: center;
-  & img {
-    position: relative;
-    top: 0;
-    //left: 0;
-    text-align: center;
-    width: 100%;
-    height: auto;
-  }
-}
-
-.page-docs,
-.page-faq {
-  & h2 {
-    border-top: 1px dotted #ccc;
-    padding: 50px 0px 0px 0px;
-    &:first-child {
-      border-top: none;
-      padding: 0px 0px 0px 0px;
-    }
-  }
-}
-
-.home .box {
-  font-size: 0.9em;
-}
-
-blockquote {
-  margin: 0;
-  font-size: 15px;
-  font-style: italic;
-  color: $gisto-color-red;
-  border-left: 5px solid $gisto-color-red;
-  padding: 10px 0px 10px 10px;
-  background: #f2f2f2;
-  & a {
-    text-decoration: underline;
-  }
-}
-
-.post {
-  & h3 {
-    text-align: center;
-  }
-  & img {
-    border-radius: 3px;
-    box-shadow: 0px 4px 10px #555;
-    &.alignleft {
-      float: left;
-      border-radius: 3px;
-      box-shadow: 0px 4px 10px #555;
-      margin: 5px 20px 20px 0px;
-      width: auto !important;
-    }
-    &.alignright {
-      float: right;
-      border-radius: 3px;
-      box-shadow: 0px 4px 10px #555;
-      margin: 5px 0px 20px 20px;
-      width: auto !important;
-    }
-  }
-  & ul li {
-    list-style-type: square;
-    margin: 0px 0px 0px 16px;
-    list-style-position: outside;
-    text-align: left;
   }
 }
