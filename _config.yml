@@ -33,8 +33,6 @@ navigation:
   url: faq
 - text: Blog
   url: blog
-- text: Changelog
-  url: changelog
 - text: Downloads
   url: download
 
