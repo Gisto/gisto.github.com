@@ -1,0 +1,90 @@
+---
+layout: default
+page_name: faq
+title: Frequently asked questions | Gisto
+permalink: /faq/
+---
+
+<h1>F.A.Q.</h1>
+
+<section class="whiter boxes page-faq">
+
+    <div class="w-container content-container">
+        <div class="w-row">
+
+            <div class="w-col w-col-3 w-clearfix side-container">
+
+                <h2>QUESTIONS</h2>
+                <nav>
+                    <ul>
+                        <li><a class="innsite" href="#q2">Authentication</a></li>
+                        <li><a class="innsite" href="#q3">Do you use backend server?</a></li>
+                        <li><a class="innsite" href="#q4">Who can see my gists?</a></li>
+                        <li><a class="innsite" href="#q5">Do you plan to support / add support for
+                            [future-name-here]?</a></li>
+                        <li><a class="innsite" href="#q8">Issues, bug reporting and pull and feature requests</a></li>
+                        <li><a class="innsite" href="#q9">How to contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="w-col w-col-9 w-clearfix">
+
+
+                <h2 id="q2">Authentication</h2>
+
+                <p>Gisto authenticates to GitHub by using basic authentication over SSL and retrieving an oAuth2 token
+                    Thus the need for your GitHub user and password.</p>
+
+                <p>Gisto only saves the oAuth2 token received after authenticating and nothing else.
+                    If you would rather to supply your own access token without providing Gisto your login details you
+                    may manually create an access token from the account settings at GitHub and login using the
+                    generated token.</p>
+
+                <p>This token will be saved permanently until you log out.</p>
+
+                <h2 id="q3">Do you use backend server?</h2>
+
+                <p>Gisto is using GitHub gist API and communicates directly with Github, no 3rd party server or database
+                    involved in gist management. </p>
+
+                <p>However we do use a backend server for "notifications and sharing service", the only data stored is username
+                    and gist ID and this is to allow Gisto to notify user if there are shares waiting for him/her to
+                    accept (fork).
+                </p>
+
+                <p>The server code is in the repository should you wish to run an alternative server.</p>
+
+                <h2 id="q4">Who can see my gists?</h2>
+
+                <p>As per GitHub Guidelines gists are not private and are available to the public.</p>
+
+                <p>The difference between secret and public gists is that public gists are listed on GitHub website for
+                    public viewing and searching while secret gists are not</p>
+
+
+                <h2 id="q5">Do you plan to support / add support for [<i>future-name-here</i>]?</h2>
+
+                <p>Please open a feature request in our <a
+                        href="https://github.com/Gisto/Gisto/issues">issue tracker</a>, we appreciate and strive for
+                    suggestions on how to improve Gisto.</p>
+
+                <h2 id="q8">Issues, bug reporting and pull and feature requests</h2>
+
+                <p>Please feel free to add a bug / feature request / suggestions to the <a
+                        href="https://github.com/Gisto/Gisto/issues">issue tracker</a>.
+                    Pull requests are also very welcome as well.
+                </p>
+
+                <h2 id="q9">How to contact us</h2>
+
+                <p>Twitter: <a href="https://twitter.com/gistoapp">@gistoapp</a></p>
+                    <p>Email: contact@gistoapp.com</p>
+                    <p>Issue tracker: <a href="https://github.com/Gisto/Gisto/issues">Issue tracker at GitHub</a></p>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>

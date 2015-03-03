@@ -1,0 +1,360 @@
+---
+layout: default
+page_name: changelog
+title: Changelog | Gisto
+permalink: /changelog/
+---
+
+<h1>Changelog</h1>
+
+<section class="whiter boxes">
+
+<div class="w-container content-container">
+<div class="w-row">
+
+<div class="w-col w-col-3 w-clearfix side-container">
+
+    <h2>VERSIONS</h2>
+    <nav>
+        <ul>
+            <li><a class="innsite" href="#v030">v0.3.0</a></li>
+            <li><a class="innsite" href="#v026b">v0.2.6b</a></li>
+            <li><a class="innsite" href="#v025b">v0.2.5b</a></li>
+            <li><a class="innsite" href="#v024b">v0.2.4b</a></li>
+            <li><a class="innsite" href="#v023b">v0.2.3b</a></li>
+            <li><a class="innsite" href="#v022b">v0.2.2b</a></li>
+            <li><a class="innsite" href="#v021b">v0.2.1b</a></li>
+            <li><a class="innsite" href="#v020b">v0.2.0b</a></li>
+            <li><a class="innsite" href="#v013a">v0.1.3a</a></li>
+            <li><a class="innsite" href="#v012a">v0.1.2a</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="w-col w-col-9 w-clearfix main">
+
+<h2 id="v030">0.3.0</h2>
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (gist polling): Add polling to update changed gists</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (enterprise): Add GitHub Enterprise support</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (enterprise): Add ability to use a custom notification server</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (hotkeys): Add keyboard shortcuts, press ? to see available shortcuts</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (toggle file content): You can now fold and unfold certain file in gists</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (editor): Add option to wrap editor lines</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (single gist): Add "Copy link to clipboard" for whole gist</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (editor): Add .adoc and .asciidoc syntax highlighting</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> IMPROVE (settings): Settings changes are now reflected immediately</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> IMPROVE (version checking): Better version checking</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (settings): Change checkboxes to toggles in settings screen</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (settings): Add indication that settings were saved or imported.</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (theme): Fix input and select colors on dark themes</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (notifications): Add default avatar to Gisto share notifications</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (fonts): Fix default fonts in windows</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (revisions dialog): Fix Revisions popup UI location</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (gists pagination): Fix gists pagination to pull all pages instead of stopping at 10 pages resulting in not all gists shown.</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (editor) Ace Editor cursor wrongly placed when UI zoom is other than 100%</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (API): Fix Delete not generating correct url</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (gist list): Fix icons (star and private) not showing in gist list</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (rename gist files): Prevent files from duplicating themselves when being renamed</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (tags): Allow use of tags such as C# F#</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (settings): Fix settings screen is not able to scroll down</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (revisions): Fix revision history link</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (shared gist view): Fix links to the gist when viewing a shared gist</li>
+
+</ul>
+
+<h2 id="v026b">0.2.6b</h2>
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (editor): add vim mode</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (create gist): Fix text overflowing from the description field</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (single gist): wrong direct link for uppercase characters in filename or extension</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (editor): paste now updates correctly in the angular file model</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (edit mode): Edit mode is now canceled upon route change</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (Open file in browser): Open file in browser is now opening correctly</li>
+</ul>
+
+<h2 id="v025b">0.2.5b</h2>
+
+<ul class="fa-ul">
+
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (settings): add export/import of user settings
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (settings): add export/import of user settings
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (single gist): show fork info if gist is forked
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (share gist): add auto-completion to share gist
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FEATURE (editor): add preview of markdown</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (big files): add indication of big file</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (css): add markdown css</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> UI (css): update text fields to reflect valid/invalid
+        state
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (editor): fix font size settings issue</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (dotfiles in gist): fix links of dotfiles</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (gist API): gisto fail to handle files >1MB</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (deleting a file): local copies of files now
+        properly delete when not yet saved to GitHub
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (drag & drop): drag area disappears on drag cancel
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX: Files that do not exist in github do not send a
+        patch request upon deletion.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX: Fix not being able to save when there is an empty
+        file in create screen.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (single gist): notify upon Error when creating gist
+        + validate filename with regex.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (single gist): URLs of gist API for single gist
+        view.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> FIX (single gist): #81 where username was incorrectly
+        pulled from json causing gist file url appear with no username parameter thus double slash.
+    </li>
+</ul>
+
+<h2 id="v024b">0.2.4b</h2>
+
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: Editor overflow where pasted text would appear
+        visually broken
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: Better controll of editor size - line based</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Update: ACE editor with additions to 2 new themes and a
+        few new highlighters
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: When Cancelling a gist edit now the gist is
+        returned to original state
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Emmet and status bar plugins to ace editor</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Drag & drop support for folders and sub-folders
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Auto completion to ace editor (enable from
+        settings)
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Range selector to control application size in
+        settings. Fixes #69
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Confirmation when deleting a file from a gist.
+        Fixes #76.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Update: Comments are now paginated due to changes in
+        GitHub API.
+    </li>
+</ul>
+
+<h2 id="v023b">0.2.3b</h2>
+
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Fix: Fixed Fork gist bug
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Fix: Switch token generation to the new oAuth token generation per application
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        New: Copy gist ID to clipboard
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Small UI/CSS fixes
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Repository maintains
+    </li>
+</ul>
+<h2 id="v022b">0.2.2b</h2>
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: Text selection is now disabled on
+        appropriate parts of the application, making a more streamlined
+        native feel. Thanks to @tusharmath.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: You are now able to browse gists
+        revisions and link to specific revisions of your gists.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Allow to change the state of an
+        existing gist from private to secret and vice versa.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: Dates meta on single gist toolbar now
+        adopt more responsive design and should not break on small
+        resolutions.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: You can now post and delete (your own)
+        comments on gists within Gisto with markdown preview.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: Removing a gist after editing but not
+        applying any changes now works.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: Notifications now clear when switching
+        between users on a single session.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Added the ability to disable
+        animations. Thanks to @juristr
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Users without gravatar will now user
+        the identicon generated by GitHub
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: Optimized settings service layer
+        performance and will now respond better to slower network
+        connections.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Fix: User preferences do not delete when a
+        user logs out, all the application specific settings are
+        kept.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> New: Added the ability to login with a
+        manual oAuth2 token generated by GitHub Account settings for
+        users that do not wish to user the current authentication system.
+    </li>
+</ul>
+
+<h2 id="v021b">0.2.1b</h2>
+
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Bugfix: edit mode now exits properly when logging out inside edit mode
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Bugfix: Fixed bug with gists not saving properly when adding new files to gists at some
+        cases
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Modification: Changed discard notification icon to a trash can to better visualize the
+        intent of
+        the button
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+        Feature: Added 2-factor-authentication (2FA) support to support new GitHub functionality
+    </li>
+</ul>
+
+
+<h2 id="v020b">0.2.0b</h2>
+
+<ul class="fa-ul">
+
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Gisto users can now share gists to
+        each
+        other easily! just hit the send button and enter a github username of the person you want to
+        share with. The user will be immdiatly notified and can view/fork the gist!
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Open in plunker, You can now load
+        gists
+        with 1 click into plunker, if the gist contains web files (html, css, js) it automatically
+        loads
+        and runs them!
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added more themes, syntax modes and
+        new
+        adjustable settings to the editor.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Editors height are now based on
+        file
+        height and minimum and maximum height can be adjusted in the settings.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added "Edit Mode" for unobstructive
+        file editing. when changes are detected to a file the sidebar closes allowing you to focus
+        on
+        the code.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added drop-down with file list in
+        single gist view to ease navigation between files.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added "Copy embed code to
+        clipboard".
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added a delete button to files in
+        create new gist screen.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added online/offline indicator to
+        show
+        status of notifications server.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Bugfix: 404 bad requests.</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added a check to see if a gist has
+        comments, if there are none a request for the comments isn't sent.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Gists are now saved only when
+        changes
+        are detected to prevent a revision increment with no changes.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added registration link to GitHub
+        for
+        those who do not yet have a GitHub account.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Bugfix: positioning of data and
+        revision data in single gist for low resolutions.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Gist tags are now added to the list
+        when creating a new gist.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Gravatar not cached after user
+        logout
+        and another user logging in right after.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Drag & Drop is now working in
+        create
+        gist.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added caching to github username
+        and
+        updated gravatar so it can appear in the main screen.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> See more at:
+        http://www.gistoapp.com/changelog/
+    </li>
+</ul>
+<h2 id="v013a">0.1.3a</h2>
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added indication to gist list for
+        stared gists.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Notify if empty file is to be
+        saved.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Add "Open file at GitHub Gist
+        website"
+        to gist files.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added animations for more aesthetic
+        experience.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Small UI fixes.</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Updated angular UI to angular-ui
+        utils
+        0.0.3.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Updated starred gists to update
+        only
+        when gists finished loading.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Improved efficiency when loading
+        multiple gist pages.
+    </li>
+</ul>
+<h2 id="v012a">0.1.2a</h2>
+<ul class="fa-ul">
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Added version checker</li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Rewrote the save function of
+        application settings to be more versatile.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Changed appearance of main
+        application
+        screen.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Changed notifications to bottom
+        right
+        corner in order to avoid movement of the entire screen.
+    </li>
+    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> Updated node-webkit to version
+        0.6.0/Chromium 28
+    </li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</section>

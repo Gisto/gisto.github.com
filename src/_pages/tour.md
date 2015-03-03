@@ -1,0 +1,40 @@
+---
+layout: default
+page_name: tour
+title: Tour | Gisto
+permalink: /tour/
+---
+
+<h1>Tour</h1>
+
+<section class="whiter boxes">
+
+
+    <div class="w-container main content-container">
+
+
+        <div class="w-row">
+
+            <div class="w-col w-col-12 w-clearfix">
+
+                <h3>Single gist view</h3>
+
+                <div style="background: url(/images/gisto.png);box-shadow: 0px 0px 20px #ccc;width: 960px;height: 735px;position: relative">
+                    <div class="tour_logo"></div>
+                    <div class="tour_search"></div>
+                    <div class="tour_star"></div>
+                    <div class="tour_lock"></div>
+                    <div class="tour_gist1"></div>
+                    <div class="tour_gist1_file1"></div>
+                    <div class="tour_gist_count"></div>
+                    <div class="tour_notification_server_online"></div>
+                    <div class="tour_gist_comments"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
