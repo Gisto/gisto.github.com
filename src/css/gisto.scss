@@ -237,32 +237,21 @@ a.nav-link {
     margin: 0;
   }
   & i {
-    text-align: center;
     top: 0;
     position: absolute;
-    display: none !important;
-    margin: 13% 30%;
+    display: none!important;
+    margin: 5% 25%;
     font-size: 62px;
-    border: 4px solid #555;
     width: inherit;
-    padding: 30px 15px;
-    border-radius: 10px;
-    height: 50%;
-    background: #fff;
-    & span {
-      font-size: 17px;
-      padding: 0;
-      margin: -30px 0px 0px 0px;
-      line-height: 47px;
-      text-align: center;
-      display: block;
-    }
+    padding: 15px;
+    text-align: center;
   }
   &:hover i {
-    display: block !important;
-    background: #fff;
+    display: block!important;
     opacity: 1;
-    box-shadow: 0px 0px 20px #000;
+    color: #fff;
+    text-shadow: 0 0 20px #000;
+    font-size: 150px;
   }
 }
 
