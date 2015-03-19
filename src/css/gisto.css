@@ -508,9 +508,8 @@ div .fb_reset {
 
 .home .box {
   font-size: 0.9em; }
-  .home .box small {
-    font-size: small;
-    font-weight: 700; }
+  .home .box sup {
+    font-size: 50%; }
 
 blockquote {
   margin: 0;

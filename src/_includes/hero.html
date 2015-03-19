@@ -46,12 +46,12 @@
                     <a href="#download" class="w-col w-col-4 w-clearfix box bg-tomato txt-white uppercase innsite">
                         <i class="fa fa-download fa-4x pull-left"></i>
 
-                        <h3>Downloads <small>v{% for v in site.releases %}
+                        <h3>Downloads <sup>v{% for v in site.releases %}
                           {% if forloop.first %}
                           {% assign current_version=v.version %}
                           {{ current_version }}
                           {% endif %}
-                          {% endfor %}</small></h3>
+                          {% endfor %}</sup></h3>
                 <span>
                     <i>Mirrors, nightly builds and prev. versions</i> <i class="fa fa-chevron-right"></i>
                 </span>

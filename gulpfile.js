@@ -30,6 +30,8 @@ gulp.task('css',['sass'], function () {
   gulp.src(css_files)
     .pipe(minifyCss())
     .pipe(concat('style.css'))
+    .pipe(gulp.dest('_site/css'))
+    .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('src/css'));
 });
 
@@ -61,20 +63,17 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
   browserSync.reload();
 });
 
-gulp.task('browser-sync', function () {
-    var files = [
-      'src/css/*.css',
-      'src/js/*.js',
-      'src/*/**.html'
-    ];
-
-    browserSync.init(files, {
+gulp.task('browser-sync', ['sass', 'jekyll-build'], function () {
+    browserSync.init({
       server: {
         baseDir: '_site'
       }
     });
 });
 
-gulp.task('default', function () {
-  gulp.start(['jekyll-build','browser-sync']);
+gulp.task('watch', function () {
+  gulp.watch('src/css/*.scss', ['css']);
+  gulp.watch(['index.html', '_pages/*','_includes/*', '_posts/*'], ['jekyll-rebuild']);
 });
+
+gulp.task('default', ['browser-sync', 'watch']);

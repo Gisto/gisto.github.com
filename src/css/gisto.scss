@@ -641,9 +641,8 @@ div .fb_reset {
 
 .home .box {
   font-size: 0.9em;
-  & small {
-    font-size: small;
-    font-weight: 700;
+  & sup {
+    font-size:50%;
   }
 }
 
