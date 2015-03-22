@@ -1,17 +1,14 @@
+# Title, decription, tagline and URL for your site
+# Can be used in your theme by calling 'site.title' and so on
 name: Gisto
 url: http://gistoapp.com
-gisto_build_date: 2014-06-29
+gisto_build_date: 2015-02-25
 download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
 nightly_url: http://build.gistoapp.com
-year: 2015
-highlighter: true
-markdown: kramdown
-
-gems:
-  - jekyll-sitemap
 
 releases:
+ - version: 0.3.0
  - version: 0.2.6b
  - version: 0.2.5b
  - version: 0.2.4b
@@ -26,13 +23,15 @@ navigation:
 - text: Home
   url: /
 - text: Features
-  url: /features/
-- text: Documentation
-  url: /documentation/
+  url: features
+- text: Docs
+  url: documentation
 - text: FAQ
-  url: /faq/
+  url: faq
+- text: Blog
+  url: blog
 - text: Downloads
-  url: /download/
+  url: download
 
 contributers:
 - name: Maayan Glikser
@@ -45,3 +44,31 @@ contributers:
   site: www.sanusart.com
   twitter_name: sanusart
   description: Web Developer
+
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: src
+destination: _site
+
+# _config.build.yml overwrites these options when you run `gulp build`
+# Enables future posts (posts with dates in the future) and drafts
+future: true
+show_drafts: true
+# Disables the more accurate related posts for faster generating of the site
+lsi: false
+# Only make the last 10 posts so generating isn't slow
+limit_posts: 5
+
+# Permalink structure and pagination options
+permalink: pretty
+paginate: 5
+paginate_path: 'page:num'
+excerpt_separator: '<!--more-->'
+include: ['_pages']
+
+# Markdown library
+markdown: redcarpet
+# Markdown library options
+redcarpet:
+  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
+              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
+highlighter: true

@@ -1,0 +1,25 @@
+---
+layout: default
+page_name: blog
+title: Blog | Gisto
+permalink: /blog/
+---
+
+<h1>Blog</h1>
+
+{% for post in site.posts %}
+<section class="whiter boxes page-docs">
+
+
+    <div class="w-container content-container">
+
+        <div class="w-row w-col">
+
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+            <p>{{ post.date | date: "%B %d, %Y" }}</p>
+            <p>{{ post.excerpt }}</p>
+        </div>
+    </div>
+</section>
+{% endfor %}

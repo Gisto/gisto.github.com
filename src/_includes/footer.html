@@ -1,0 +1,46 @@
+<div class="push"></div>
+<footer>
+
+    <div class="w-container">
+        <div class="w-row">
+
+            {% for contributer in site.contributers %}
+
+            <div class="w-col w-col-1 w-clearfix">
+                <img src="{{ contributer.gravatar }}" alt="{{ contributer.name }}"/>
+            </div>
+            <div class="w-col w-col-5 w-clearfix">
+                <h3>{{ contributer.name }}</h3>
+
+                <p>
+                    {{ contributer.description }} <br/> <a target="_blank" href="http://{{ contributer.site }}">{{ contributer.site }}</a>
+                    | <i class="fa fa-twitter"></i> <a target="_blank" href="https://twitter.com/{{ contributer.twitter_name }}">@{{ contributer.twitter_name }}</a>
+                </p>
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <p class="txt-center">&copy; {{ site.time | date: "%Y" }} {{ site.name }}</p>
+
+</footer>
+
+<a href="#top" class="top innsite"><i class="fa fa-arrow-up"></i></a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ["Open Sans:300,400,600,700,800"]
+        }
+    });
+</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "6ccdc1be-66dc-486b-bd54-e41e194e96d5", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
