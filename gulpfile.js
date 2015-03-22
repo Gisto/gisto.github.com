@@ -80,12 +80,12 @@ gulp.task('fonts', function () {
 
 gulp.task('jekyll-build', ['fonts', 'css', 'js'], function (done) {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'}).on('close', done);
+    return cp.spawn('bundle', ['exec', 'jekyll', 'build'], { stdio: 'inherit' }).on('close', done);
 });
 
 gulp.task('jekyll-simple-build', [], function (done) {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'}).on('close', done);
+    return cp.spawn('bundle', ['exec', 'jekyll', 'build'], { stdio: 'inherit' }).on('close', done);
 });
 
 gulp.task('jekyll-just-reload', ['jekyll-simple-build'], function () {
