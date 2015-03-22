@@ -690,6 +690,32 @@ blockquote {
   }
 }
 
+.tour-item {
+  display: block;
+  margin: 0;
+  position: absolute;
+  &.tour-logo {
+    height: 42px;
+    width: 20px;
+    padding: 0;
+    top: 38px;
+    width: 160px;
+  }
+  &.tour-search {
+    height: 45px;
+    top: 36px;
+    left: 195px;
+    width: 211px;
+  }
+  &.tour-star {
+    width: 20px;
+    height: 20px;
+    top: 49px;
+    left: 419px;
+  }
+}
+
+
 /* Mediaqueries */
 
 @media screen and (max-width: 479px) {

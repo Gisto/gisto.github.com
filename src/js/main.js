@@ -104,7 +104,7 @@ $(document).scroll(function () {
 function initMobile() {
     if (isMobile() === true) {
         $('.nav-column').hide();
-        $('header').append('<div class="mobile-menu"><i class="icon-reorder icon-2x"></i></div>');
+        $('header').append('<div class="mobile-menu"><i class="fa fa-bars fa-2x"></i></div>');
         $('.mobile-menu').click(function () {
             $('.nav-column').slideToggle();
         });
@@ -124,31 +124,31 @@ if (window.location.href.match('tour')) {
     var enjoyhint_instance = new EnjoyHint({});
     var enjoyhint_script_steps = [
         {
-            'next .tour_logo': 'Welcome to Gisto, take a small tour or just hit "SKIP"'
+            'next .tour-logo': 'Welcome to Gisto, take a small tour or just hit "SKIP"'
         },
         {
-            'next .tour_search': 'This is the search box, you can search tags too something like "#css" or "#build-process"'
+            'next .tour-search': 'This is the search box, you can search tags too something like "#css" or "#build-process"'
         },
         {
-            'next .tour_star': 'This is indicator of starred gist'
+            'next .tour-star': 'This is indicator of starred gist'
         },
         {
-            'next .tour_lock': 'This is indicator of public or private gist'
+            'next .tour-lock': 'This is indicator of public or private gist'
         },
         {
-            'next .tour_gist1': 'This is gist...'
+            'next .tour-gist1': 'This is gist...'
         },
         {
-            'next .tour_gist1_file1': '... and it\'s files'
+            'next .tour-gist1_file1': '... and it\'s files'
         },
         {
-            'next .tour_gist_count': 'I got 61 gits in total. Hmmm.'
+            'next .tour-gist_count': 'I got 61 gits in total. Hmmm.'
         },
         {
-            'next .tour_notification_server_online': 'The notification server is on-line!'
+            'next .tour-notification_server_online': 'The notification server is on-line!'
         },
         {
-            'last .tour_gist_comments': ':( I have no comments'
+            'last .tour-gist_comments': ':( I have no comments'
         }
     ];
     enjoyhint_instance.set(enjoyhint_script_steps);
