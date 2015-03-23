@@ -37,14 +37,14 @@
         <div class="w-row">
             <nav class="w-col w-col-12 w-clearfix nav-column">
                 {% for link in site.navigation %}
-                {% assign state = '' %}
-                {% if page.page_name == link.url %}
-                {% assign state = 'active ' %}
-                {% endif %}
-                <a class="nav-link {{ state }} {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}nav-link-download{% endif %}"
-                   href="{% if forloop.first %}/{% else %}/{{ link.url }}/{% endif %}" target="_self">
-                    {{ link.text }}
-                </a>
+                  {% assign state = '' %}
+                  {% if page.page_name == link.url %}
+                    {% assign state = 'active ' %}
+                  {% endif %}
+                  <a class="nav-link {{ state }} {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}nav-link-download{% endif %}"
+                     href="{% if forloop.first %}/{% else %}/{{ link.url }}/{% endif %}">
+                      {{ link.text }}
+                  </a>
                 {% endfor %}
             </nav>
         </div>
