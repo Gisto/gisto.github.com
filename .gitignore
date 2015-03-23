@@ -65,7 +65,6 @@ site
 src/lib
 .idea
 Gemfile.lock
-_site
 src/fonts/fontawesome-webfont.eot
 src/fonts/fontawesome-webfont.svg
 src/fonts/fontawesome-webfont.ttf
