@@ -8,18 +8,19 @@ permalink: /blog/
 <h1>Blog</h1>
 
 {% for post in site.posts %}
+
 <section class="whiter boxes page-docs">
+  <div class="w-container content-container">
+    <div class="w-row w-col">
 
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-    <div class="w-container content-container">
+      <p>{{ post.date | date: "%B %d, %Y" }}</p>
 
-        <div class="w-row w-col">
+      <p>{{ post.excerpt }}</p>
 
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-            <p>{{ post.date | date: "%B %d, %Y" }}</p>
-            <p>{{ post.excerpt }}</p>
-        </div>
     </div>
+  </div>
 </section>
+
 {% endfor %}
