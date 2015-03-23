@@ -22,6 +22,7 @@
     "node": ">0.10.0"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "site-deploy": "git subtree push --prefix _site origin master"
   }
 }

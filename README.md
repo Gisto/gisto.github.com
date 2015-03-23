@@ -2,6 +2,8 @@
 
 Web pages of [www.gistoapp.com](http://www.gistoapp.com)
 
+**NOTE!** Default branch is `src`, deployment branch is `master`
+
 ### Depends on:
 
  - jekyll
@@ -11,4 +13,9 @@ Web pages of [www.gistoapp.com](http://www.gistoapp.com)
 - `bundle install` - to install jekyll and it's dependencies
 - `npm install` - to install dependencies (runs `bower install` via postinstall script)
 - `gulp` - to run the site with browserSync (will open http://localhost:3000)
-- `gulp release --min` - to run the site with browserSync and all files minified (will open http://localhost:3000) - it is basically for release and preview 
+
+### Deploy
+
+- `gulp release --min` - generate `_site` dir, minify files, runs the site with browserSync (will open http://localhost:3000) - it is basically for release and preview
+- Commit and push changes (to `src` branch)
+- `npm run site-deploy` - will deploy content of generated `_site` with git subtree 
