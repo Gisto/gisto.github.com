@@ -381,10 +381,10 @@ ul {
   .feat h3 {
     text-align: center; }
 
-.icons-ul {
+.fa-ul {
   margin-left: 0 !important;
   text-align: left; }
-  .icons-ul i {
+  .fa-ul i {
     color: tomato; }
 
 .btn-center {
@@ -545,6 +545,22 @@ blockquote {
   margin: 0px 0px 0px 16px;
   list-style-position: outside;
   text-align: left; }
+
+.is-page-blog a.more {
+  font-size: 20px;
+  color: tomato;
+  text-align: right;
+  text-transform: uppercase;
+  margin: 30px 0px 0px 0px; }
+  .is-page-blog a.more:hover {
+    text-shadow: 1px 1px 1px #fff, 0px 1px 3px tomato; }
+.is-page-blog h2 span {
+  margin: 0;
+  padding: 0;
+  line-height: 15px;
+  display: block;
+  color: #777;
+  font-size: 16px; }
 
 .tour-item {
   display: block;

@@ -7,20 +7,25 @@ permalink: /blog/
 
 <h1>Blog</h1>
 
-{% for post in site.posts %}
-
 <section class="whiter boxes page-docs">
   <div class="w-container content-container">
     <div class="w-row w-col">
 
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {% for post in site.posts %}
 
-      <p>{{ post.date | date: "%B %d, %Y" }}</p>
+      <h2>
+        <!--googleoff: index-->
+        <span>{{ post.date | date: "%B %d, %Y" }}</span>
+        <!--googleon: index-->
+        {{ post.title }}
+      </h2>
 
       <p>{{ post.excerpt }}</p>
+
+      <a class="more" href="{{ post.url }}"> Continue &raquo; </a>
+
+      {% endfor %}
 
     </div>
   </div>
 </section>
-
-{% endfor %}
