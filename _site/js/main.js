@@ -64,7 +64,7 @@ $(function () {
     }
 
 
-    $('body').on('click', '.download', function () {
+    $('.download ').on('click', 'a', function () {
         _gaq.push(['_trackEvent', 'Gisto Download', 'Downloaded', this.href]);
     });
 
