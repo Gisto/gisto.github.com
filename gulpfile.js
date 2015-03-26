@@ -10,7 +10,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var args = require('yargs').argv;
 var gulpif = require('gulp-if');
-var inlinesource = require('gulp-inline-source');
+var minifyInline = require('gulp-minify-inline-scripts');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
@@ -66,7 +66,7 @@ gulp.task('html', function () {
   };
   gulp.src('_site/**/*.html')
     .pipe(gulpif(args.min, minifyHtml(opts)))
-    .pipe(gulpif(args.min, inlinesource({compress: true})))
+    .pipe(gulpif(args.min, minifyInline()))
     .pipe(gulp.dest('_site/'));
 });
 

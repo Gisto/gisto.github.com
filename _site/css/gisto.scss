@@ -582,6 +582,10 @@ a.top {
   padding: 10px 10px;
   border-radius: 50% 0 0 50%;
   font-size: 20px;
+  &:hover {
+    transform: translateY(-10px);
+    transition: transform 200ms;
+  }
 }
 
 .hero-video {
@@ -692,13 +696,18 @@ blockquote {
 
 .is-page-blog {
   & a.more {
-    font-size: 20px;
+    font-size: 16px;
     color: tomato;
     text-align: right;
     text-transform: uppercase;
     margin: 30px 0px 0px 0px;
     &:hover {
       text-shadow: 1px 1px 1px #fff, 0px 1px 3px tomato;
+    }
+    &:hover i {
+      transform: translateX(5px);
+      transition: transform 0.5s;
+
     }
   }
   & h2 span {
