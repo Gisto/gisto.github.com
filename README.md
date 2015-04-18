@@ -16,4 +16,6 @@ Web pages of [www.gistoapp.com](http://www.gistoapp.com)
 
 ### Deploy
 
-- Deploying via drone.io by commits to `src` branch  
+- `gulp release --min` - generate `_site` dir, minify files, runs the site with browserSync (will open http://localhost:3000) - it is basically for release and preview
+- Commit and push changes (to `src` branch)
+- `npm run site-deploy` - will deploy content of generated `_site` with git subtree 
