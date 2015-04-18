@@ -61,7 +61,7 @@ test/
 
 # Output folders
 serve
-site
+_site
 src/lib
 .idea
 Gemfile.lock

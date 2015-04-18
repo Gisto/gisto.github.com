@@ -117,9 +117,11 @@ gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('release',['jekyll-build'], function() {
   gulp.start('html');
   // Start browser sync just for preview
-  browserSync.init({
-    server: {
-      baseDir: '_site'
-    }
-  });
+  if(args.bs) {
+    browserSync.init({
+      server: {
+        baseDir: '_site'
+      }
+    });
+  }
 });
