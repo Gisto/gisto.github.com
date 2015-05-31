@@ -24,6 +24,6 @@
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
-    "site-deploy": "git subtree push --prefix _site origin master"
+    "site-deploy": "git push origin `git subtree split --prefix _site src`:master --force"
   }
 }
