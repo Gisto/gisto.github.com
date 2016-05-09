@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'flexo';
-  src: url('../fonts/Flexo-CapsDEMO-webfont.eot');
-  src: url('../fonts/Flexo-CapsDEMO-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Flexo-CapsDEMO-webfont.woff') format('woff'), url('../fonts/Flexo-CapsDEMO-webfont.ttf') format('truetype'), url('../fonts/Flexo-CapsDEMO-webfont.svg#FertigoProRegular') format('svg');
+  src: url("../fonts/Flexo-CapsDEMO-webfont.eot");
+  src: url("../fonts/Flexo-CapsDEMO-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Flexo-CapsDEMO-webfont.woff") format("woff"), url("../fonts/Flexo-CapsDEMO-webfont.ttf") format("truetype"), url("../fonts/Flexo-CapsDEMO-webfont.svg#FertigoProRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 html {
-  background: url('../images/sky2.jpg') no-repeat center center fixed #afbfd9;
+  background: url("../images/sky2.jpg") no-repeat center center fixed #afbfd9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -173,7 +173,8 @@ a.nav-link {
 .link {
   background-color: #828282; }
 
-.under-nav, .under-nav p {
+.under-nav,
+.under-nav p {
   padding: 10px 0px 0px 0px;
   font: normal 19px/28px 'open sans'; }
 
@@ -294,7 +295,8 @@ header {
   border-radius: 50%;
   border: 1px solid #333; }
 
-.push, footer {
+.push,
+footer {
   height: 150px; }
 
 footer {
@@ -335,6 +337,7 @@ ul {
 
 .inner h2, .inner h3, .inner h4, .inner h5, .inner h6 {
   text-align: left; }
+
 .inner .whiter p a {
   text-decoration: underline; }
   .inner .whiter p a:hover {
@@ -345,6 +348,7 @@ ul {
     background: tomato;
     border-radius: 3px;
     text-decoration: none; }
+
 .inner nav ul {
   list-style: none;
   font-size: 16px;
@@ -502,10 +506,12 @@ div .fb_reset {
     width: 100%;
     height: auto; }
 
-.page-docs h2, .page-faq h2 {
+.page-docs h2,
+.page-faq h2 {
   border-top: 1px dotted #ccc;
   padding: 50px 0px 0px 0px; }
-  .page-docs h2:first-child, .page-faq h2:first-child {
+  .page-docs h2:first-child,
+  .page-faq h2:first-child {
     border-top: none;
     padding: 0px 0px 0px 0px; }
 
@@ -528,6 +534,7 @@ blockquote {
 
 .post h3 {
   text-align: center; }
+
 .post img {
   border-radius: 3px;
   box-shadow: 0px 4px 10px #555; }
@@ -543,6 +550,7 @@ blockquote {
     box-shadow: 0px 4px 10px #555;
     margin: 5px 0px 20px 20px;
     width: auto !important; }
+
 .post ul li {
   list-style-type: square;
   margin: 0px 0px 0px 16px;
@@ -560,6 +568,7 @@ blockquote {
   .is-page-blog a.more:hover i {
     transform: translateX(5px);
     transition: transform 0.5s; }
+
 .is-page-blog h2 span {
   margin: 0;
   padding: 0;
@@ -592,7 +601,7 @@ blockquote {
 /* Mediaqueries */
 @media screen and (max-width: 479px) {
   html {
-    background: url('../images/sky_mob.jpg') no-repeat top center fixed #afbfd9; }
+    background: url("../images/sky_mob.jpg") no-repeat top center fixed #afbfd9; }
   .w-col {
     text-align: center; }
     .w-col p {
@@ -601,9 +610,19 @@ blockquote {
       margin: 0 auto; }
     .w-col h1, .w-col h2, .w-col h3, .w-col h4, .w-col h5, .w-col h6 {
       text-align: center; }
-    .w-col .inner h2, .w-col .inner h3, .w-col .inner h4, .w-col .inner h5, .w-col .inner h6 {
+    .w-col .inner h2,
+    .w-col .inner h3,
+    .w-col .inner h4,
+    .w-col .inner h5,
+    .w-col .inner h6 {
       text-align: center !important; }
-  .under-nav .box h1, .under-nav .box h2, .under-nav .box h3, .under-nav .box h4, .under-nav .box h5, .under-nav .box h6, .content-container h1, .content-container h2, .content-container h3, .content-container h4, .content-container h5, .content-container h6 {
+  .under-nav .box h1, .under-nav .box h2, .under-nav .box h3, .under-nav .box h4, .under-nav .box h5, .under-nav .box h6,
+  .content-container h1,
+  .content-container h2,
+  .content-container h3,
+  .content-container h4,
+  .content-container h5,
+  .content-container h6 {
     text-align: center; }
   .side-container h1, .side-container h2, .side-container h3, .side-container h4, .side-container h5, .side-container h6 {
     text-align: center; }
