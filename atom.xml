@@ -4,13 +4,44 @@
  <title></title>
  <link href="http://gistoapp.com/atom.xml" rel="self"/>
  <link href="http://gistoapp.com/"/>
- <updated>2016-05-10T00:30:40+03:00</updated>
+ <updated>2018-02-10T19:23:08+02:00</updated>
  <id>http://gistoapp.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Gisto version 2</title>
+   <link href="http://gistoapp.com/blog/gisto-version-2-in-development"/>
+   <updated>2018-02-10T00:00:00+02:00</updated>
+   <id>http://gistoapp.com/blog/gisto-version-two</id>
+   <content type="html">&lt;p&gt;In the past few months we&amp;rsquo;ve been working hard on the next major Gisto iteration, a complete re-write of Gisto to version 2 with fresh look and functionality.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;What is the status?&lt;/h2&gt;
+
+&lt;p&gt;The current status probably should be called pre-alpha, and threaded as one.&lt;/p&gt;
+
+&lt;h2&gt;What&amp;rsquo;s changed?&lt;/h2&gt;
+
+&lt;p&gt;Everything except the API end point we talking too :)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;UI completely rewritten with new layout&lt;/li&gt;
+&lt;li&gt;Every part of the app rewritten or being rewritten with newer technologies&lt;/li&gt;
+&lt;li&gt;Better user experience&lt;/li&gt;
+&lt;li&gt;More search and filtering options&lt;/li&gt;
+&lt;li&gt;Probably more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Development is currently happening in &lt;a href=&quot;https://github.com/Gisto/Gisto/tree/v2&quot;&gt;v2&lt;/a&gt; git branch and will be moved to master later on.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;Comments, remarks, suggestions and pull request are greatly appriciaetd&lt;/blockquote&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Gisto enterprise mode</title>
