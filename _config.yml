@@ -7,6 +7,8 @@ download_url: http://download.gistoapp.com
 download_url_mirror: http://mirror.gistoapp.com
 nightly_url: http://build.gistoapp.com
 
+plugins: [jekyll-paginate]
+
 releases:
  - version: 0.3.1
  - version: 0.3.0
