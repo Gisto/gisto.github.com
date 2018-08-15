@@ -1,5 +1,261 @@
-<!DOCTYPE html><html id=top><head><meta charset=utf-8><title>Documentation | Gisto</title><meta name=description><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=twitter:card content=summary><meta name=twitter:site content=@gistoapp><meta name=twitter:creator content=@gistoapp><meta name=twitter:title content="Gisto - Manage your github gists on desktop"><meta name=twitter:description content="Cross-platform gist snippets management desktop application that allows you and your team share code snippets fast and easily #gistoapp"><meta name=twitter:image content=https://raw.githubusercontent.com/Gisto/Gisto/master/app/icon.png><meta property=og:title content="Gisto - Manage your github gists on desktop"><meta property=og:url content=https://www.gistoapp.com><meta property=og:image content=https://raw.githubusercontent.com/Gisto/Gisto/master/app/icon.png><meta property=og:site_name content=Gistoapp><meta property=og:description content="Cross-platform gist snippets management desktop application that allows you and your team share code snippets fast and easily #gistoapp"><script type=text/javascript>var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-40972813-1"]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script><link rel=stylesheet type=text/css href=/css/style.css></head><body class="is-page-documentation inner"><header class="section header"><div class=header><h1><strong><a href="/">&lt;/Gisto&gt;</a></strong></h1></div><div class=w-container><div class=w-row><nav class="w-col w-col-12 w-clearfix nav-column"><a class="nav-link first" href="/">Home</a> <a class=nav-link href="/features/">Features</a> <a class="nav-link active" href="/documentation/">Docs</a> <a class=nav-link href="/faq/">FAQ</a> <a class="nav-link nav-link-download" href="/blog/">Blog</a></nav></div></div></header><h1>Documentation</h1><section class="whiter boxes page-docs"><div class="w-container content-container"><div class=w-row><div class="w-col w-col-3 w-clearfix side-container"><h2>NAV</h2><nav><ul><li><a class=innsite href=#tags>Tag gist</a></li><li><a class=innsite href=#publicprivate>Change gist state secret / public</a></li><li><a class=innsite href=#sharing>Sharing gists</a></li><li><a class=innsite href=#devs>For developers</a></li><li><a class=innsite href=#notification-server>Notification server</a></li><li><a class=innsite href=#build>Build Gisto</a></li></ul></nav></div><div class="w-col w-col-9 w-clearfix main"><h2 id=tags>Tag gist</h2><p>Every gist can be tagged by adding hash-tag to it's title.</p><p>For example: You have a gist titled</p><pre><span>TEXT</span>Simple html template</pre><p>and you'd like to tag it with "template" and "html" tags. All you need to do, is to add these tags as hash-tags to the end of the title like so:</p><pre><span>TEXT</span>Simple html template #html #template</pre><p>Gisto will then use the hash-tags to display tags in the gist list and search by this tags.</p><h2 id=publicprivate>Change gist state secret / public</h2><p>Gist state can be changed from "secret" to public and vise-versa via the <i class="fa fa-lock"></i> or <i class="fa fa-unlock"></i> on the top panel when viewing gist.</p><p><blockquote>Note! That all comments and revisions of this gist will be lost upon this action.<br><small><b>Update:</b> recently GitHub added this functionality via web interface (with no data loss), but it is not yet available to use via Gist API.</small></blockquote></p><h2 id=sharing>Sharing gists between Gisto users</h2><p>In order to share a gist with another Gisto user all you need to do is open a gist and click share on the top bar and type in the github username of the recipient.</p><p>The recipient will receive a notification that a gist has been sent by you and will be able to view and fork the gist.</p><h2 id=devs>Setting up for development</h2><h4>Pre-installed requirements:</h4><ul class=fa-ul><li class=icons-li><i class="fa fa-chevron-circle-right"></i> <a href=http://git-scm.com/downloads>GIT</a> - distributed version control</li><li class=icons-li><i class="fa fa-chevron-circle-right"></i> <a href="http://nodejs.org/">Node.js</a> - server-side software system written in JavaScript</li><li class=icons-li><i class="fa fa-chevron-circle-right"></i> <a href=https://github.com/rogerwang/node-webkit#downloads>Node-webkit</a> - app runtime based on Chromium and node.js</li><li class=icons-li><i class="fa fa-chevron-circle-right"></i> <a href="http://gulpjs.com/">gulp.js</a> - The streaming build system</li><li class=icons-li><i class="fa fa-chevron-circle-right"></i> <a href="http://gruntjs.com/">MongoDB</a> - NoSQL Database (Optional - used only by notification server)</li></ul><h2>Set it all to work together:</h2><p><i class="fa fa-chevron-circle-right"></i> Clone the latest source (and submodules) with the following command to a directory of your choice:</p><pre><span>SHELL</span>git clone --recursive https://github.com/Gisto/Gisto.git</pre><p><i class="fa fa-chevron-circle-right"></i> Enter into the newly created directory:</p><pre><span>SHELL</span>cd Gisto</pre><p><i class="fa fa-chevron-circle-right"></i> Run:</p><pre><span>SHELL</span>npm install</pre><p>this will install all necessary npm and bower dependencies.</p><p><blockquote>See <a href=https://github.com/Gisto/Gisto/blob/master/gulpfile.js>gulpfile.js</a> fore more details, usage is documented in comments.</blockquote></p><p><i class="fa fa-chevron-circle-right"></i> Rename <code>app/config.json.sample</code> file to <code>app/config.json</code> and fill required fields</p><pre><span>JSON</span>{
+<!DOCTYPE html>
+<html id="top">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation | Gisto</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@gistoapp">
+    <meta name="twitter:creator" content="@gistoapp">
+    <meta name="twitter:title" content="Gisto - Manage your github gists on desktop">
+    <meta name="twitter:description" content="Cross-platform gist snippets management desktop application that allows you and your team share code snippets fast and easily #gistoapp">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Gisto/Gisto/master/app/icon.png">
+    <meta property="og:title" content="Gisto - Manage your github gists on desktop">
+    <meta property="og:url" content="https://www.gistoapp.com">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Gisto/Gisto/master/app/icon.png">
+    <meta property="og:site_name" content="Gistoapp">
+    <meta property="og:description" content="Cross-platform gist snippets management desktop application that allows you and your team share code snippets fast and easily #gistoapp">
+
+
+    <script type="text/javascript">//<![CDATA[
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-40972813-1']);
+_gaq.push(['_trackPageview']);
+(function () {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+//]]></script>
+
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body class="is-page-documentation inner">
+
+
+<header class="section header">
+
+    <div class="header">
+        <h1><strong><a href="/">&lt;/Gisto&gt;</a></strong></h1>
+    </div>
+
+    <div class="w-container">
+        <div class="w-row">
+            <nav class="w-col w-col-12 w-clearfix nav-column">
+                
+                  
+                  
+                  <a class="nav-link  first "
+                     href="/">
+                      Home
+                  </a>
+                
+                  
+                  
+                  <a class="nav-link   "
+                     href="/features/">
+                      Features
+                  </a>
+                
+                  
+                  
+                  <a class="nav-link active   "
+                     href="/documentation/">
+                      Docs
+                  </a>
+                
+                  
+                  
+                  <a class="nav-link   "
+                     href="/faq/">
+                      FAQ
+                  </a>
+                
+                  
+                  
+                  <a class="nav-link   "
+                     href="/blog/">
+                      Blog
+                  </a>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+
+<h1>Documentation</h1>
+
+<section class="whiter boxes page-docs">
+
+
+    <div class="w-container content-container">
+        <div class="w-row">
+
+            <div class="w-col w-col-3 w-clearfix side-container">
+                <h2>NAV</h2>
+                <nav>
+                    <ul>
+                        <li><a class="innsite" href="#tags">Tag gist</a></li>
+                        <li><a class="innsite" href="#devs">For developers</a></li>
+                        <li><a class="innsite" href="#build">Build Gisto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="w-col w-col-9 w-clearfix main">
+
+                <h2 id="tags">Tag gist</h2>
+
+                <p>Every gist can be tagged by adding hash-tag to it's title.</p>
+
+                <p>For example: You have a gist titled</p>
+                <pre><span>TEXT</span>Simple html template</pre>
+                <p>and you'd like to tag it with "template" and "html" tags. All you need to do, is to add these tags as
+                    hash-tags to the end of the title like so:</p>
+                <pre><span>TEXT</span>Simple html template #html #template</pre>
+                <p>Gisto will then use the hash-tags to display tags in the gist list and search by this tags.</p>
+
+                <h2 id="devs">Setting up for development</h2>
+                <h4>Pre-installed requirements:</h4>
+                <ul class="fa-ul">
+                    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> <a href="http://git-scm.com/downloads">GIT</a>
+                        - distributed version control
+                    </li>
+                    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> <a
+                            href="http://nodejs.org/">Node.js</a> -
+                        server-side software system written in JavaScript
+                    </li>
+                    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> <a
+                            href="https://github.com/rogerwang/node-webkit#downloads">Node-webkit</a> - app runtime
+                        based on Chromium and node.js
+                    </li>
+                    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i>
+                        <a href="http://gulpjs.com/">gulp.js</a> - The streaming build
+                        system
+
+                    </li>
+                    <li class="icons-li"><i class="fa fa-chevron-circle-right"></i> <a
+                            href="http://gruntjs.com/">MongoDB</a> - NoSQL Database (Optional - used only by notification server)
+                    </li>
+                </ul>
+                <h2>Set it all to work together:</h2>
+
+                <p><i class="fa fa-chevron-circle-right"></i> Clone the latest source (and submodules) with the following command to a
+                    directory of your choice:</p>
+                <pre><span>SHELL</span>git clone --recursive https://github.com/Gisto/Gisto.git</pre>
+
+                <p><i class="fa fa-chevron-circle-right"></i> Enter into the newly created directory:</p>
+
+                <pre><span>SHELL</span>cd Gisto</pre>
+
+                <p><i class="fa fa-chevron-circle-right"></i> Run:</p>
+
+                <pre><span>SHELL</span>npm install</pre>
+
+                <p>this will install all necessary npm and bower dependencies.</p>
+
+                <p><blockquote>See <a href="https://github.com/Gisto/Gisto/blob/master/gulpfile.js">gulpfile.js</a> fore more details, usage is documented in comments.</blockquote></p>
+
+                <p><i class="fa fa-chevron-circle-right"></i> Rename <code>app/config.json.sample</code> file to <code>app/config.json</code> and fill required fields</p>
+
+                <pre><span>JSON</span>{
     "client_id":"",
     "client_secret":""
-}</pre><p>This needed in order to use GitHub Gist API (<a href=https://github.com/settings/applications/new>Register a new OAuth application</a>)</p><p><i class="fa fa-chevron-circle-right"></i> Run Gisto</p><pre><span>SHELL</span>npm start</pre><p>This will run Gisto via node-webkit (pre-installed by npm as dependency)</p><h2 id=notification-server>Run the notifications server: (optional)</h2><p>Configure the notification server connection string: you will find <code>config.js.sample</code> sample file, in the <i>server</i> directory. Rename it to <code>config.js</code> and fill in the "connectionString" which is the full connection string of mongo e.g. <code>mongodb://server/collection</code> and OAuth application "clientId".</p><pre><span>JavaScript</span>exports.connectionString = '';
-exports.clientId = '';</pre><p>Start a mongoDB instance</p><p><i class="fa fa-chevron-circle-right"></i> Run:</p><pre><span>SHELL</span>mongod</pre><p>Start the nodejs notifications server</p><pre><span>SHELL</span>node server/app.js</pre><p><blockquote>Even better, run it with <a href=https://www.npmjs.com/package/forever title="A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)">forever</a> or <a href=https://www.npmjs.com/package/pm2 title="Production process manager for Node.JS applications. Perfectly designed for microservice architecture">PM2</a> (both available as NPM packages) on persistent server.</blockquote></p><h4><b>Congratulations!</b> If all went well, you are now have set-up local version of Gisto in your machine.</h4><h2 id=build>Build</h2><p><i class="fa fa-chevron-circle-right"></i> View build script help/usage:</p><pre><span>SHELL</span>./build/script/nwjs-build.sh --help</pre></div></div></div></section><div class=push></div><footer><div class=w-container><div class=w-row><div class="w-col w-col-1 w-clearfix"><img src="https://secure.gravatar.com/avatar/3a615b34ef2060face8fcd481c6377e1?s=80" alt="Maayan Glikser"></div><div class="w-col w-col-5 w-clearfix"><h3>Maayan Glikser</h3><p>Software Developer<br><a target=_blank href=http://www.glikm.com>www.glikm.com</a> | <i class="fa fa-twitter"></i> <a target=_blank href=https://twitter.com/MaayanGlikser>@MaayanGlikser</a></p></div><div class="w-col w-col-1 w-clearfix"><img src="https://secure.gravatar.com/avatar/7ddad1a9a1c8de452badaf82b6c30c76?s=80" alt="Sasha Khamkov"></div><div class="w-col w-col-5 w-clearfix"><h3>Sasha Khamkov</h3><p>Web Developer<br><a target=_blank href=http://www.sanusart.com>www.sanusart.com</a> | <i class="fa fa-twitter"></i> <a target=_blank href=https://twitter.com/sanusart>@sanusart</a></p></div></div></div><p class=txt-center>&copy; 2018 Gisto</p></footer><a href=#top class="top innsite"><i class="fa fa-arrow-up"></i></a><script src=https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js></script><script>WebFont.load({google:{families:["Open Sans:300,400,600,700,800"]}});</script><script type=text/javascript src=https://ws.sharethis.com/button/buttons.js></script><script type=text/javascript>stLight.options({publisher:"6ccdc1be-66dc-486b-bd54-e41e194e96d5",doNotHash:!1,doNotCopy:!1,hashAddressBar:!1});</script><script src=/js/script.js></script></body></html>
+}</pre>
+
+                <p>This needed in order to use GitHub Gist API (<a href="https://github.com/settings/applications/new">Register a new OAuth application</a>)</p>
+
+                <p><i class="fa fa-chevron-circle-right"></i> Run Gisto</p>
+
+                <pre><span>SHELL</span>npm start</pre>
+
+                <p>This will run Gisto via node-webkit (pre-installed by npm as dependency)</p>
+
+                <h4><b>Congratulations!</b> If all went well, you are now have set-up local version of Gisto in your
+                    machine.</h4>
+
+                <h2 id="build">Build</h2>
+
+                <p><i class="fa fa-chevron-circle-right"></i> View build script help/usage:</p>
+                <pre><span>SHELL</span>./build/script/nwjs-build.sh --help</pre>
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<div class="push"></div>
+<footer>
+
+    <div class="w-container">
+        <div class="w-row">
+
+            
+
+            <div class="w-col w-col-1 w-clearfix">
+                <img src="https://secure.gravatar.com/avatar/3a615b34ef2060face8fcd481c6377e1?s=80" alt="Maayan Glikser"/>
+            </div>
+            <div class="w-col w-col-5 w-clearfix">
+                <h3>Maayan Glikser</h3>
+
+                <p>
+                    Software Developer <br/> <a target="_blank" href="http://www.glikm.com">www.glikm.com</a>
+                    | <i class="fa fa-twitter"></i> <a target="_blank" href="https://twitter.com/MaayanGlikser">@MaayanGlikser</a>
+                </p>
+            </div>
+
+            
+
+            <div class="w-col w-col-1 w-clearfix">
+                <img src="https://secure.gravatar.com/avatar/7ddad1a9a1c8de452badaf82b6c30c76?s=80" alt="Sasha Khamkov"/>
+            </div>
+            <div class="w-col w-col-5 w-clearfix">
+                <h3>Sasha Khamkov</h3>
+
+                <p>
+                    Web Developer <br/> <a target="_blank" href="http://www.sanusart.com">www.sanusart.com</a>
+                    | <i class="fa fa-twitter"></i> <a target="_blank" href="https://twitter.com/sanusart">@sanusart</a>
+                </p>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <p class="txt-center">&copy; 2018 Gisto</p>
+
+</footer>
+
+<a href="#top" class="top innsite"><i class="fa fa-arrow-up"></i></a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ["Open Sans:300,400,600,700,800", "Roboto:300,400,600,700,800"]
+        }
+    });
+</script>
+<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "6ccdc1be-66dc-486b-bd54-e41e194e96d5", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
+
