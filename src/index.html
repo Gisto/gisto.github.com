@@ -16,8 +16,7 @@ title: Code Snippet Manager | Gisto | Snippets made awesome | Manage your github
                 <h3>Rich Editor</h3>
 
                 <p>
-                    Gisto includes Ace. A rich code editor for editing your Gists on the go
-                    and includes features such as syntax highlighting auto-completion emmet and more.
+                    Gisto includes open-source <a href="https://microsoft.github.io/monaco-editor/">monaco editor</a>. A rich code editor for editing your Gists and includes features such as syntax highlighting auto-completion emmet and more.
                 </p>
             </div>
 
@@ -28,7 +27,7 @@ title: Code Snippet Manager | Gisto | Snippets made awesome | Manage your github
 
                 <p>
                     Gists can be found quickly using our search and can be filtered by gist description, file
-                    names, tags and more.
+                    names, tag or multiple tags, language and more.
                 </p>
             </div>
 
@@ -38,7 +37,7 @@ title: Code Snippet Manager | Gisto | Snippets made awesome | Manage your github
                 <h3>Tags</h3>
 
                 <p>
-                    Gisto allows you to tag Gists with custom tags to help you find your Gists easily.
+                    Gisto allows you to tag Gists with custom tags to help you find your Gists easily. Just add hashtag to snippet title and you done. Later gitsts can be found by typing hash-tag into search or from the tag list on the dashboard.
                 </p>
             </div>
 
@@ -97,90 +96,4 @@ title: Code Snippet Manager | Gisto | Snippets made awesome | Manage your github
 
 
 <h1 id="download">Downloads</h1>
-<section class="whiter boxes">
-
-    <div class="w-container">
-
-        <p class="txt-grey txt-center" href=""><b>LATEST VERSION:</b>
-            {% for v in site.releases %}
-            {% if forloop.first %}
-            {% assign current_version=v.version %}
-            {{ current_version }}
-            {% endif %}
-            {% endfor %} - <b>RELEASED:</b> {{ site.gisto_build_date }}</p>
-        <br/>
-
-        <div class="w-col w-col-10 w-clearfix">
-        <p><strong>{{ site.gisto_build_date }} Note:</strong><br/>Due to recent <a target="_blank" href="https://githubengineering.com/crypto-deprecation-notice/"><u>Github changes in TLS policies</u></a>, for now we provide runnable binaries <s>installers</s> for all the platform.
-            Installers for all platform will be released through the regular channels soon after</p>
-        </div>
-
-
-        <div class="w-container">
-
-            <div class="w-row">
-
-                <div class="download w-col w-col-3 w-clearfix txt-center">
-                    <p class="txt-center"><i class="fa fa-windows fa-4x"></i></p>
-
-                    <h3>Windows<br/> <b>Download</b></h3>
-                    <a href="https://github.com/Gisto/Gisto/releases/download/0.3.2-beta/Gisto-v0.3.2-windows-x64.zip"><b>64</b>BIT</a>
-                </div>
-
-                <div class="download w-col w-col-3 w-clearfix txt-center">
-                    <p class="txt-center"><i class="fa fa-apple fa-4x"></i></p>
-
-                    <h3>OSX<br/> <b>Download</b></h3>
-                    <a href="https://github.com/Gisto/Gisto/releases/download/0.3.2-beta/Gisto-v0.3.2-macos-x64.dmg"><b>64</b>BIT</a>
-                </div>
-
-                <div class="download w-col w-col-3 w-clearfix txt-center">
-                    <p class="txt-center"><i class="fa fa-linux fa-4x"></i></p>
-
-                    <h3>Linux 64bit<br/> <b>Download</b></h3>
-                    <a href="https://github.com/Gisto/Gisto/releases/download/0.3.2-beta/Gisto-v0.3.2-linux-win32.zip"><b>32</b>BIT</a> | <a
-                        href="https://github.com/Gisto/Gisto/releases/download/0.3.2-beta/Gisto-v0.3.2-linux-x64.zip"><b>64</b>BIT</a>
-                </div>
-
-                <div class="download w-col w-col-3 w-clearfix txt-center">
-                    <p class="txt-center"><i class="fa fa-cogs fa-4x"></i></p>
-
-                    <h3>Nightly builds<br/> <b>Download</b></h3>
-                    <a href="{{ site.nightly_url }}">Build server</a>
-                </div>
-
-            </div>
-
-            <!--<div class="w-container">-->
-                <!--<div class="w-row">-->
-                    <!--<div class="w-col w-col-pull-1 w-col-push-3 w-col-6 ">-->
-                        <!--<h2>Other install options:</h2>-->
-
-                        <!--<p>via <b>Homebrew cask</b>:-->
-                        <!--<pre><span>SHELL</span>$ brew cask install gisto</pre>-->
-                        <!--</p>-->
-                        <!--<p>via <b>Archlinux AUR</b>:-->
-                        <!--<pre><span>SHELL</span>$ yaourt -S gisto</pre>-->
-                        <!--</p>-->
-                        <!--<p>via <b>SlackBuilds.org (Slackware)</b>:-->
-                        <!--<pre><span>SHELL</span># sbopkg -i gisto</pre>-->
-                        <!--</p>-->
-
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="center-holder">-->
-                <!--<a href="download/" class="btn bg-grey txt-white btn-center">-->
-                    <!--Mirrors and prev. versions <i class="fa fa-arrow-right"></i>-->
-                <!--</a>-->
-
-                <!--<a href="changelog/" class="btn bg-grey txt-white btn-center">-->
-                    <!--Change log-->
-                <!--</a>-->
-            <!--</div>-->
-
-
-        </div>
-    </div>
-</section>
+{% include downloads.html %}

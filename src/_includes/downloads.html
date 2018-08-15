@@ -1,0 +1,101 @@
+<section class="whiter boxes">
+
+    <div class="w-container">
+
+        <p class="txt-grey txt-center" href=""><b>LATEST VERSION:</b>
+            {% for v in site.releases %}
+            {% if forloop.first %}
+            {% assign current_version=v.version %}
+            {{ current_version }}
+            {% endif %}
+            {% endfor %} - <b>RELEASED:</b> {{ site.gisto_build_date }}</p>
+        <br/>
+
+        <div class="w-container">
+
+            <div class="w-row">
+
+                <div class="download w-col w-col-3 w-clearfix txt-center">
+                    <p class="txt-center"><i class="fa fa-windows fa-4x"></i></p>
+
+                    <h3><b>Windown</b><br/>Download</h3>
+                    <a href="{{ download_url }}/download/v{{ current_version }}/Gisto-{{ current_version }}.exe"><b>exe</b></a>
+                </div>
+
+                <div class="download w-col w-col-3 w-clearfix txt-center">
+                    <p class="txt-center"><i class="fa fa-apple fa-4x"></i></p>
+
+                    <h3><b>macOS</b><br/>Download</h3>
+                    <a href="{{ download_url }}/download/{{ current_version }}/Gisto-v{{ current_version }}-macos-x64.dmg"><b>dmg</b></a> |
+                    <a href="{{ download_url }}/download/v{{ current_version }}/Gisto-{{ current_version }}.zip"><b>zip</b></a>
+                </div>
+
+                <div class="download w-col w-col-3 w-clearfix txt-center">
+                    <p class="txt-center"><i class="fa fa-linux fa-4x"></i></p>
+
+                    <h3><b>Linux</b><br/>Download</h3>
+                    <a href="{{ download_url }}/download/v{{ current_version }}/Gisto-{{ current_version }}-amd64.deb"><b>deb</b></a> |
+                    <a href="{{ download_url }}/download/v{{ current_version }}/Gisto-{{ current_version }}-amd64.snap"><b>snap</b></a> |
+                    <a href="{{ download_url }}/download/v{{ current_version }}/Gisto-{{ current_version }}-x86_64.AppImage"><b>AppImage</b></a> |
+                    <a href="{{ download_url }}/download/v{{ current_version }}/Gisto-{{ current_version }}-x86_64.rpm"><b>rpm</b></a> |
+                    <a href="{{ download_url }}/download/v{{ current_version }}/Gisto-{{ current_version }}.pacman"><b>pacman</b></a>
+                </div>
+
+                <div class="download w-col w-col-3 w-clearfix txt-center">
+                    <p class="txt-center"><i class="fa fa-cogs fa-4x"></i></p>
+
+                    <h3>Nightly<br/> <b>Download</b></h3>
+                    <a href="{{ site.nightly_url }}">GitHub releases</a>
+                </div>
+
+            </div>
+
+
+            <div class="w-row">
+
+                <p class="txt-grey txt-center" href=""><b>PREVIOUS VERSION:</b>
+                    0.3.2</p>
+                <br/>
+
+                <div class="download w-col w-col-12 w-clearfix txt-center">
+                    <i class="fa fa-windows"></i> <a href="{{ download_url }}/download/0.3.2-beta/Gisto-v0.3.2-windows-x64.zip">Windows</a>
+                    <i class="fa fa-apple"></i> <a href="{{ download_url }}/download/0.3.2-beta/Gisto-v0.3.2-macos-x64.dmg">MACOS</a>
+                    <i class="fa fa-linux"></i> <a href="{{ download_url }}/download/0.3.2-beta/Gisto-v0.3.2-linux-win32.zip">Linux 32bit</a>
+                    <i class="fa fa-linux"></i> <a href="{{ download_url }}/download/0.3.2-beta/Gisto-v0.3.2-linux-x64.zip">Linux 64bit</a>
+                </DIV>
+
+            </div>
+
+            <!--<div class="w-container">-->
+            <!--<div class="w-row">-->
+            <!--<div class="w-col w-col-pull-1 w-col-push-3 w-col-6 ">-->
+            <!--<h2>Other install options:</h2>-->
+
+            <!--<p>via <b>Homebrew cask</b>:-->
+            <!--<pre><span>SHELL</span>$ brew cask install gisto</pre>-->
+            <!--</p>-->
+            <!--<p>via <b>Archlinux AUR</b>:-->
+            <!--<pre><span>SHELL</span>$ yaourt -S gisto</pre>-->
+            <!--</p>-->
+            <!--<p>via <b>SlackBuilds.org (Slackware)</b>:-->
+            <!--<pre><span>SHELL</span># sbopkg -i gisto</pre>-->
+            <!--</p>-->
+
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="center-holder">-->
+            <!--<a href="download/" class="btn bg-grey txt-white btn-center">-->
+            <!--Mirrors and prev. versions <i class="fa fa-arrow-right"></i>-->
+            <!--</a>-->
+
+            <!--<a href="changelog/" class="btn bg-grey txt-white btn-center">-->
+            <!--Change log-->
+            <!--</a>-->
+            <!--</div>-->
+
+
+        </div>
+    </div>
+</section>

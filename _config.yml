@@ -2,26 +2,16 @@
 # Can be used in your theme by calling 'site.title' and so on
 name: Gisto
 url: http://gistoapp.com
-gisto_build_date: 2018-25-02
-download_url: http://download.gistoapp.com
+gisto_build_date: 2018-08-15
+download_url: https://github.com/Gisto/Gisto/releases
 download_url_mirror: http://mirror.gistoapp.com
-nightly_url: http://build.gistoapp.com
+nightly_url: https://github.com/Gisto/Gisto/releases
 
 plugins: [jekyll-paginate]
 
 releases:
+ - version: 1.9.61
  - version: 0.3.2
- - version: 0.3.1
- - version: 0.3.0
- - version: 0.2.6b
- - version: 0.2.5b
- - version: 0.2.4b
- - version: 0.2.3b
- - version: 0.2.2b
- - version: 0.2.1b
- - version: 0.2.0b
- - version: 0.1.3a
- - version: 0.1.2a
 
 navigation:
 - text: Home

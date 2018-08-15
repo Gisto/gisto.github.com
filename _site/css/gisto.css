@@ -42,7 +42,7 @@ p {
   font-size: 16px; }
 
 .bg-tomato {
-  background: tomato; }
+  background: #3f83a8; }
 
 .bg-grey {
   background: grey; }
@@ -113,7 +113,7 @@ code {
 .button, .btn {
   display: inline-block;
   padding: 4px 15px;
-  background-color: tomato;
+  background-color: #3f83a8;
   color: white;
   text-align: center;
   text-decoration: none; }
@@ -123,7 +123,7 @@ button {
   padding: 7px 20px; }
 
 .bg-tomato {
-  background: tomato; }
+  background: #3f83a8; }
 
 .bg-grey {
   background: grey; }
@@ -161,11 +161,11 @@ a.nav-link {
     border-width: 10px;
     margin-left: -10px; }
   a.nav-link:hover {
-    text-shadow: 1px 1px 1px #fff, 0px 1px 3px tomato;
-    color: tomato; }
+    text-shadow: 1px 1px 1px #fff, 0px 1px 3px #3f83a8;
+    color: #3f83a8; }
 
 .nav-link-download {
-  color: tomato; }
+  color: #3f83a8; }
 
 .nav-column {
   text-align: center; }
@@ -178,55 +178,8 @@ a.nav-link {
   padding: 10px 0px 0px 0px;
   font: normal 19px/28px 'open sans'; }
 
-.hero-video {
-  display: none; }
-
-.video-run {
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease; }
-  .video-run img {
-    box-shadow: 0px 2px 3px #555;
-    padding: 0;
-    margin: 0; }
-  .video-run i {
-    top: 0;
-    position: absolute;
-    display: none !important;
-    margin: 5% 25%;
-    font-size: 62px;
-    width: inherit;
-    padding: 15px;
-    text-align: center; }
-  .video-run:hover i {
-    display: block !important;
-    opacity: 1;
-    color: #fff;
-    text-shadow: 0 0 20px #000;
-    font-size: 150px; }
-
-.close-video, .next-video, .prev-video {
-  position: absolute;
-  top: 10px;
-  z-index: 999;
-  right: 10px;
-  font-size: 28px;
-  color: #fff;
-  background: tomato;
-  padding: 5px 10px;
-  opacity: 0.5; }
-  .close-video:hover, .next-video:hover, .prev-video:hover {
-    opacity: 1; }
-
-.next-video {
-  right: 62px;
-  background: skyblue; }
-
-.prev-video {
-  right: 118px;
-  background: skyblue; }
+.app-image img {
+  box-shadow: 0 0 5px #555; }
 
 header {
   background: #fff;
@@ -242,7 +195,7 @@ header {
   header h1 {
     padding: 10px 0px;
     margin: 0;
-    font-family: 'open sans';
+    font-family: 'open sans', sans-serif;
     font-weight: 100; }
 
 .boxes {
@@ -251,7 +204,7 @@ header {
 .box {
   padding: 10px;
   color: #fff;
-  font-family: 'open sans';
+  font-family: 'open sans', sans-serif;
   font-weight: 100;
   text-decoration: none; }
   .box:hover {
@@ -270,7 +223,7 @@ header {
     margin-top: 0; }
 
 .txt-red {
-  color: tomato; }
+  color: #3f83a8; }
 
 .txt-grey {
   color: #555; }
@@ -341,11 +294,11 @@ ul {
 .inner .whiter p a {
   text-decoration: underline; }
   .inner .whiter p a:hover {
-    color: tomato;
+    color: #3f83a8;
     opacity: 1; }
   .inner .whiter p a:active {
     color: #fff;
-    background: tomato;
+    background: #3f83a8;
     border-radius: 3px;
     text-decoration: none; }
 
@@ -360,8 +313,8 @@ ul {
     border-radius: 3px;
     padding: 5px 10px; }
     .inner nav ul a:hover {
-      background: tomato;
-      border: 1px solid tomato;
+      background: #3f83a8;
+      border: 1px solid #3f83a8;
       color: #fff; }
 
 .inner .feat {
@@ -378,8 +331,8 @@ ul {
     width: 90%; }
     .feat img:hover {
       border-radius: 3px;
-      box-shadow: 0px 4px 10px #555;
-      border: 1px solid #333; }
+      box-shadow: 0px 0px 50px #777;
+      border: 1px solid #CCC; }
   .feat p {
     text-align: left; }
   .feat h3 {
@@ -389,7 +342,7 @@ ul {
   margin-left: 0 !important;
   text-align: left; }
   .fa-ul i {
-    color: tomato; }
+    color: #3f83a8; }
 
 .btn-center {
   margin: 20px auto 0;
@@ -454,7 +407,7 @@ pre {
     opacity: 0; }
 
 .main p a, .main ul a {
-  color: tomato; }
+  color: #3f83a8; }
   .main p a:hover, .main ul a:hover {
     color: skyblue; }
 
@@ -524,8 +477,8 @@ blockquote {
   margin: 0;
   font-size: 15px;
   font-style: italic;
-  color: tomato;
-  border-left: 5px solid tomato;
+  color: #3f83a8;
+  border-left: 5px solid #3f83a8;
   padding: 10px 0px 10px 10px;
   background: #f2f2f2;
   text-align: left; }
@@ -559,12 +512,12 @@ blockquote {
 
 .is-page-blog a.more {
   font-size: 16px;
-  color: tomato;
+  color: #3f83a8;
   text-align: right;
   text-transform: uppercase;
   margin: 30px 0px 0px 0px; }
   .is-page-blog a.more:hover {
-    text-shadow: 1px 1px 1px #fff, 0px 1px 3px tomato; }
+    text-shadow: 1px 1px 1px #fff, 0px 1px 3px #3f83a8; }
   .is-page-blog a.more:hover i {
     transform: translateX(5px);
     transition: transform 0.5s; }
@@ -704,3 +657,6 @@ blockquote {
     width: 50%;
     padding: 15px;
     border-radius: 10px; } }
+
+.text-danger {
+  color: tomato; }

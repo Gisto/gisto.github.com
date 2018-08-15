@@ -4,7 +4,7 @@
  <title></title>
  <link href="http://gistoapp.com/atom.xml" rel="self"/>
  <link href="http://gistoapp.com/"/>
- <updated>2018-03-19T23:26:12+02:00</updated>
+ <updated>2018-08-16T01:02:11+03:00</updated>
  <id>http://gistoapp.com</id>
  <author>
    <name></name>
@@ -23,7 +23,7 @@
 
 &lt;h2&gt;What is the status?&lt;/h2&gt;
 
-&lt;p&gt;The current status probably should be called pre-alpha, and threaded as one.&lt;/p&gt;
+&lt;p&gt;The current status probably should be called beta.&lt;/p&gt;
 
 &lt;h2&gt;What&amp;rsquo;s changed?&lt;/h2&gt;
 
@@ -37,7 +37,7 @@
 &lt;li&gt;Probably more&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Development is currently happening in &lt;a href=&quot;https://github.com/Gisto/Gisto/tree/v2&quot;&gt;v2&lt;/a&gt; git branch and will be moved to master later on.&lt;/p&gt;
+&lt;p&gt;Development is currently happening in &lt;a href=&quot;https://github.com/Gisto/Gisto/tree/next&quot;&gt;next&lt;/a&gt; git branch and will be moved to master later on.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote&gt;Comments, remarks, suggestions and pull request are greatly appriciaetd&lt;/blockquote&gt;&lt;/p&gt;
 </content>
@@ -134,7 +134,7 @@ the notifications server in premise and connect to that server.&lt;/p&gt;
 &lt;p&gt;Please note that these are not stable releases. &lt;br&gt;Bugs are possible. Those builds lacks the usual installers you may get in the regular releases.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&amp;ldquo;Nightly&amp;rdquo; builds for all platforms are available at: &lt;a href=&quot;http://build.gistoapp.com&quot;&gt;build.gistoapp.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Nightly&amp;rdquo; builds for all platforms are available at: &lt;a href=&quot;https://github.com/Gisto/Gisto/releases&quot;&gt;build.gistoapp.com&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

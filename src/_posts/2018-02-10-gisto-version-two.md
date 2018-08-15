@@ -15,7 +15,7 @@ In the past few months we've been working hard on the next major Gisto iteration
 
 ## What is the status?
 
-The current status probably should be called pre-alpha, and threaded as one.
+The current status probably should be called beta.
 
 ## What's changed?
 
@@ -27,7 +27,7 @@ Everything except the API end point we talking too :)
 - More search and filtering options
 - Probably more
 
-Development is currently happening in <a href="https://github.com/Gisto/Gisto/tree/v2">v2</a> git branch and will be moved to master later on.
+Development is currently happening in <a href="https://github.com/Gisto/Gisto/tree/next">next</a> git branch and will be moved to master later on.
 
 <p><blockquote>Comments, remarks, suggestions and pull request are greatly appriciaetd</blockquote></p>
 

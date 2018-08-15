@@ -41,7 +41,7 @@
                   {% if page.page_name == link.url %}
                     {% assign state = 'active ' %}
                   {% endif %}
-                  <a class="nav-link {{ state }} {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}nav-link-download{% endif %}"
+                  <a class="nav-link {{ state }} {% if forloop.first %}first{% endif %} {{ current }}"
                      href="{% if forloop.first %}/{% else %}/{{ link.url }}/{% endif %}">
                       {{ link.text }}
                   </a>

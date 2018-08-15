@@ -18,10 +18,7 @@ permalink: /documentation/
                 <nav>
                     <ul>
                         <li><a class="innsite" href="#tags">Tag gist</a></li>
-                        <li><a class="innsite" href="#publicprivate">Change gist state secret / public</a></li>
-                        <li><a class="innsite" href="#sharing">Sharing gists</a></li>
                         <li><a class="innsite" href="#devs">For developers</a></li>
-                        <li><a class="innsite" href="#notification-server">Notification server</a></li>
                         <li><a class="innsite" href="#build">Build Gisto</a></li>
                     </ul>
                 </nav>
@@ -39,21 +36,6 @@ permalink: /documentation/
                     hash-tags to the end of the title like so:</p>
                 <pre><span>TEXT</span>Simple html template #html #template</pre>
                 <p>Gisto will then use the hash-tags to display tags in the gist list and search by this tags.</p>
-
-                <h2 id="publicprivate">Change gist state secret / public</h2>
-
-                <p>Gist state can be changed from "secret" to public and vise-versa via the <i class="fa fa-lock"></i> or <i class="fa fa-unlock"></i> on the top panel when viewing gist.</p>
-                <p><blockquote>Note! That all comments and revisions of this gist will be lost upon this action.
-            <br><small><b>Update:</b> recently GitHub added this functionality via web interface (with no data loss),
-                but it is not yet available to use via Gist API.</small></blockquote></p>
-
-                <h2 id="sharing">Sharing gists between Gisto users</h2>
-
-                <p>In order to share a gist with another Gisto user all you need to do is open a gist and click
-                    share on the top bar and type in the github username of the recipient.</p>
-
-                <p>The recipient will receive a notification that a gist has been sent by you and will be able to view
-                    and fork the gist.</p>
 
                 <h2 id="devs">Setting up for development</h2>
                 <h4>Pre-installed requirements:</h4>
@@ -110,24 +92,6 @@ permalink: /documentation/
                 <pre><span>SHELL</span>npm start</pre>
 
                 <p>This will run Gisto via node-webkit (pre-installed by npm as dependency)</p>
-
-                <h2 id="notification-server">Run the notifications server: (optional)</h2>
-
-                <p>Configure the notification server connection string: you will find <code>config.js.sample</code> sample file, in the <i>server</i>
-                    directory. Rename it to <code>config.js</code> and fill in the "connectionString" which is the full connection string of mongo e.g. <code>mongodb://server/collection</code> and OAuth application "clientId".</p>
-
-<pre><span>JavaScript</span>exports.connectionString = '';
-exports.clientId = '';</pre>
-
-                <p>Start a mongoDB instance</p>
-
-                <p><i class="fa fa-chevron-circle-right"></i> Run:</p>
-                <pre><span>SHELL</span>mongod</pre>
-
-                <p>Start the nodejs notifications server</p>
-                <pre><span>SHELL</span>node server/app.js</pre>
-
-                <p><blockquote>Even better, run it with <a href="https://www.npmjs.com/package/forever" title="A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)">forever</a> or <a href="https://www.npmjs.com/package/pm2" title="Production process manager for Node.JS applications. Perfectly designed for microservice architecture">PM2</a> (both available as NPM packages) on persistent server.</blockquote></p>
 
                 <h4><b>Congratulations!</b> If all went well, you are now have set-up local version of Gisto in your
                     machine.</h4>
