@@ -3513,15 +3513,6 @@ ul {
     .download a:hover {
       color: #fff;
       background: #555; }
-  .download:hover {
-    padding: 20px;
-    border: 1px dashed #ccc;
-    background: #f2f2f2;
-    border-radius: 3px; }
-    .download:hover i {
-      text-shadow: 0px 0px 10px #fff; }
-    .download:hover:active {
-      background: skyblue; }
 
 .center-holder {
   position: relative;
