@@ -3507,9 +3507,12 @@ ul {
     text-align: center; }
   .download a {
     color: grey;
-    background: transparent;
-    padding: 5px 10px;
-    border-radius: 3px; }
+    border: 1px solid grey;
+    padding: 1px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px; }
     .download a:hover {
       color: #fff;
       background: #555; }
@@ -3519,7 +3522,6 @@ ul {
   text-align: center; }
 
 pre {
-  white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
   border: 1px solid #ccc;
