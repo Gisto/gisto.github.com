@@ -359,7 +359,8 @@ ul {
     padding: 1px 10px;
     border-radius: 3px;
     display: inline-block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-right: 10px; }
     .download a:hover {
       color: #fff;
       background: #555; }
