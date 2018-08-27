@@ -175,11 +175,47 @@ a.nav-link {
 
 .under-nav,
 .under-nav p {
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0 0 0;
   font: normal 19px/28px 'open sans'; }
 
-.app-image img {
-  box-shadow: 0 0 5px #555; }
+.app-image p#app-image-controls {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+.app-image #app-image-controls span {
+  border: 1px solid #3f83a8;
+  display: inline-block;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border-radius: 50%; }
+  .app-image #app-image-controls span.selected {
+    border: 1px solid #3f83a8;
+    background: #3f83a8; }
+
+.app-image #app-image {
+  position: relative;
+  width: 100%;
+  height: 288px;
+  margin: 0 auto 10px; }
+
+.app-image #app-image img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0); }
+
+.app-image #app-image img.opaque {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1); }
 
 header {
   background: #fff;
