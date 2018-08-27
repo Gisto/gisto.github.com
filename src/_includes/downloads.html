@@ -2,13 +2,15 @@
 
     <div class="w-container">
 
-        <p class="txt-grey txt-center" href=""><b>LATEST VERSION:</b>
+        <p class="txt-grey txt-center"><b>LATEST VERSION:</b>
             {% for v in site.releases %}
             {% if forloop.first %}
             {% assign current_version=v.version %}
             {{ current_version }}
             {% endif %}
-            {% endfor %} - <b>RELEASED:</b> {{ site.gisto_build_date }}</p>
+            {% endfor %} |
+            <a href="https://github.com/Gisto/Gisto/blob/master/CHANGELOG.md" class="txt-red txt-underline">Change log</a>
+            | <b>RELEASED:</b> {{ site.gisto_build_date }}</p>
         <br/>
 
         <div class="w-container">
@@ -50,18 +52,27 @@
 
             </div>
 
-
             <div class="w-row">
 
-                <p class="txt-grey txt-center" href=""><b>PREVIOUS VERSION:</b>
-                    0.3.2</p>
+                <p class="txt-grey txt-center"><b>PREVIOUS VERSION:</b> 0.3.2</p>
                 <br/>
-
+                <div class="w-col w-col-12 w-clearfix txt-center">
+                    <p>Development of this version is stopped at "v0.3.2" and it should be considered obsolete. No updates, features
+                        or bugfixes will be issued.</p>
+                </div>
                 <div class="download w-col w-col-12 w-clearfix txt-center">
-                    <i class="fa fa-windows"></i> <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-windows-x64.zip">Windows</a>
-                    <i class="fa fa-apple"></i> <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-macos-x64.dmg">MACOS</a>
-                    <i class="fa fa-linux"></i> <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-linux-win32.zip">Linux 32bit</a>
-                    <i class="fa fa-linux"></i> <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-linux-x64.zip">Linux 64bit</a>
+                    <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-windows-x64.zip">
+                        <i class="fa fa-windows"></i> Windows
+                    </a>
+                    <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-macos-x64.dmg">
+                        <i class="fa fa-apple"></i> MACOS
+                    </a>
+                    <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-linux-win32.zip">
+                        <i class="fa fa-linux"></i> Linux 32bit
+                    </a>
+                    <a href="{{ site.download_url }}/download/0.3.2-beta/Gisto-v0.3.2-linux-x64.zip">
+                        <i class="fa fa-linux"></i> Linux 64bit
+                    </a>
                 </DIV>
 
             </div>
@@ -83,16 +94,6 @@
 
             <!--</div>-->
             <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="center-holder">-->
-            <!--<a href="download/" class="btn bg-grey txt-white btn-center">-->
-            <!--Mirrors and prev. versions <i class="fa fa-arrow-right"></i>-->
-            <!--</a>-->
-
-            <!--<a href="changelog/" class="btn bg-grey txt-white btn-center">-->
-            <!--Change log-->
-            <!--</a>-->
             <!--</div>-->
 
 

@@ -9362,4 +9362,20 @@ $(function () {
         }
     });
 
+    $(document).ready(function () {
+        $("#app-image-controls").on("click", "span", function () {
+            $("#app-image img").removeClass("opaque");
+
+            var newImage = $(this).index();
+
+            $("#app-image img")
+                .eq(newImage)
+                .addClass("opaque");
+
+            $("#app-image-controls span").removeClass("selected");
+            $(this).addClass("selected");
+        });
+    });
+
+
 });
