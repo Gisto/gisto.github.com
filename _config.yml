@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 name: Gisto
 url: http://gistoapp.com
-gisto_build_date: 2018-08-27
+gisto_build_date: 2018-08-30
 download_url: https://github.com/Gisto/Gisto/releases
 download_url_mirror: http://mirror.gistoapp.com
 nightly_url: https://github.com/Gisto/Gisto/releases
@@ -10,6 +10,7 @@ nightly_url: https://github.com/Gisto/Gisto/releases
 plugins: [jekyll-paginate]
 
 releases:
+ - version: 1.9.84
  - version: 1.9.83
  - version: 1.9.82
  - version: 1.9.81
