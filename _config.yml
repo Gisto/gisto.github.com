@@ -10,6 +10,7 @@ nightly_url: https://github.com/Gisto/Gisto/releases
 plugins: [jekyll-paginate]
 
 releases:
+ - version: 1.9.86
  - version: 1.9.85
  - version: 1.9.84
  - version: 1.9.83
@@ -34,8 +35,8 @@ navigation:
   url: faq
 - text: Blog
   url: blog
-#- text: Downloads
-#  url: download
+- text: Downloads
+  url: download
 
 contributers:
 - name: Maayan Glikser
