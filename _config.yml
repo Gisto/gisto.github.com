@@ -10,6 +10,7 @@ nightly_url: https://github.com/Gisto/Gisto/releases
 plugins: [jekyll-paginate]
 
 releases:
+ - version: 1.9.85
  - version: 1.9.84
  - version: 1.9.83
  - version: 1.9.82
