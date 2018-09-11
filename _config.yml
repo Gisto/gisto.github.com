@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 name: Gisto
 url: http://gistoapp.com
-gisto_build_date: 2018-09-02
+gisto_build_date: 2018-09-12
 download_url: https://github.com/Gisto/Gisto/releases
 download_url_mirror: http://mirror.gistoapp.com
 nightly_url: https://github.com/Gisto/Gisto/releases
