@@ -1,51 +1,51 @@
-// function getFileType(file) {
-//     return fileExtension = file.split('.').reverse()[0];
-// }
-//
-// function getOsType(file) {
-//     var fileExtension = getFileType(file);
-//     switch (fileExtension) {
-//         case 'snap':
-//         case 'AppImage':
-//         case 'deb':
-//         case 'rpm':
-//         case 'pacman': {
-//             return 'linux';
-//         }
-//
-//         case 'dmg':
-//         case 'zip': {
-//             return 'mac';
-//         }
-//
-//         case 'exe': {
-//             return 'windows';
-//         }
-//
-//         default:
-//             return 'unknown';
-//     }
-// }
-//
-// function dataStructure(asset) {
-//     return {
-//         os: getOsType(asset.name),
-//         link: asset.browser_download_url,
-//         fileType: getFileType(asset.name)
-//     }
-// }
+function getFileType(file) {
+    return fileExtension = file.split('.').reverse()[0];
+}
 
-// function getOsIcon(data) {
-//     if (data.os === 'mac') {
-//         return 'fa-apple';
-//     } else if (data.os === 'linux') {
-//         return 'fa-linux';
-//     } else if (data.os === 'windows') {
-//         return 'fa-windows';
-//     }
-//
-//     return;
-// }
+function getOsType(file) {
+    var fileExtension = getFileType(file);
+    switch (fileExtension) {
+        case 'snap':
+        case 'AppImage':
+        case 'deb':
+        case 'rpm':
+        case 'pacman': {
+            return 'linux';
+        }
+
+        case 'dmg':
+        case 'zip': {
+            return 'mac';
+        }
+
+        case 'exe': {
+            return 'windows';
+        }
+
+        default:
+            return 'unknown';
+    }
+}
+
+function dataStructure(asset) {
+    return {
+        os: getOsType(asset.name),
+        link: asset.browser_download_url,
+        fileType: getFileType(asset.name)
+    }
+}
+
+function getOsIcon(data) {
+    if (data.os === 'mac') {
+        return 'fa-apple';
+    } else if (data.os === 'linux') {
+        return 'fa-linux';
+    } else if (data.os === 'windows') {
+        return 'fa-windows';
+    }
+
+    return;
+}
 
 function isMobile() {
     if ($(".nav-link").css("display") == "block") {
@@ -91,44 +91,56 @@ $(function () {
         _gaq.push(['_trackEvent', 'Gisto Download', 'Downloaded', this.href]);
     });
 
-    // var downloads;
-    // function template(data) {
-    //     return '<div class="download w-col w-col-3 w-clearfix txt-center">\n' +
-    //         '                    <p class="txt-center"><i class="fa ' + getOsIcon(data) + ' fa-4x"></i></p>\n' +
-    //         '\n' +
-    //         '                    <h3>' + data.os + '<br/> <b>Download</b></h3>\n' +
-    //         '                    <a href="' + data.link + '"><b>' + data.fileType + '</b></a>\n' +
-    //         '                </div>';
-    // }
+    var downloads;
+    function template(data) {
+        return '<div class="download w-col w-col-3 w-clearfix txt-center">\n' +
+            '                    <p class="txt-center"><i class="fa ' + getOsIcon(data) + ' fa-4x"></i></p>\n' +
+            '\n' +
+            '                    <h3>' + data.os + '<br/> <b>Download</b></h3>\n' +
+            '                    <a href="' + data.link + '"><b>' + data.fileType + '</b></a>\n' +
+            '                </div>';
+    }
 
-    // if (!sessionStorage.getItem('gistoReleases')) {
-    //     $.ajax({
-    //         url: 'https://api.github.com/repos/Gisto/Gisto/releases'
-    //     }).done(function (data) {
-    //         sessionStorage.setItem('gistoReleases', JSON.stringify(data));
-    //         var latest = data[0];
-    //         $('.latest-release-version').text('v' + latest.name);
-    //
-    //         downloads = latest.assets.map(function (asset) {
-    //             return dataStructure(asset);
-    //         }).filter(function(os) {
-    //             return os !== 'unknown';
-    //         });
-    //     });
-    // } else {
-    //     var latest = JSON.parse(sessionStorage.getItem('gistoReleases'));
-    // console.log('%c LOG ', 'background: #555; color: tomato', latest);
-    //     downloads = latest[0].assets.map(function (asset) {
-    //         return dataStructure(asset);
-    //     }).filter(function(os) {
-    //         return os !== 'unknown';
-    //     });
-    // }
+    if (!sessionStorage.getItem('gistoReleases')) {
+        $.ajax({
+            url: 'https://api.github.com/repos/Gisto/Gisto/releases'
+        }).done(function (data) {
+            sessionStorage.setItem('gistoReleases', JSON.stringify(data));
+            var latest = data[0];
+            $('.latest-release-version').text('v' + latest.name);
+            $('.published_at').text(latest.published_at);
+            // sessionStorage.setItem('gistoLatestVersion', latest.name);
 
-    // downloads && downloads.length > 0 && downloads.map(function(asset) {
-    //     console.log('%c LOG ', 'background: #555; color: tomato', '<a href="' + asset.link + '"><b>' + asset.fileType + '</b></a>');
-    //     return $('.linux-downloads').append('<a href="' + asset.link + '"><b>' + asset.fileType + '</b></a>');
-    // });
+            downloads = latest.assets.map(function (asset) {
+                return dataStructure(asset);
+            }).filter(function(os) {
+                return os !== 'unknown';
+            });
+        });
+    } else {
+        var latest = JSON.parse(sessionStorage.getItem('gistoReleases'));
+        var latestVersion = latest[0].name;
+        $('.latest-release-version').text('v' + latestVersion);
+        $('.published_at').text(latest[0].published_at);
+        // sessionStorage.setItem('gistoLatestVersion', latestVersion);
+        downloads = latest[0].assets.map(function (asset) {
+            return dataStructure(asset);
+        }).filter(function(os) {
+            return os !== 'unknown';
+        });
+    }
+
+    downloads && downloads.length > 0 && downloads.map(function(asset) {
+        if (asset.os === 'mac') {
+            $('.mac-downloads').append('<a href="' + asset.link + '"><b>' + asset.fileType + '</b></a>');
+        }
+        if (asset.os === 'windows') {
+            $('.windows-downloads').append('<a href="' + asset.link + '"><b>' + asset.fileType + '</b></a>');
+        }
+        if (asset.os === 'linux') {
+            $('.linux-downloads').append('<a href="' + asset.link + '"><b>' + asset.fileType + '</b></a>');
+        }
+    });
 
     $(document).scroll(function () {
         if ($(this).scrollTop() > 100) {
