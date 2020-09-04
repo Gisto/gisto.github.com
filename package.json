@@ -18,7 +18,7 @@
     "gulp-minify-inline-scripts": "0.0.6",
     "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.1.0",
-    "node-sass": "^4.6.1",
+    "node-sass": "^4.13.1",
     "yargs": "^4.7.0"
   },
   "engines": {
