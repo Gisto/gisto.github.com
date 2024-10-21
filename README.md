@@ -1,6 +1,7 @@
-# www.gistoapp.com
+# https://gisto.github.io
 
-Web pages of [www.gistoapp.com](http://www.gistoapp.com)
+~~Web pages of [www.gistoapp.com](http://www.gistoapp.com)~~
+Web pages of Gisto app https://gisto.github.io
 
 **NOTE!** Default branch is `src`, deployment branch is `master`
 
